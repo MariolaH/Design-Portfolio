@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
-import "../app/styles/global.css";
+import "/src/app/styles/global.css";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </header> */}
 
-      <header className="text-center text-light">
+<header className="top text-center text-light py-5" style={{ backgroundImage: 'url("/crystal-7428278_1280.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <h1 className="display-4">Hi, I'm Mariola</h1>
         <p className="lead">A UX/UI Designer and Software Developer</p>
         <div className="mt-4">
@@ -40,43 +40,43 @@ export default function Home() {
         <div className="row">
           <div className="col-md-4 mb-4">
             <Link
-              href="/case-studies/graphic-design"
+              href="/caseStudyOne"
               className="btn btn-light p-4 d-block shadow text-decoration-none"
             >
               <div className="mb-3">
-                <img src="/path/to/icon1.png" alt="Graphic Design" />
+                <img src="/CaseStudy1.png" />
               </div>
-              <h3 className="h5">GRAPHIC DESIGN</h3>
+              <h3 className="h5">CASE STUDY 1</h3>
               <p className="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Flower Catalogue Website
               </p>
             </Link>
           </div>
           <div className="col-md-4 mb-4">
             <Link
-              href="/bio"
+              href="/caseStudyTwo"
               className="btn btn-light p-4 d-block shadow text-decoration-none"
             >
               <div className="mb-3">
-                <img src="/path/to/icon2.png" alt="Awesome Code" />
+                <img src="/CaseStudy1.png" />
               </div>
-              <h3 className="h5">AWESOME CODE</h3>
+              <h3 className="h5">CASE STUDY 2</h3>
               <p className="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Flower Catalogue Website
               </p>
             </Link>
           </div>
           <div className="col-md-4 mb-4">
             <Link
-              href="/case-studies/free-template"
+              href="/caseStudyThree"
               className="btn btn-light p-4 d-block shadow text-decoration-none"
             >
               <div className="mb-3">
                 <img src="/path/to/icon3.png" alt="Free Template" />
               </div>
-              <h3 className="h5">FREE TEMPLATE</h3>
+              <h3 className="h5">CASE STUDY 3</h3>
               <p className="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Museum Website 
               </p>
             </Link>
           </div>
