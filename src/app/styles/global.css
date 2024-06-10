@@ -5,6 +5,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   
+  
+  
   header {
     position: relative;
     height: 800px; /* Increase height */
@@ -14,7 +16,7 @@ body {
     align-items: center;
     padding: 2rem; /* Add padding if needed */
     text-align: center;
-    background-image: url("/crystal-7428278_1280.jpg");
+    /* background-image: url("/crystal-7428278_1280.jpg"); */
     background-size: cover;
     background-position: center;
     overflow: hidden; /* Ensures ::before doesn't extend beyond the header */
@@ -75,6 +77,106 @@ body {
   }
   
   section {
+    background-color: white;
     padding: 3rem 1rem;
   }
+
+  .container {
+    background-color: white;
+  }
   
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-image {
+    max-width: 100px; /* Adjust the size as needed */
+    max-height: 100px; /* Adjust the size as needed */
+  }
+  
+  .top {
+    margin-bottom: 2rem; /* Add space below the header */
+  }
+
+  .purple-shadow {
+    box-shadow: 0 4px 6px rgba(111,66,193); /* Adjust the shadow size and color as needed */
+  }
+  
+  .custom-hover:hover {
+    color: #fff; /* Adjust the hover text color */
+  }
+  
+  .skill-icon {
+    position: relative;
+    display: inline-block;
+    transition: opacity 0.3s;
+  }
+  
+  
+  .skill-icon:hover img {
+    opacity: 0.5;
+  }
+  
+  .skill-icon .tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .skill-icon .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow points down */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .skill-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* .center {
+    justify-content: center;
+    padding-top: 0.5rem;
+  } */
+
+  .around {
+    border-radius: 5px;
+    border-color: white;
+  }
+
+  .size {
+    min-width: 450px; /* Set a minimum width */
+    min-height: 50px;
+  }
+
+  .info {
+    min-width: 450px; /* Set a minimum width */
+    min-height: 150px;
+  }
+
+  .content {
+    min-width: 650px; /* Set a minimum width */
+    min-height: 50px;
+  }
+
+  .size2 {
+    min-width: 450px; /* Set a minimum width */
+    min-height: 10px;
+  }
