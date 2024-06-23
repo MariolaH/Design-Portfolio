@@ -1,94 +1,61 @@
 "use client";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import "/src/app/styles/global.css";
-
+import Icon from "../icons";
+import LinkCard from "../components/linkCard";
 
 export default function caseStudyOne() {
-    return (
-      <div>
-        <p>Case Study One</p>
-        <p>Case Study One</p>
-        {/* Add more content about yourself here */}
-        <section className="container text-center py-5">
-        <h2 className="mb-4">UX / UI DESIGN</h2>
-        {/* <p className="text-muted mb-5">THIS IS SOME TEXT INSIDE OF A DIV BLOCK.</p> */}
-        <div className="row">
-          <div className="col-md-2 mb-2">
-            <Link
-              href="/caseStudyOne"
-              className="btn btn-light p-4 d-block shadow text-decoration-none"
-            >
-              <div className="mb-3">
-                <img src="/Empathize.png" className="centered-image" />
+  return (
+    <div>
+      <section className="container text-center py-5">
+        <h2 className="mb-5 mt-5">Flowers Flowers Flowers Website</h2>
+        <p className="mb-5 mt-5">
+          PROMPT: Design an app and a responsive website for a public art museum
+          to advertise exhibitions and events, provide museum information to
+          patrons, and enable patrons to schedule visits.
+        </p>
+        <div className="row justify-content-center mt-5">
+            <div className="col-md-2 d-flex justify-content-center">
+              <div className="around p-4 d-block shadow text-decoration-none">
+                <div className="size">
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vQxDZK_2-fSdpQ4_jTZp7Dn1YUB-VS0ZrzNranteznP__tqwoOtuWzq6A8Y86HRgCeAzZzbFRvBq6Ut/pub?start=true&loop=true&delayms=30000" target="_blank"> <img src="/flowers.png" /> </a>
+                {/* <img src="/flowers.png" /> */}
+                </div>
               </div>
-              {/* <h3 className="h5">CASE STUDY 1</h3> */}
-              {/* <p className="text-muted">
-                Flower Catalogue Website
-              </p> */}
-            </Link>
-          </div>
-          <div className="col-md-2 mb-2">
-            <Link
-              href="/caseStudyTwo"
-              className="btn btn-light p-4 d-block shadow text-decoration-none"
-            >
-              <div className="mb-3">
-                <img src="/CaseStudy1.png" />
-              </div>
-              <h3 className="h5">CASE STUDY 2</h3>
-              <p className="text-muted">
-               Flower Catalogue Website
-              </p>
-            </Link>
-          </div>
-          <div className="col-md-2 mb-2">
-            <Link
-              href="/caseStudyThree"
-              className="btn btn-light p-4 d-block shadow text-decoration-none"
-            >
-              <div className="mb-3">
-                <img src="/path/to/icon3.png" alt="Free Template" />
-              </div>
-              <h3 className="h5">CASE STUDY 3</h3>
-              <p className="text-muted">
-              Museum Website 
-              </p>
-            </Link>
-          </div>
-          <div className="col-md-2 mb-2">
-            <Link
-              href="/caseStudyThree"
-              className="btn btn-light p-4 d-block shadow text-decoration-none"
-            >
-              <div className="mb-3">
-                <img src="/path/to/icon3.png" alt="Free Template" />
-              </div>
-              <h3 className="h5">CASE STUDY 3</h3>
-              <p className="text-muted">
-              Museum Website 
-              </p>
-            </Link>
-          </div>
-          <div className="col-md-2 mb-2">
-            <Link
-              href="/caseStudyThree"
-              className="btn btn-light p-4 d-block shadow text-decoration-none"
-            >
-              <div className="mb-3">
-                <img src="/path/to/icon3.png" alt="Free Template" />
-              </div>
-              <h3 className="h5">CASE STUDY 3</h3>
-              <p className="text-muted">
-              Museum Website 
-              </p>
-            </Link>
+            </div>
+            </div>
+            <div className="d-flex justify-content-center mt-5">
+          <div className="row justify-content-center mt-5 btn-round image-container">
+            <LinkCard
+              href="/caseStudyThree/empathize"
+              imgSrc="/DesignProcess/E.png"
+              text="Empathize"
+            />
+            <LinkCard
+              href="/caseStudyThree/define"
+              imgSrc="/DesignProcess/D.png"
+              text="Define"
+            />
+            <LinkCard
+              href="/caseStudyThree/ideate"
+              imgSrc="/DesignProcess/I.png"
+              text="Ideate"
+            />
+            <LinkCard
+              href="/caseStudyThree/prototype"
+              imgSrc="/DesignProcess/Design.png"
+              text="Prototype"
+            />
+            <LinkCard
+              href="/caseStudyThree/test"
+              imgSrc="/DesignProcess/Test.png"
+              text="Test"
+            />
           </div>
         </div>
       </section>
-      </div>
-      
-    );
-  };
-  
+    </div>
+  );
+}

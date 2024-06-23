@@ -3,6 +3,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import "/src/app/styles/global.css";
+import LinkCard from "../components/linkCard";
 
 export default function caseStudyTwo() {
   return (
@@ -14,65 +15,39 @@ export default function caseStudyTwo() {
           to advertise exhibitions and events, provide museum information to
           patrons, and enable patrons to schedule visits.
         </p>
-        
         <div className="d-flex justify-content-center mt-5">
-          <div className="row justify-content-center mt-5">
-            <div className="col-md-2 d-flex justify-content-center">
-              <Link
-                href="/caseStudyTwo/empathize"
-                className="btn btn-light p-4 d-block shadow text-decoration-none"
-              >
-                <div className="img-fluid">
-                  <img src="/Empathize.png" />
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-2 d-flex justify-content-center">
-              <Link
-                href="/caseStudyTwo/define"
-                className="btn btn-light p-4 d-block shadow text-decoration-none"
-              >
-                <div className="img-fluid">
-                  <img src="/lifecyleImages/define.png" />
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-2 d-flex justify-content-center">
-              <Link
-                href="/caseStudyTwo/ideate"
-                className="btn btn-light p-4 d-block shadow text-decoration-none"
-              >
-                <div className="img-fluid">
-                  <img src="/lifecyleImages/ideate.png" />
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-2 d-flex justify-content-center">
-              <Link
-                href="/caseStudyTwo/prototype"
-                className="btn btn-light p-4 d-block shadow text-decoration-none"
-              >
-                <div className="img-fluid">
-                  <img src="/lifecyleImages/prototype.png" />
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-2 d-flex justify-content-center">
-              <Link
-                href="/caseStudyTwo/test"
-                className="btn btn-light p-4 d-block shadow text-decoration-none"
-              >
-                <div className="img-fluid">
-                  <img src="/lifecyleImages/test.png" />
-                </div>
-              </Link>
-            </div>
+          <div className="row justify-content-center mt-5 btn-round image-container">
+            <LinkCard
+              href="/caseStudyThree/empathize"
+              imgSrc="/DesignProcess/E.png"
+              text="Empathize"
+            />
+            <LinkCard
+              href="/caseStudyThree/define"
+              imgSrc="/DesignProcess/D.png"
+              text="Define"
+            />
+            <LinkCard
+              href="/caseStudyThree/ideate"
+              imgSrc="/DesignProcess/I.png"
+              text="Ideate"
+            />
+            <LinkCard
+              href="/caseStudyThree/prototype"
+              imgSrc="/DesignProcess/Design.png"
+              text="Prototype"
+            />
+            <LinkCard
+              href="/caseStudyThree/test"
+              imgSrc="/DesignProcess/Test.png"
+              text="Test"
+            />
           </div>
         </div>
+        
+          
+      
+      
       </section>
     </div>
   );
