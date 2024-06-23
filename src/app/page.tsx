@@ -28,7 +28,7 @@ export default function Home() {
             backgroundPosition: "center",
           }}
         >
-          <h1 className="display-4">Hi, I amm Mariola</h1>
+          <h1 className="display-4">Hi, I am Mariola</h1>
           <p className="lead">A UX/UI Designer and Software Developer</p>
           <div className="mt-4">
             <Link href="/bio" className="btn btn-purple btn-equal mx-2">

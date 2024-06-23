@@ -6,6 +6,7 @@ import "/src/app/styles/global.css";
 import ImageCard from "@/app/components/imageCard";
 import ImageAndTextCard from "@/app/components/imageAndTextCard";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function define() {
   const scrollToTop = () => {
@@ -14,7 +15,7 @@ export default function define() {
   return (
     <div>
       <Link href="/">
-        <img src="/HomeButton.png" alt="HomeButton" id="home-button" />
+        <Image src="/HomeButton.png" alt="HomeButton" id="home-button" />
       </Link>
       <section className="container text-center py-5">
         <h2 className="mb-5 mt-5">Introduction to the Define Section Phase</h2>
@@ -51,7 +52,7 @@ export default function define() {
                 </p>
                 <p>
                   The define phase sets the direction for all subsequent phases.
-                  By thoroughly understanding and articulating the users' needs
+                  By thoroughly understanding and articulating the users needs
                   and challenges, we ensure that our design solutions are
                   precisely tailored to solve the most pressing problems. This
                   results in products that are more likely to be successful and

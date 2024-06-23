@@ -52,12 +52,12 @@ body {
 
   .btn-purple {
 
-    background-color: #50269e96;
+    background-color: rgba(57, 36, 103, 0.576);
     color: white;
   }
   
   .btn-purple:hover {
-    background-color: #6f42c1; /* Bootstrap's purple */
+    background-color: #5D3587; /* Bootstrap's purple */
   }
 
   .btn-white:hover {
@@ -84,6 +84,12 @@ body {
   .container {
     background-color: white;
   }
+
+  .centered-image {
+    max-width: 100px; /* Adjust the size as needed */
+    max-height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make the image round */
+}
   
   .image-container {
     display: flex;
@@ -180,3 +186,36 @@ body {
     min-width: 450px; /* Set a minimum width */
     min-height: 10px;
   }
+
+  .fontSize{
+    font-size: small;
+  }
+
+/* send to top css */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  background-color: white;
+  color: rgb(6, 6, 6);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#back-to-top:hover {
+  background-color: #5D3587;
+}
+
+#home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 75px; /* Adjust the size as needed */
+  height: 75px; /* Adjust the size as needed */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+

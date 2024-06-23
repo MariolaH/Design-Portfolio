@@ -9,7 +9,7 @@ export default function bio() {
     return (
       <div>
         <h1>About Me</h1>
-        <p>Hi, I am Mariola, a UX/UI Designer and Software Developer.</p>
+        <p>Hi, I&apos;m Mariola, a UX/UI Designer and Software Developer.</p>
         {/* Add more content about yourself here */}
       </div>
     );
