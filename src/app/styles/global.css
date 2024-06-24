@@ -241,7 +241,7 @@ body {
 }
 
 .lead-responsive {
-  font-size: 1.25rem; /* Default size */
+  font-size: 1.00rem; /* Default size */
 }
 
 @media (max-width: 768px) {
