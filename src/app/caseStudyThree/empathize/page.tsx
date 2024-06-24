@@ -13,16 +13,15 @@ export default function Empathize() {
   return (
     <div>
       <Link href="/" >
-        <img src='/HomeButton.png' alt='HomeButton' id="home-button"/>
+        <img src='/HomeButton.png' alt='HomeButton' id="home-button"  width={75} height={75}/>
       </Link>
      <section className="container text-center py-5">
         <h2 className="mb-5 mt-5">Introduction to the Empathize Section Phase</h2>
-
         <div className="row justify-content-center mt-5">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <p>
+    <div className="col-md-8 d-flex justify-content-center">
+      <div className="p-4 d-block text-decoration-none">
+        <div className="content">
+          <p className="lead-responsive">
                   Welcome to the Empathize section of my portfolio. This section is dedicated to the foundational phase of the design thinking process—empathizing with users. Here, you will find an exploration of various methods and techniques used to deeply understand user needs, pain points, and goals.
                 </p>
               </div>
@@ -31,14 +30,14 @@ export default function Empathize() {
         </div>
 
         <div className="row justify-content-center mt-3">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
+    <div className="col-12 col-md-8 d-flex justify-content-center">
+      <div className="p-4 d-block text-decoration-none">
+        <div className="content">
                 <h5 className="mb-4">The Importance of Empathizing with Users</h5>
-                <p>
+                <p className="lead-responsive">
                   Empathy is the cornerstone of effective UX design. By genuinely understanding and connecting with users, designers can create solutions that are not only functional but also meaningful and engaging. This deep understanding ensures that the products we create truly resonate with users, leading to more impactful and lasting experiences.
                 </p>
-                <p>
+                <p className="lead-responsive">
                   Empathizing with users is not just the first step in the design process—it is a continuous effort that informs every subsequent phase. By thoroughly understanding the users, we can ensure that the design solutions are tailored to their real needs and challenges. This results in products that are more likely to be successful and well-received.
                 </p>
               </div>
@@ -47,18 +46,17 @@ export default function Empathize() {
         </div>
 
         <div className="row justify-content-center mt-3">
-          <div className="col-md-8 d-flex justify-content-center">
+          <div className="col-12 col-md-8 d-flex justify-content-center">
             <div className="p-4 d-block text-decoration-none">
               <div className="content">
                 <h5 className="mb-4">What You Will See in This Section</h5>
-                <p>
+                <p className="lead-responsive">
                   In this section, you will be introduced to several key empathy activities that are crucial for gathering insights and creating user-centered designs:
                 </p>
               </div>
             </div>
           </div>
         </div>
-
         <div className="row justify-content-center mt-5 pb-5">
             <ImageAndTextCard
             href="#user-interviews"
@@ -93,7 +91,8 @@ export default function Empathize() {
             text="User Journey Maps: Visual narratives that depict the steps users take to achieve a goal, highlighting their experiences and potential pain points along the way."
           />
         </div>
-        <div className='pt-5'>
+        <div className="container pt-5">
+      <div className="row justify-content-center">
         <ImageCard imgSrc="/empathizeCS3/researchGoals.png" />
         <ImageCard imgSrc="/empathizeCS3/audience.png" />
         <ImageCard id="user-interviews" imgSrc="/empathizeCS3/interviewQuestions.png" />
@@ -122,12 +121,13 @@ export default function Empathize() {
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapMichael.png" />
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapEmma.png" />
         </div>
+        </div>
 
-        <div className="row justify-content-center">
-          <div className="col-md-2 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <p>
+         <div className="row justify-content-center mt-5">
+    <div className="col-12 col-md-8 d-flex justify-content-center">
+      <div className="p-4 d-block text-decoration-none">
+        <div className="content">
+          <p className="lead-responsive">
                   The Empathize section of my portfolio is a comprehensive guide
                   to understanding users and their experiences. By delving into
                   these empathy activities, you will gain a deeper appreciation

@@ -167,6 +167,12 @@ body {
     border-color: white;
   }
 
+
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
   .size {
     min-width: 450px; /* Set a minimum width */
     min-height: 50px;
@@ -178,7 +184,7 @@ body {
   }
 
   .content {
-    min-width: 650px; /* Set a minimum width */
+    min-width: 100px; /* Set a minimum width */
     min-height: 50px;
   }
 
@@ -213,9 +219,40 @@ body {
   position: fixed;
   top: 20px;
   left: 20px;
-  width: 75px; /* Adjust the size as needed */
-  height: 75px; /* Adjust the size as needed */
   cursor: pointer;
   z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.link-card {
+  width: 100%;
+  max-width: 200px; /* You can adjust this value */
+}
+
+@media (max-width: 768px) {
+  .link-card {
+    max-width: 150px; /* Shrink the cards on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .link-card {
+    max-width: 150px; /* Further shrink the cards on extra small screens */
+  }
+}
+
+.lead-responsive {
+  font-size: 1.25rem; /* Default size */
+}
+
+@media (max-width: 768px) {
+  .lead-responsive {
+    font-size: 1rem; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .lead-responsive {
+    font-size: 0.875rem; /* Adjusted for mobile devices */
+  }
 }
 

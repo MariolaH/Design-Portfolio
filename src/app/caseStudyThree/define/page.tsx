@@ -15,7 +15,7 @@ export default function define() {
   return (
     <div>
       <Link href="/">
-        <Image src="/HomeButton.png" alt="HomeButton" id="home-button" />
+        <Image src="/HomeButton.png" alt="HomeButton" id="home-button" width={75} height={75} />
       </Link>
       <section className="container text-center py-5">
         <h2 className="mb-5 mt-5">Introduction to the Define Section Phase</h2>

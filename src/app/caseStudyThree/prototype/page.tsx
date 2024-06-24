@@ -15,7 +15,7 @@ export default function prototype() {
   return (
     <div>
       <Link href="/" >
-        <img src='/HomeButton.png' alt='HomeButton' id="home-button"/>
+        <img src='/HomeButton.png' alt='HomeButton' id="home-button" width={75} height={75}/>
       </Link>
      <section className="container text-center py-5">
         <h2 className="mb-5 mt-5">Introduction to the Prototype Section Phase</h2>
