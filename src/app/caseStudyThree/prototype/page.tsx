@@ -5,97 +5,83 @@ import div from "next/link";
 import "/src/app/styles/global.css";
 import ImageCard from "@/app/components/imageCard";
 import ImageAndTextCard from "@/app/components/imageAndTextCard";
-import Link from 'next/link';
-
+import Link from "next/link";
+import Section from "@/app/components/section";
 
 export default function prototype() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 650, behavior: 'smooth' });
+    window.scrollTo({ top: 650, behavior: "smooth" });
   };
+
+  const content = [
+    {
+      paragraphs: [
+        "Welcome to the Prototype section of my portfolio. This section is dedicated to the iterative phase of the design thinking process—transforming ideas into tangible forms. Here, you will find an exploration of various prototyping methods and techniques used to develop interactive models that address user needs and pain points.",
+      ],
+    },
+    {
+      subheading: "The Importance of Prototyping with Users",
+      paragraphs: [
+        "Prototyping is a crucial stage in the UX design process. By creating interactive representations of ideas, designers can test and refine solutions based on user feedback. This phase builds on the insights and ideas generated during the ideation stage, bringing concepts to life in a way that allows for practical evaluation and iteration.",
+        "Developing prototypes is essential for identifying the most effective solutions. During the prototyping phase, we create various levels of prototypes, from low-fidelity wireframes to high-fidelity interactive models, to ensure that all aspects of the design are thoroughly tested and refined. This helps in creating innovative and user-centered designs that are both functional and engaging.",
+        "The Prototype section of my portfolio is a comprehensive guide to transforming ideas into tangible solutions. By delving into these prototyping activities, you will gain a deeper appreciation of the iterative design process and how it leads to more effective and meaningful user-centered designs.",
+      ],
+    },
+    {
+      subheading: "What You Will See in This Section",
+      paragraphs: [
+        "In this section, you will be introduced to several key prototyping techniques that are essential for developing interactive models. These include:",
+      ],
+    },
+  ];
+
   return (
     <div>
-      <Link href="/" >
-        <img src='/HomeButton.png' alt='HomeButton' id="home-button" width={75} height={75}/>
+      <Link href="/">
+        <img
+          src="/HomeButton.png"
+          alt="HomeButton"
+          id="home-button"
+          width={75}
+          height={75}
+        />
       </Link>
-     <section className="container text-center py-5">
-        <h2 className="mb-5 mt-5">Introduction to the Prototype Section Phase</h2>
-
-        <div className="row justify-content-center mt-5">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <p>
-                  Welcome to the Empathize section of my portfolio. This section is dedicated to the foundational phase of the design thinking process—empathizing with users. Here, you will find an exploration of various methods and techniques used to deeply understand user needs, pain points, and goals.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center mt-3">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <h5 className="mb-4">The Importance of Empathizing with Users</h5>
-                <p>
-                  Empathy is the cornerstone of effective UX design. By genuinely understanding and connecting with users, designers can create solutions that are not only functional but also meaningful and engaging. This deep understanding ensures that the products we create truly resonate with users, leading to more impactful and lasting experiences.
-                </p>
-                <p>
-                  Empathizing with users is not just the first step in the design process—it is a continuous effort that informs every subsequent phase. By thoroughly understanding the users, we can ensure that the design solutions are tailored to their real needs and challenges. This results in products that are more likely to be successful and well-received.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center mt-3">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <h5 className="mb-4">What You Will See in This Section</h5>
-                <p>
-                  In this section, you will be introduced to several key empathy activities that are crucial for gathering insights and creating user-centered designs:
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center mt-5 pb-5">
+      <Section
+        title="Introduction to the Prototype Section Phase"
+        content={content}
+      />
+      <div className="row justify-content-center mt-5 pb-5">
         <ImageAndTextCard
-            href="#user-interviews"
-            imgSrc="/moduleIcons/userFlow.png"
-            text="User flow, Storyboards, and Sitemaps: Detailed documentation and analysis of
-            interviews conducted to gather firsthand user insights."
-          />
+          href="#user-interviews"
+          imgSrc="/moduleIcons/userFlow.png"
+          text="User flow diagrams, storyboards and sitemaps: User flow diagrams are visual maps of user steps; Storyboards detail user experiences visually; Sitemap are an overview of product information architecture."
+        />
 
-<ImageAndTextCard
-            href="#empathy-map"
-            imgSrc="/moduleIcons/paperWireframes.png"
-            text="Paper wireframes : Visual representations
-            of user thoughts, feelings, and behaviors, helping to distill
-            key insights from user interviews."
-          />
+        <ImageAndTextCard
+          href="#empathy-map"
+          imgSrc="/moduleIcons/paperWireframes.png"
+          text="Paper wireframes: Creating basic layouts to define the structure and flow of the design."
+        />
 
-<ImageAndTextCard
-            href="#empathy-map"
-            imgSrc="/moduleIcons/digitalWireframes.png"
-            text="Digital wireframes: Visual representations
-            of user thoughts, feelings, and behaviors, helping to distill
-            key insights from user interviews."
-          />
-          <ImageAndTextCard
-            href="#empathy-map"
-            imgSrc="/moduleIcons/lowFidelityPrototypes.png"
-            text="Low-fidelity prototypes: Visual representations
-            of user thoughts, feelings, and behaviors, helping to distill
-            key insights from user interviews."
-          />
-        </div>
-        <div className='pt-5'>
-        <ImageCard imgSrc="/empathizeCS3/researchGoals.png" />
+        <ImageAndTextCard
+          href="#empathy-map"
+          imgSrc="/moduleIcons/digitalWireframes.png"
+          text="Digital wireframes: Developing interactive digital layouts to simulate user interactions."
+        />
+        <ImageAndTextCard
+          href="#empathy-map"
+          imgSrc="/moduleIcons/lowFidelityPrototypes.png"
+          text="Low-fidelity prototypes: Initial interactive models to test and refine design concepts."
+        />
+      </div>
+      <div className="container pt-5">
+      <div className="row justify-content-center">
+        {/* <ImageCard imgSrc="/empathizeCS3/researchGoals.png" />
         <ImageCard imgSrc="/empathizeCS3/audience.png" />
-        <ImageCard id="user-interviews" imgSrc="/empathizeCS3/interviewQuestions.png" />
+        <ImageCard
+          id="user-interviews"
+          imgSrc="/empathizeCS3/interviewQuestions.png"
+        />
         <ImageCard imgSrc="/empathizeCS3/Anna.png" />
         <ImageCard imgSrc="/empathizeCS3/Carlos.png" />
         <ImageCard imgSrc="/empathizeCS3/Sophie.png" />
@@ -108,7 +94,7 @@ export default function prototype() {
         <ImageCard imgSrc="/empathyMaps/RaviEmpathyMap.png" />
         <ImageCard imgSrc="/empathyMaps/JasmineEmpathyMap.png" />
         <ImageCard imgSrc="/empathyMaps/MichaelEmpathyMap.png" />
-  
+
         <ImageCard id="user-persona" imgSrc="/CS3Personas/PersonaAnna2.png" />
         <ImageCard imgSrc="/CS3Personas/PersonaMichael2.png" />
         <ImageCard imgSrc="/CS3Personas/PersonaEmma2.png" />
@@ -117,27 +103,14 @@ export default function prototype() {
         <ImageCard imgSrc="/CS3UserStory/UserStoryMichael.png" />
         <ImageCard imgSrc="/CS3UserStory/UserStoryEmma.png" />
 
-        <ImageCard id="User-Journey-Maps" imgSrc="/CS3JourneyMap/JourneyMapAnna.png" />
+        <ImageCard
+          id="User-Journey-Maps"
+          imgSrc="/CS3JourneyMap/JourneyMapAnna.png"
+        />
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapMichael.png" />
-        <ImageCard imgSrc="/CS3JourneyMap/JourneyMapEmma.png" />
-        </div>
-
-        <div className="row justify-content-center">
-          <div className="col-md-2 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <p>
-                  The Empathize section of my portfolio is a comprehensive guide
-                  to understanding users and their experiences. By delving into
-                  these empathy activities, you will gain a deeper appreciation
-                  of the user-centered design process and how it leads to more
-                  effective and meaningful design solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <ImageCard imgSrc="/CS3JourneyMap/JourneyMapEmma.png" /> */}
+      </div>
+      </div>
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
       </button>

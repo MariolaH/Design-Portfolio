@@ -23,7 +23,7 @@ export default function Empathize() {
       paragraphs: [
         "Empathy is the cornerstone of effective UX design. By genuinely understanding and connecting with users, designers can create solutions that are not only functional but also meaningful and engaging. This deep understanding ensures that the products we create truly resonate with users, leading to more impactful and lasting experiences.",
         "Empathizing with users is not just the first step in the design process—it is a continuous effort that informs every subsequent phase. By thoroughly understanding the users, we can ensure that the design solutions are tailored to their real needs and challenges. This results in products that are more likely to be successful and well-received.",
-        "  The Empathize section of my portfolio is a comprehensive guide to understanding users and their experiences. By delving into these empathy activities, you will gain a deeper appreciation of the user-centered design process and how it leads to more effective and meaningful design solutions.",
+        "The Empathize section of my portfolio is a comprehensive guide to understanding users and their experiences. By delving into these empathy activities, you will gain a deeper appreciation of the user-centered design process and how it leads to more effective and meaningful design solutions.",
       ],
     },
     {
@@ -104,15 +104,6 @@ export default function Empathize() {
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapMichael.png" />
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapEmma.png" />
         </div>
-        </div>
-
-         <div className="row justify-content-center mt-5">
-    <div className="col-12 col-md-8 d-flex justify-content-center">
-      <div className="p-4 d-block text-decoration-none">
-        <div className="content">
-              </div>
-            </div>
-          </div>
         </div>
       <button id="back-to-top" onClick={scrollToTop}>
         ↑

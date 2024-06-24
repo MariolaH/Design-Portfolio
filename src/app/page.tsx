@@ -28,7 +28,7 @@ export default function Home() {
             backgroundPosition: "center",
           }}
         >
-          <h1 className="display-4">Hi, I am Mariola</h1>
+          <h1 className="display-4">Hi, I&apos;m Mariola</h1>
           <p className="lead">A UX/UI Designer and Software Developer</p>
           <div className="mt-4">
             <Link href="/bio" className="btn btn-purple btn-equal mx-2">
@@ -57,7 +57,7 @@ export default function Home() {
               <div className="mb-3">
                 <img src="/CaseStudy1.png" />
               </div>
-              <h3 className="h5">CASE STUDY</h3>
+              {/* <h3 className="h5">CASE STUDY</h3> */}
               <p className="text-muted">Flower Catalogue Website</p>
             </Link>
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
               <div className="mb-3">
                 <img src="/CaseStudy1.png" />
               </div>
-              <h3 className="h5">CASE STUDY</h3>
+              {/* <h3 className="h5">CASE STUDY</h3> */}
               <p className="text-muted">Flower Catalogue App</p>
             </Link>
           </div>
@@ -79,9 +79,9 @@ export default function Home() {
               className="btn btn-light p-4 d-block shadow text-decoration-none"
             >
               <div className="mb-3">
-                <img src="/CaseStudy1.png " />
+                <img src="/Musuem.png" />
               </div>
-              <h3 className="h5">CASE STUDY</h3>
+              {/* <h3 className="h5">CASE STUDY</h3> */}
               <p className="text-muted">Museum Website</p>
             </Link>
           </div>

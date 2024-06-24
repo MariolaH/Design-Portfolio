@@ -7,77 +7,39 @@ import ImageCard from "@/app/components/imageCard";
 import ImageAndTextCard from "@/app/components/imageAndTextCard";
 import Link from "next/link";
 import Image from "next/image";
+import Section from '@/app/components/section';
 
 export default function define() {
   const scrollToTop = () => {
     window.scrollTo({ top: 650, behavior: "smooth" });
   };
+  const content = [
+    {
+      paragraphs: [
+        " Welcome to the Define section of my portfolio. This section is dedicated to the second phase of the design thinking process—defining user needs and problems. Here, you will find an exploration of various methods and techniques used to clearly articulate and prioritize user pain points, needs, and goals.",
+      ],
+    },
+    {
+      subheading: "The Importance of Defining User Needs",
+      paragraphs: [
+        " Defining user needs is crucial in the product lifecycle. By clearly identifying and prioritizing these needs, designers can create targeted solutions that address the most critical issues faced by users. This ensures that the products we develop are not only functional but also provide significant value and satisfaction to the users.",
+"  The define phase sets the direction for all subsequent phases. By thoroughly understanding and articulating the users needs and challenges, we ensure that our design solutions are precisely tailored to solve the most pressing problems. This results in products that are more likely to be successful and well-received.",
+" The Define section of my portfolio is a comprehensive guide to synthesizing user insights and establishing clear problem statements. By exploring these defining activities, we will gain a deeper appreciation of how refining and articulating user needs and challenges leads to more focused and impactful design solutions.",
+      ],
+    },
+    {
+      subheading: "What You Will See in This Section",
+      paragraphs: [
+        " In this section, you will be introduced to several key activities that are crucial for defining user needs and creating user-centered designs: this section, you will be introduced to several key empathy activities that are crucial for gathering insights and creating user-centered designs:",
+      ],
+    },
+  ];
   return (
     <div>
       <Link href="/">
         <Image src="/HomeButton.png" alt="HomeButton" id="home-button" width={75} height={75} />
       </Link>
-      <section className="container text-center py-5">
-        <h2 className="mb-5 mt-5">Introduction to the Define Section Phase</h2>
-
-        <div className="row justify-content-center mt-5">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <p>
-                  Welcome to the Define section of my portfolio. This section is
-                  dedicated to the second phase of the design thinking
-                  process—defining user needs and problems. Here, you will find
-                  an exploration of various methods and techniques used to
-                  clearly articulate and prioritize user pain points, needs, and
-                  goals.{" "}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center mt-3">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <h5 className="mb-4">The Importance of Defining User Needs</h5>
-                <p>
-                  Defining user needs is crucial in the product lifecycle. By
-                  clearly identifying and prioritizing these needs, designers
-                  can create targeted solutions that address the most critical
-                  issues faced by users. This ensures that the products we
-                  develop are not only functional but also provide significant
-                  value and satisfaction to the users.
-                </p>
-                <p>
-                  The define phase sets the direction for all subsequent phases.
-                  By thoroughly understanding and articulating the users needs
-                  and challenges, we ensure that our design solutions are
-                  precisely tailored to solve the most pressing problems. This
-                  results in products that are more likely to be successful and
-                  well-received.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center mt-3">
-          <div className="col-md-8 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <h5 className="mb-4">What You Will See in This Section</h5>
-                <p>
-                  In this section, you will be introduced to several key
-                  activities that are crucial for defining user needs and
-                  creating user-centered designs:
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <Section title="IIntroduction to the Define Section Phase" content={content} />
         <div className="row justify-content-center mt-5 pb-5">
           <ImageAndTextCard
             href="#problem-statement"
@@ -97,7 +59,8 @@ export default function define() {
             text="Goal statement: define the desired outcomes of the design process, providing clear, SMART objectives to ensure the final product delivers real value to users."
           />
         </div>
-        <div className="pt-5">
+        <div className="container pt-5">
+      <div className="row justify-content-center">
           <ImageCard
             id="problem-statement"
             imgSrc="/CS3PS/ProblemStatement.png"
@@ -122,24 +85,7 @@ export default function define() {
           <ImageCard imgSrc="/CS3GoalStatement/GoalStatementMichael.png" />
           <ImageCard imgSrc="/CS3GoalStatement/GoalStatementEmma.png" />
         </div>
-
-        <div className="row justify-content-center">
-          <div className="col-md-2 d-flex justify-content-center">
-            <div className="p-4 d-block text-decoration-none">
-              <div className="content">
-                <p>
-                 The Define section of my portfolio is a comprehensive
-                  guide to synthesizing user insights and establishing clear
-                  problem statements. By exploring these defining activities,
-                  we will gain a deeper appreciation of how refining and
-                  articulating user needs and challenges leads to more focused
-                  and impactful design solutions.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
       </button>

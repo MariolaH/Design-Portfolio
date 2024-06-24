@@ -29,27 +29,27 @@ export default function caseStudyOne() {
             <div className="d-flex justify-content-center mt-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
             <LinkCard
-              href="/caseStudyThree/empathize"
+              href="/caseStudyOne/empathize/"
               imgSrc="/DesignProcess/E.png"
               text="Empathize"
             />
             <LinkCard
-              href="/caseStudyThree/define"
+              href="/caseStudyOne/define"
               imgSrc="/DesignProcess/D.png"
               text="Define"
             />
             <LinkCard
-              href="/caseStudyThree/ideate"
+              href="/caseStudyOne/ideate"
               imgSrc="/DesignProcess/I.png"
               text="Ideate"
             />
             <LinkCard
-              href="/caseStudyThree/prototype"
+              href="/caseStudyOne/prototype"
               imgSrc="/DesignProcess/Design.png"
               text="Prototype"
             />
             <LinkCard
-              href="/caseStudyThree/test"
+              href="/caseStudyOne/test"
               imgSrc="/DesignProcess/Test.png"
               text="Test"
             />
