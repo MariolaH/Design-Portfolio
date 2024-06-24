@@ -270,3 +270,22 @@ body {
   }
 }
 
+.equal-size {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.equal-size .mb-3 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-img {
+  max-width: 25%; /* Adjust the width percentage as needed */
+  height: auto;
+}
+

@@ -46,47 +46,35 @@ export default function Home() {
       </div>
 
       <section className="container text-center py-5">
-        <h2 className="mb-4 section-heading p-4">UX / UI DESIGN</h2>
-        {/* <p className="text-muted mb-5">THIS IS SOME TEXT INSIDE OF A DIV BLOCK.</p> */}
-        <div className="row p-4">
-          <div className="col-md-4 mb-4">
-            <Link
-              href="/caseStudyOne"
-              className="btn btn-light p-4 d-block shadow text-decoration-none"
-            >
-              <div className="mb-3">
-                <img src="/CaseStudy1.png" />
-              </div>
-              {/* <h3 className="h5">CASE STUDY</h3> */}
-              <p className="text-muted">Flower Catalogue Website</p>
-            </Link>
-          </div>
-          <div className="col-md-4 mb-4">
-            <Link
-              href="/caseStudyTwo"
-              className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover"
-            >
-              <div className="mb-3">
-                <img src="/CaseStudy1.png" />
-              </div>
-              {/* <h3 className="h5">CASE STUDY</h3> */}
-              <p className="text-muted">Flower Catalogue App</p>
-            </Link>
-          </div>
-          <div className="col-md-4 mb-4">
-            <Link
-              href="/caseStudyThree"
-              className="btn btn-light p-4 d-block shadow text-decoration-none"
-            >
-              <div className="mb-3">
-                <img src="/Musuem.png" />
-              </div>
-              {/* <h3 className="h5">CASE STUDY</h3> */}
-              <p className="text-muted">Museum Website</p>
-            </Link>
-          </div>
+  <h2 className="mb-4 section-heading p-4">UX / UI DESIGN</h2>
+  <div className="row p-4">
+    <div className="col-md-4 mb-4">
+      <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size">
+        <div className="mb-3">
+          <img src="/CaseStudy1.png" className="img-fluid"/>
         </div>
-      </section>
+        <p className="text-muted">Flower Catalogue Website</p>
+      </Link>
+    </div>
+    <div className="col-md-4 mb-4">
+      <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
+        <div className="mb-3">
+        <img src="/app.png" className="img-fluid small-img"/>
+        </div>
+        <p className="text-muted">Flower Catalogue App</p>
+      </Link>
+    </div>
+    <div className="col-md-4 mb-4">
+      <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size">
+        <div className="mb-3">
+          <img src="/Musuem.png" className="img-fluid"/>
+        </div>
+        <p className="text-muted">Museum Website</p>
+      </Link>
+    </div>
+  </div>
+</section>
+
 <div className="container text-center py-5">
   <h2 className="mb-4 section-heading p-4">SKILLS</h2>
   <div className="row p-4">
