@@ -114,7 +114,6 @@ export default function Empathize() {
             </div>
           </div>
         </div>
-      {/* </Section> */}
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
       </button>
