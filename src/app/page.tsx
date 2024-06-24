@@ -3,29 +3,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import "/src/app/styles/global.css";
 import Icon from "./icons";
+import styles from './HomePage.module.css';
 
 export default function Home() {
   return (
     <div>
-      {/* <header className="text-center text-light py-5" style={{ backgroundImage: 'url("/crystal-7428278_1280.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <h1 className="display-4">Hi, I'm Mariola</h1> */}
-      {/* <p className="lead">A FREE RESPONSIVE TEMPLATE BY WEBFLOW</p> */}
-      {/* <div className="mt-4">
-          <Link href="/signup" legacyBehavior>
-            <a className="btn btn-primary mx-2">Sign Up</a>
-          </Link>
-          <Link href="/learn-more" legacyBehavior>
-            <a className="btn btn-outline-light mx-2">Learn More</a>
-          </Link>
-        </div>
-      </header> */}
-      <div className="parallax">
+      {/* <div>
         <header
-          className="text-center text-light py-5"
+          className="text-center text-light py-5 homepageHeader"
           style={{
             backgroundImage: 'url("/crystal-7428278_1280.jpg")',
             backgroundSize: "cover",
             backgroundPosition: "center",
+            
           }}
         >
           <h1 className="display-4">Hi, I&apos;m Mariola</h1>
@@ -43,7 +33,27 @@ export default function Home() {
             </Link>
           </div>
         </header>
-      </div>
+      </div> */}
+
+      <div>
+      <header className="text-center text-light py-5 homepageHeader">
+        <h1 className="display-4">Hi, I&apos;m Mariola</h1>
+        <p className="lead">A UX/UI Designer and Software Developer</p>
+        <div className="mt-4">
+        <Link href="/bio" className="btn btn-purple btn-equal mx-2">
+              More About Me
+            </Link>
+          
+            <Link
+              href="https://mariola-portfolio.vercel.app/"
+              target="_blank"
+              className="btn btn-equal btn-outline-light btn-white mx-2"
+            >
+              Developer Portfolio
+            </Link>
+        </div>
+      </header>
+    </div>
 
       <section className="container text-center py-5">
   <h2 className="mb-4 section-heading p-4">UX / UI DESIGN</h2>

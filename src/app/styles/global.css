@@ -302,3 +302,17 @@ body {
     height: auto;
   }
 }
+
+
+.homepageHeader {
+  background-image: url("/crystal-7428278_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .homepageHeader {
+    background-size: contain; /* Adjust as needed */
+    background-position: center;
+  }
+}
