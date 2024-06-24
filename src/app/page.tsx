@@ -78,7 +78,7 @@ export default function Home() {
 <div className="container text-center py-5">
   <h2 className="mb-4 section-heading p-4">SKILLS</h2>
   <div className="row p-4">
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Apple.svg" alt="Apple" />
@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Bootstrap.svg" alt="Bootstrap" />
@@ -94,7 +94,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/CSS3.svg" alt="CSS3" />
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Figma.svg" alt="Figma" />
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/HTML5.svg" alt="HTML5" />
@@ -118,7 +118,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/JavaScript.svg" alt="JavaScript" />
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/JSON.svg" alt="JSON" />
@@ -134,7 +134,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/MongoDB.svg" alt="MongoDB" />
@@ -142,7 +142,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/next.svg" alt="Next.js" />
@@ -150,7 +150,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Python.svg" alt="Python" />
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/React.svg" alt="React" />
@@ -166,7 +166,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Realm.svg" alt="Realm" />
@@ -174,7 +174,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/SQLite.svg" alt="SQLite" />
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/vercel.svg" alt="Vercel" />
@@ -190,7 +190,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/VisualStudioCode.svg" alt="Visual Studio Code" />
@@ -198,7 +198,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Xcode.svg" alt="Xcode" />
@@ -206,7 +206,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Firebase.svg" alt="Firebase" />
@@ -214,7 +214,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="col-6 col-sm-4 col-md-2 mb-4">
+    <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
           <Icon src="/skills/Git.svg" alt="Git" />
