@@ -70,10 +70,15 @@ export default function ideate() {
       <div className="row justify-content-center">
         <ImageCard
           id="competitiveAudits"
-          imgSrc="/Ideate/CompetitiveAudit.png"
+          imgSrc="/headings/competitiveAudit.png"
         />
         <ImageCard imgSrc="/Ideate/AuditGoal.png" />
         <ImageCard imgSrc="/Ideate/AuditAims.png" />
+        <ImageCard imgSrc="/CS3GoalStatement/competitiveAuditGeneral.png" />
+        <ImageCard imgSrc="/CS3competitiveAudit/FirstImpressions.png" />
+        <ImageCard imgSrc="/CS3competitiveAudit/Interaction.png" />
+        <ImageCard imgSrc="/CS3competitiveAudit/VisualDesignandContent.png" />
+
         <ImageCard imgSrc="/Ideate/KeyInsights.png" />
         <ImageCard imgSrc="/Ideate/PainPointIdentified.png" />
         <ImageCard imgSrc="/Ideate/PainPoints.png" />

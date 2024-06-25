@@ -78,29 +78,34 @@ export default function Empathize() {
       <div className="row justify-content-center">
         <ImageCard imgSrc="/empathizeCS3/researchGoals.png" />
         <ImageCard imgSrc="/empathizeCS3/audience.png" />
-        <ImageCard id="user-interviews" imgSrc="/empathizeCS3/interviewQuestions.png" />
+        <ImageCard id="user-interviews" imgSrc="/headings/userInterviews.png" />
+        <ImageCard imgSrc="/empathizeCS3/interviewQuestions.png" />
         <ImageCard imgSrc="/empathizeCS3/Anna.png" />
         <ImageCard imgSrc="/empathizeCS3/Carlos.png" />
         <ImageCard imgSrc="/empathizeCS3/Sophie.png" />
         <ImageCard imgSrc="/empathizeCS3/Ravi.png" />
         <ImageCard imgSrc="/empathizeCS3/Jasmine.png" />
         <ImageCard imgSrc="/empathizeCS3/Michael.png" />
-        <ImageCard id="empathy-map" imgSrc="/empathyMaps/AnnaEmpathyMap.png" />
+        <ImageCard id="empathy-map" imgSrc="/headings/empathyMaps.png" />
+        <ImageCard imgSrc="/empathyMaps/AnnaEmpathyMap.png" />
         <ImageCard imgSrc="/empathyMaps/CarlosEmpathyMap.png" />
         <ImageCard imgSrc="/empathyMaps/SophieEmpathyMap.png" />
         <ImageCard imgSrc="/empathyMaps/RaviEmpathyMap.png" />
         <ImageCard imgSrc="/empathyMaps/JasmineEmpathyMap.png" />
         <ImageCard imgSrc="/empathyMaps/MichaelEmpathyMap.png" />
-  
-        <ImageCard id="user-persona" imgSrc="/CS3Personas/PersonaAnna2.png" />
+
+        <ImageCard id="user-persona" imgSrc="/headings/userPersonas.png" />
+        <ImageCard imgSrc="/CS3Personas/PersonaAnna2.png" />
         <ImageCard imgSrc="/CS3Personas/PersonaMichael2.png" />
         <ImageCard imgSrc="/CS3Personas/PersonaEmma2.png" />
 
-        <ImageCard id="user-stories" imgSrc="/CS3UserStory/UserStoryAnna.png" />
+        <ImageCard id="user-stories" imgSrc="/headings/userStories.png" />
+        <ImageCard imgSrc="/CS3UserStory/UserStoryAnna.png" />
         <ImageCard imgSrc="/CS3UserStory/UserStoryMichael.png" />
         <ImageCard imgSrc="/CS3UserStory/UserStoryEmma.png" />
 
-        <ImageCard id="User-Journey-Maps" imgSrc="/CS3JourneyMap/JourneyMapAnna.png" />
+        <ImageCard id="User-Journey-Maps" imgSrc="/headings/userJourneyMaps.png" />
+        <ImageCard imgSrc="/CS3JourneyMap/JourneyMapAnna.png" />
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapMichael.png" />
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapEmma.png" />
         </div>
