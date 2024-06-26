@@ -327,3 +327,40 @@ body {
   background-color: #000;
   opacity: 0.5;
 }
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+  max-width: 640px; /* Adjust the max-width as needed */
+}
+
+@media (max-width: 768px) {
+  .responsive-video {
+    max-width: 320px; /* Adjust the max-width for smaller screens as needed */
+  }
+}
+
+
+.responsive-video {
+  width: auto;
+  height: 500px;
+  max-width: 640px; /* Adjust the max-width as needed */
+}
+
+@media (max-width: 768px) {
+  .responsive-video {
+    max-width: 300px; /* Adjust the max-width for smaller screens as needed */
+  }
+}
+
+.responsive-video1 {
+  width: auto;
+  height: 500px;
+  max-width: 640px; /* Adjust the max-width as needed */
+}
+
+@media (max-width: 768px) {
+  .responsive-video1 {
+    max-width: 395px; /* Adjust the max-width for smaller screens as needed */
+  }
+}
