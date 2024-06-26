@@ -11,9 +11,7 @@ export default function caseStudyTwo() {
       <section className="container text-center py-5">
         <h2 className="mb-5 mt-5">CASE STUDY TWO</h2>
         <p className="mb-5 mt-5">
-          PROMPT: Design an app and a responsive website for a public art museum
-          to advertise exhibitions and events, provide museum information to
-          patrons, and enable patrons to schedule visits.
+        PROMPT: Design a flower catalogue app for a florist.
         </p>
         <div className="d-flex justify-content-center mt-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
@@ -44,10 +42,6 @@ export default function caseStudyTwo() {
             />
           </div>
         </div>
-        
-          
-      
-      
       </section>
     </div>
   );
