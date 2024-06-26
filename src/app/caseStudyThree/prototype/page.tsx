@@ -84,9 +84,14 @@ export default function prototype() {
         <ImageCard
           imgSrc="/headings/storyboards.png"
         />
+         <ImageCard imgSrc="/CS3prototype/StoryboardAnna.png" />
+         <ImageCard imgSrc="/CS3prototype/StoryboardMichael.png" />
+         <ImageCard imgSrc="/CS3prototype/StoryboardEmma.png" />
         <ImageCard
           imgSrc="/headings/sitemaps.png"
         />
+        <ImageCard imgSrc="/CS3prototype/siteMap.png" />
+
         <ImageCard id="paper-Wireframes" imgSrc="/headings/PaperWireframes .png" />
 
 
