@@ -90,6 +90,35 @@ export default function Home() {
 <div className="container text-center py-5">
   <h2 className="mb-4 section-heading p-4">SKILLS</h2>
   <div className="row p-4">
+
+  <div className="col-6 col-sm-6 col-md-2 mb-4">
+      <div className="skill-icon p-4 d-block shadow text-decoration-none">
+        <div className="mb-3">
+          <Icon src="/skills/Audit.svg" alt="Bootstrap" />
+          <div className="tooltip">Competitive Audits</div>
+        </div>
+      </div>
+    </div>
+
+  <div className="col-6 col-sm-6 col-md-2 mb-4">
+      <div className="skill-icon p-4 d-block shadow text-decoration-none">
+        <div className="mb-3">
+          <Icon src="/skills/paperwireframe.svg" alt="Bootstrap" />
+          <div className="tooltip">Paper Wireframing</div>
+        </div>
+      </div>
+    </div>
+
+  <div className="col-6 col-sm-6 col-md-2 mb-4">
+      <div className="skill-icon p-4 d-block shadow text-decoration-none">
+        <div className="mb-3">
+          <Icon src="/skills/DigitalWireframes.svg" alt="Bootstrap" />
+          <div className="tooltip">Digital Wireframing</div>
+        </div>
+      </div>
+    </div>
+
+
     <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
