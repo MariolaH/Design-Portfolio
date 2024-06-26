@@ -24,7 +24,7 @@ export default function caseStudyOne() {
               </div>
             </div>
             </div>
-            <div className="d-flex justify-content-center mt-5">
+            {/* <div className="d-flex justify-content-center mt-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
             <LinkCard
               href="/caseStudyOne/empathize/"
@@ -52,7 +52,7 @@ export default function caseStudyOne() {
               text="Test"
             />
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
