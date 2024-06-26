@@ -46,10 +46,12 @@ export default function prototype() {
           height={75}
         />
       </Link>
+      <div className="title">
       <Section
         title="Introduction to the Prototype Section Phase"
         content={content}
       />
+      </div>
       <div className="row justify-content-center mt-5 pb-5">
         <ImageAndTextCard
           href="#user-Flow"

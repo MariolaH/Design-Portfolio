@@ -223,6 +223,18 @@ body {
   z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
+@media (max-width: 768px) {
+  #home-button {
+    top: 10px; /* Adjust top position for smaller screens */
+    left: 10px; /* Adjust left position for smaller screens */
+  }
+
+  .title {
+    padding-top: 15px; /* Ensure there's enough space between the title and the button */
+  }
+}
+
+
 .link-card {
   width: 100%;
   max-width: 200px; /* You can adjust this value */
