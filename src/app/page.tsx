@@ -94,6 +94,15 @@ export default function Home() {
   <div className="col-6 col-sm-6 col-md-2 mb-4">
       <div className="skill-icon p-4 d-block shadow text-decoration-none">
         <div className="mb-3">
+          <Icon src="/skills/Design.svg" alt="Bootstrap" />
+          <div className="tooltip">UX / UI Design</div>
+        </div>
+      </div>
+    </div>
+
+  <div className="col-6 col-sm-6 col-md-2 mb-4">
+      <div className="skill-icon p-4 d-block shadow text-decoration-none">
+        <div className="mb-3">
           <Icon src="/skills/Audit.svg" alt="Bootstrap" />
           <div className="tooltip">Competitive Audits</div>
         </div>
