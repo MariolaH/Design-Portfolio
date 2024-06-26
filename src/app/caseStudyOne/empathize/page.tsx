@@ -40,7 +40,10 @@ export default function cs2empathize() {
       <Link href="/" >
         <img src='/HomeButton.png' alt='HomeButton' id="home-button"  width={75} height={75}/>
       </Link>
+      <div className="title">
+
      <Section title="Introduction to the Empathize Section Phase" content={content} />
+      </div>
         <div className="row justify-content-center mt-5 pb-5">
             <ImageAndTextCard
             href="#user-interviews"

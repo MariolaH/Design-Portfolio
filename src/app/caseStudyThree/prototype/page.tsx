@@ -82,6 +82,7 @@ export default function prototype() {
           id="user-Flow"
           imgSrc="/headings/UserFlow.png"
         />
+        <ImageCard imgSrc="/CS3prototype/userFlow.png" />
 
         <ImageCard
           imgSrc="/headings/storyboards.png"
@@ -95,7 +96,9 @@ export default function prototype() {
         <ImageCard imgSrc="/CS3prototype/siteMap.png" />
 
         <ImageCard id="paper-Wireframes" imgSrc="/headings/PaperWireframes .png" />
-
+        <ImageCard imgSrc="/CS3prototype/paperWireframe1.png" />
+        <ImageCard imgSrc="/CS3prototype/paperWireframe2.png" />
+        <ImageCard imgSrc="/CS3prototype/paperWireframe3.png" />
 
         <ImageCard id="digital-Wireframes" imgSrc="/headings/DigitalWireframes.png" />
         <ImageCard imgSrc="/CS3prototype/WFw1.png" />
