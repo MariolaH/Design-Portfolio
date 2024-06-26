@@ -64,6 +64,7 @@ export default function Home() {
           <img src="/CaseStudy1.png" className="img-fluid"/>
         </div>
         <p className="text-muted">Flower Catalogue Website</p>
+        <p className="text-muted">COMING SOON...</p>
       </Link>
     </div>
     <div className="col-md-4 mb-4">
@@ -72,6 +73,7 @@ export default function Home() {
         <img src="/app.png" className="img-fluid small-img"/>
         </div>
         <p className="text-muted">Flower Catalogue App</p>
+        <p className="text-muted">COMING SOON...</p>
       </Link>
     </div>
     <div className="col-md-4 mb-4">
