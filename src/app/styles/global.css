@@ -123,6 +123,24 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .default-image {
+    opacity: 1; /* Ensure default image is visible */
+  }
+
+  .hover-image {
+    display: none; /* Hide hover image */
+  }
+
+  .image-hover-container:hover .default-image {
+    opacity: 1; /* Disable hover effect for default image */
+  }
+
+  .image-hover-container:hover .hover-image {
+    opacity: 0; /* Disable hover effect for hover image */
+  }
+}
+
   section {
     background-color: white;
     padding: 3rem 1rem;

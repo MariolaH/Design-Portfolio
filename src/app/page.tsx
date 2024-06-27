@@ -79,8 +79,8 @@ export default function Home() {
     <div className="col-md-4 mb-4">
       <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
         <div className="mb-3 image-container">
-        <img src="/MusuemMockup.png" className="img-fluid default-image hover-image"/>
-          <img src="/Musuem.png" className="img-fluid"/>
+        <img src="/Musuem.png" className="img-fluid default-image hover-image"/>
+          <img src="/MusuemMockup.png" className="img-fluid"/>
         </div>
         <p className="text-muted">Museum Website</p>
       </Link>
