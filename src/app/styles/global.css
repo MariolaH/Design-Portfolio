@@ -124,7 +124,26 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .default-image {
+    display: block; /* Ensure default image is visible */
+    opacity: 1; /* Ensure default image is fully opaque */
+  }
 
+  .hover-image {
+    display: block; /* Ensure hover image is visible */
+    opacity: 1; /* Ensure hover image is fully opaque */
+    position: static; /* Remove absolute positioning on mobile */
+  }
+
+  .image-hover-container:hover .default-image {
+    opacity: 1; /* Disable hover effect for default image */
+  }
+
+  .image-hover-container:hover .hover-image {
+    opacity: 1; /* Disable hover effect for hover image */
+  }
+}
 
   .section {
     background-color: white;
