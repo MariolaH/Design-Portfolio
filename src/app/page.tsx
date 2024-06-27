@@ -59,8 +59,9 @@ export default function Home() {
   <h2 className="mb-4 section-heading p-4">UX / UI DESIGN</h2>
   <div className="row p-4">
     <div className="col-md-4 mb-4">
-      <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size">
-        <div className="mb-3">
+      <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
+        <div className="mb-3 image-container">
+          <img src="/Flowerwireframe.png" className="img-fluid default-image hover-image"/>
           <img src="/CaseStudy1.png" className="img-fluid"/>
         </div>
         <p className="text-muted">Flower Catalogue Website</p>
