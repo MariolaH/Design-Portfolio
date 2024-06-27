@@ -47,10 +47,10 @@ export default function prototype() {
         />
       </Link>
       <div className="title">
-      <Section
-        title="Introduction to the Prototype Section Phase"
-        content={content}
-      />
+        <Section
+          title="Introduction to the Prototype Section Phase"
+          content={content}
+        />
       </div>
       <div className="row justify-content-center mt-5 pb-5">
         <ImageAndTextCard
@@ -77,73 +77,75 @@ export default function prototype() {
         />
       </div>
       <div className="container pt-5">
-      <div className="row justify-content-center">
-      <ImageCard
-          id="user-Flow"
-          imgSrc="/headings/UserFlow.png"
-        />
-        <ImageCard imgSrc="/CS3prototype/userFlow.png" />
+        <div className="row justify-content-center">
+          <ImageCard id="user-Flow" imgSrc="/headings/UserFlow.png" />
+          <ImageCard imgSrc="/CS3prototype/userFlow.png" />
 
-        <ImageCard
-          imgSrc="/headings/storyboards.png"
-        />
-         <ImageCard imgSrc="/CS3prototype/StoryboardAnna.png" />
-         <ImageCard imgSrc="/CS3prototype/StoryboardMichael.png" />
-         <ImageCard imgSrc="/CS3prototype/StoryboardEmma.png" />
-        <ImageCard
-          imgSrc="/headings/sitemaps.png"
-        />
-        <ImageCard imgSrc="/CS3prototype/siteMap.png" />
+          <ImageCard imgSrc="/headings/storyboards.png" />
+          <ImageCard imgSrc="/CS3prototype/StoryboardAnna.png" />
+          <ImageCard imgSrc="/CS3prototype/StoryboardMichael.png" />
+          <ImageCard imgSrc="/CS3prototype/StoryboardEmma.png" />
+          <ImageCard imgSrc="/headings/sitemaps.png" />
+          <ImageCard imgSrc="/CS3prototype/siteMap.png" />
 
-        <ImageCard id="paper-Wireframes" imgSrc="/headings/PaperWireframes .png" />
-        <ImageCard imgSrc="/CS3prototype/paperWireframe1.png" />
-        <ImageCard imgSrc="/CS3prototype/paperWireframe2.png" />
-        <ImageCard imgSrc="/CS3prototype/paperWireframe3.png" />
+          <ImageCard
+            id="paper-Wireframes"
+            imgSrc="/headings/PaperWireframes .png"
+          />
+          <ImageCard imgSrc="/CS3prototype/paperWireframe1.png" />
+          <ImageCard imgSrc="/CS3prototype/paperWireframe2.png" />
+          <ImageCard imgSrc="/CS3prototype/paperWireframe3.png" />
 
-        <ImageCard id="digital-Wireframes" imgSrc="/headings/DigitalWireframes.png" />
-        <ImageCard imgSrc="/CS3prototype/WFw1.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe2.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe3.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe4.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe5.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe6.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe7.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe8.png" />
-        <ImageCard imgSrc="/CS3prototype/wireframe9.png" />
-        
-        <ImageCard imgSrc="/CS3prototype/LPAPP1.png" />
-        <ImageCard imgSrc="/CS3prototype/LPAPP2.png" />
-        <ImageCard imgSrc="/CS3prototype/LPAPP3.png" />
-        <ImageCard imgSrc="/CS3prototype/LPAPP4.png" />
+          <ImageCard
+            id="digital-Wireframes"
+            imgSrc="/headings/DigitalWireframes.png"
+          />
+          <ImageCard imgSrc="/CS3prototype/WFw1.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe2.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe3.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe4.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe5.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe6.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe7.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe8.png" />
+          <ImageCard imgSrc="/CS3prototype/wireframe9.png" />
 
-        <ImageCard
-          id="lowFidelity-Prototypes"
-          imgSrc="/headings/Low-FidelityPrototypes.png"
-        />
-   <video className="responsive-video responsive-video1 mb-5" controls preload="none">
-        <source src="/CS3prototype/LF-website.mp4" type="video/mp4" />
-        <track
-          src="/CS3prototype/captions.vtt"
-          kind="subtitles"
-          srcLang="en"
-          label="English"
-        />
-        Your browser does not support the video tag.
-      </video>
+          <ImageCard imgSrc="/CS3prototype/LPAPP1.png" />
+          <ImageCard imgSrc="/CS3prototype/LPAPP2.png" />
+          <ImageCard imgSrc="/CS3prototype/LPAPP3.png" />
+          <ImageCard imgSrc="/CS3prototype/LPAPP4.png" />
 
-      <video className="responsive-video mb-5" controls preload="none">
-        <source src="/CS3prototype/AppPrototype.mp4" type="video/mp4" />
-        <track
-          src="/CS3prototype/captions.vtt"
-          kind="subtitles"
-          srcLang="en"
-          label="English"
-        />
-        Your browser does not support the video tag.
-      </video>
- 
+          <ImageCard
+            id="lowFidelity-Prototypes"
+            imgSrc="/headings/Low-FidelityPrototypes.png"
+          />
+          <video
+            className="responsive-video responsive-video1 mb-5"
+            controls
+            preload="none"
+          >
+            <source src="/CS3prototype/LF-website.mp4" type="video/mp4" />
+            <track
+              src="/CS3prototype/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+            Your browser does not support the video tag.
+          </video>
 
-        {/* <ImageCard imgSrc="/empathizeCS3/Anna.png" />
+          <video className="responsive-video mb-5" controls preload="none">
+            <source src="/CS3prototype/AppPrototype.mp4" type="video/mp4" />
+            <track
+              src="/CS3prototype/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* <ImageCard imgSrc="/empathizeCS3/Anna.png" />
         <ImageCard imgSrc="/empathizeCS3/Carlos.png" />
         <ImageCard imgSrc="/empathizeCS3/Sophie.png" />
         <ImageCard imgSrc="/empathizeCS3/Ravi.png" />
@@ -170,7 +172,7 @@ export default function prototype() {
         />
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapMichael.png" />
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapEmma.png" /> */}
-      </div>
+        </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
