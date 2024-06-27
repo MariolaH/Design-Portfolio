@@ -86,7 +86,7 @@ body {
     min-height: 50px;
     padding: 10px 20px; /* Ensure padding is consistent */
   }
-  
+
   .image-hover-container {
     position: relative;
     display: flex;
@@ -125,10 +125,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .default-image {
-    display: block; /* Ensure default image is visible */
-    opacity: 1; /* Ensure default image is fully opaque */
-  }
+
 
   .hover-image1 {
     display: block; /* Ensure hover image is visible */
@@ -144,8 +141,8 @@ body {
     opacity: 1; /* Disable hover effect for hover image */
   }
 }
-
-  .section {
+  
+  section {
     background-color: white;
     padding: 3rem 1rem;
   }
