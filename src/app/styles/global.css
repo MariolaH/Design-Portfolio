@@ -50,6 +50,12 @@ body {
     font-size: 1.25rem;
   }
 
+  .btn-equal {
+    min-width: 100%; /* Make buttons full width on mobile */
+    margin-bottom: 35px; /* Increase space between buttons */
+  }
+
+
   .btn-purple {
 
     background-color: rgba(57, 36, 103, 0.576);
