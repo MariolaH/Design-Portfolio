@@ -130,7 +130,7 @@ body {
     opacity: 1; /* Ensure default image is fully opaque */
   }
 
-  .hover-image {
+  .hover-image1 {
     display: block; /* Ensure hover image is visible */
     opacity: 1; /* Ensure hover image is fully opaque */
     position: static; /* Remove absolute positioning on mobile */
