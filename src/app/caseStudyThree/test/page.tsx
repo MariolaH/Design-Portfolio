@@ -10,7 +10,7 @@ import Section from "@/app/components/section";
 
 export default function test() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 650, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const content = [
