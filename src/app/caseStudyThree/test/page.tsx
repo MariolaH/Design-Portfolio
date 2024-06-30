@@ -58,7 +58,7 @@ export default function test() {
         />
 
         <ImageAndTextCard
-          href="#empathy-map"
+          href="#conductAStudy"
           imgSrc="/moduleIcons/conductAStudy.png"
           text="Conduct a usability study: Execute planned studies, take consistent notes, and gather valuable user feedback."
         />
@@ -82,6 +82,17 @@ export default function test() {
         <ImageCard imgSrc="/CS3Test/uxPlan5.png" />
         <ImageCard imgSrc="/CS3Test/uxPlan6.png" />
         <ImageCard imgSrc="/CS3Test/uxPlan7.png" />
+
+        <ImageCard
+          id="conductAStudy"
+          imgSrc="/CS3Test/ConductAStudy.png"
+        />
+  <ImageCard imgSrc="/CS3Test/1.png" />
+  <ImageCard imgSrc="/CS3Test/2.png" />
+  <ImageCard imgSrc="/CS3Test/3.png" />
+  <ImageCard imgSrc="/CS3Test/4.png" />
+  <ImageCard imgSrc="/CS3Test/5.png" />
+  <ImageCard imgSrc="/CS3Test/6.png" />
       </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>
