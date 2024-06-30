@@ -40,9 +40,9 @@ export default function Home() {
         <h1 className="display-4">Hi, I&apos;m Mariola</h1>
         <p className="lead">A UX / UI Designer and Software Developer</p>
         <div className="mt-4">
-        <Link href="/bio" className="btn btn-purple btn-equal mx-2">
+        {/* <Link href="/bio" className="btn btn-purple btn-equal mx-2">
               More About Me
-            </Link>
+            </Link> */}
           
             <Link
               href="https://mariola-portfolio.vercel.app/"
@@ -51,6 +51,14 @@ export default function Home() {
             >
               Developer Portfolio
             </Link>
+            <Link
+              href="https://www.linkedin.com/in/mariola-hullings/" 
+              target="_blank"
+              className="btn btn-purple btn-equal mx-2"
+            >
+             LinkedIn
+            </Link>
+
         </div>
       </header>
     </div>
