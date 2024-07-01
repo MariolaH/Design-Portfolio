@@ -66,6 +66,15 @@ export default function Home() {
       <section className="container text-center py-5">
   <h2 className="mb-4 section-heading p-4">UX / UI DESIGN</h2>
   <div className="row p-4">
+  <div className="col-md-4 mb-4">
+      <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
+        <div className="mb-3 image-container">
+        <img src="/Musuem.png" className="img-fluid default-image hover-image"/>
+          <img src="/MusuemMockup.png" className="img-fluid"/>
+        </div>
+        <p className="text-muted">Museum Website</p>
+      </Link>
+    </div>
     <div className="col-md-4 mb-4">
       <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
         <div className="mb-3 image-container">
@@ -85,19 +94,23 @@ export default function Home() {
         <p className="text-muted">COMING SOON...</p>
       </Link>
     </div>
-    <div className="col-md-4 mb-4">
-      <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
-        <div className="mb-3 image-container">
-        <img src="/Musuem.png" className="img-fluid default-image hover-image"/>
-          <img src="/MusuemMockup.png" className="img-fluid"/>
-        </div>
-        <p className="text-muted">Museum Website</p>
-      </Link>
-
-
-    </div>
   </div>
 </section>
+
+{/* <section className="container text-center py-5">
+  <h2 className="mb-4 section-heading p-4 text-uppercase">UX Certificates</h2>
+  <div className="row justify-content-center p-4">
+    <div className="col-md-4 mb-4">
+      <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
+        <div className="mb-3 image-container">
+          <img src="/Google.png" className="img-fluid"/>
+        </div>
+        <p className="text-muted">Google UX Design Professional Certificate</p>
+      </Link>
+    </div>
+  </div>
+</section> */}
+
 
 <div className="container text-center py-5">
   <h2 className="mb-4 section-heading p-4">SKILLS</h2>

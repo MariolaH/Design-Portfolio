@@ -64,7 +64,7 @@ export default function test() {
         />
 
         <ImageAndTextCard
-          href="#user-persona"
+          href="#synthesizeResults"
           imgSrc="/moduleIcons/synthesizeResults.png"
           text="Synthesize Results and modify designs: Organize data, identify patterns and themes, and derive actionable insights. Apply insights to enhance design, focusing on usability and user experience improvements."
         />
@@ -93,6 +93,15 @@ export default function test() {
   <ImageCard imgSrc="/CS3Test/4.png" />
   <ImageCard imgSrc="/CS3Test/5.png" />
   <ImageCard imgSrc="/CS3Test/6.png" />
+
+  <ImageCard id="synthesizeResults" imgSrc="/CS3Test/AffinityDiagram.png" />
+  <ImageCard imgSrc="/CS3Test/AD1.png" />
+  <ImageCard imgSrc="/CS3Test/AD2.png" />
+  <ImageCard imgSrc="/CS3Test/AD3.png" />
+  <ImageCard imgSrc="/CS3Test/AD4.png" />
+  <ImageCard imgSrc="/CS3Test/AD5.png" />
+  <ImageCard imgSrc="/CS3Test/AD6.png" />
+
       </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>
