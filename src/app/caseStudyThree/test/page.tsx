@@ -82,6 +82,7 @@ export default function test() {
         <ImageCard imgSrc="/CS3Test/uxPlan5.png" />
         <ImageCard imgSrc="/CS3Test/uxPlan6.png" />
         <ImageCard imgSrc="/CS3Test/uxPlan7.png" />
+        <ImageCard imgSrc="/CS3Test/uxPlan8.png" />
 
         <ImageCard
           id="conductAStudy"
@@ -101,6 +102,14 @@ export default function test() {
   <ImageCard imgSrc="/CS3Test/AD4.png" />
   <ImageCard imgSrc="/CS3Test/AD5.png" />
   <ImageCard imgSrc="/CS3Test/AD6.png" />
+
+  <ImageCard imgSrc="/CS3Test/34.png" />
+  <ImageCard imgSrc="/CS3Test/35.png" />
+  <ImageCard imgSrc="/CS3Test/36.png" />
+
+  <ImageCard imgSrc="/CS3Test/Insights.png" />
+  <ImageCard imgSrc="/CS3Test/37.png" />
+  <ImageCard imgSrc="/CS3Test/38.png" />
 
       </div>
       </div>
