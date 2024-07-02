@@ -4,7 +4,7 @@ import Link from "next/link";
 import "/src/app/styles/global.css";
 import Icon from "./icons";
 import styles from "./HomePage.module.css";
-import SkillCard from "./components/skillCard";
+import SkillCard from "./components/SkillCard";
 
 export default function Home() {
   return (
