@@ -5,7 +5,7 @@ import "/src/app/styles/global.css";
 import Icon from "./icons";
 import styles from "./HomePage.module.css";
 // import SkillCard from "./components/skillCard";
-import SkillCard from "./components/SkillCard"; 
+// import SkillCard from "./components/SkillCard"; 
 
 export default function Home() {
   return (
@@ -111,7 +111,7 @@ export default function Home() {
   </div>
 </section> */}
 
-      <div className="container text-center py-5">
+      {/* <div className="container text-center py-5">
         <h2 className="mb-4 section-heading p-4 text-uppercase">Skills</h2>
         <div className="row p-4">
         <SkillCard imgSrc="skills/Design.svg" altText="UX / UI Design" tooltipText="UX / UI Design" />
@@ -137,7 +137,7 @@ export default function Home() {
         <SkillCard imgSrc="skills/Firebase.svg" altText="Firebase" tooltipText="Firebase" /> 
         <SkillCard imgSrc="skills/Git.svg" altText="Git" tooltipText="Git" /> 
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
