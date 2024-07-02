@@ -20,4 +20,3 @@ const SkillCard: React.FC<SkillCardProps> = ({ imgSrc, altText, tooltipText }) =
 };
 
 export default SkillCard;
-
