@@ -111,6 +111,10 @@ export default function test() {
   <ImageCard imgSrc="/CS3Test/37.png" />
   <ImageCard imgSrc="/CS3Test/38.png" />
 
+
+  <ImageCard imgSrc="/CS3Test/39.png" />
+  <ImageCard imgSrc="/CS3Test/40.png" />
+
       </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>

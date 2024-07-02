@@ -51,13 +51,24 @@ export default function Home() {
             >
               Developer Portfolio
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/mariola-hullings/" 
-              target="_blank"
-              className="btn btn-purple btn-equal mx-2"
-            >
-             LinkedIn
-            </Link>
+
+            <div className="button-group">
+  <Link
+    href="https://www.linkedin.com/in/mariola-hullings/"
+    target="_blank"
+    className="btn btn-purple btn-icon mx-2"
+  >
+    <img src="/linkedin.svg" alt="LinkedIn" className="icon-svg" />
+  </Link>
+  <Link
+    href="https://github.com/MariolaH"
+    target="_blank"
+    className="btn btn-purple btn-icon mx-2"
+  >
+    <img src="/github.svg" alt="GitHub" className="icon-svg" />
+  </Link>
+</div>
+
 
         </div>
       </header>

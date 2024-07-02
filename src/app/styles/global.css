@@ -61,16 +61,7 @@ body {
   }
 
 
-  .btn-purple {
-
-    background-color: rgba(57, 36, 103, 0.576);
-    color: white;
-  }
   
-  .btn-purple:hover {
-    background-color: #5D3587; /* Bootstrap's purple */
-  }
-
   .btn-white:hover {
     background-color: rgba(247, 245, 245, 0.71);
   }
@@ -86,6 +77,35 @@ body {
     min-height: 50px;
     padding: 10px 20px; /* Ensure padding is consistent */
   }
+
+  .btn-purple {
+    background-color: rgba(57, 36, 103, 0.576);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 10px; /* Adjust border-radius if needed */
+  }
+  
+  .btn-purple:hover {
+    background-color: #5D3587; /* Bootstrap's purple */
+  }
+  
+  .icon-svg {
+    width: 44px;
+    height: 44px;
+    fill: currentColor; /* Ensures the SVG uses the current text color */
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+  
 
   .image-hover-container {
     position: relative;
