@@ -1,160 +1,170 @@
 /* src/app/styles/global.css */
 
+/* General Styles */
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  
-  header {
-    position: relative;
-    height: 800px; /* Increase height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem; /* Add padding if needed */
-    text-align: center;
-    /* background-image: url("/crystal-7428278_1280.jpg"); */
-    background-size: cover;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Header Styles */
+header {
+  position: relative;
+  height: 800px; /* Increase height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* Add padding if needed */
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Ensures ::before doesn't extend beyond the header */
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.76); /* Adjust the alpha value for dimming effect */
+  z-index: 1;
+}
+
+header h1, header p, .btn {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 4.5rem; /* Increase font size */
+}
+
+header p {
+  font-size: 1.75rem; /* Increase font size */
+}
+
+.homepageHeader {
+  background-image: url("/crystal-7428278_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Fill the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .homepageHeader {
+    background-size: cover; /* Adjust as needed */
     background-position: center;
-    overflow: hidden; /* Ensures ::before doesn't extend beyond the header */
+    height: auto;
+    padding: 20px; /* Add padding if needed for better appearance */
   }
-  
-  header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.76); /* Adjust the alpha value for dimming effect */
-    z-index: 1;
+
+  .display-4 {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
   }
-  
-  header h1, header p, .btn {
-    position: relative;
-    z-index: 2;
-  }
-  
-  header h1 {
-    font-size: 4.5rem; /* Increase font size */
-  }
-  
-  header p {
-    font-size: 1.75rem; /* Increase font size */
-  }
-  
-  .btn {
-    font-size: 1.25rem;
+
+  .lead {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
   }
 
   .btn-equal {
-    min-width: 100%; /* Make buttons full width on mobile */
-    margin-bottom: 35px; /* Increase space between buttons */
-  }
-
-  .btn-white:hover {
-    background-color: rgba(247, 245, 245, 0.71);
-  }
-
-  .btn-outline-light {
-    color: rgba(255, 255, 255, 0.834);
-    border-color: rgba(247, 245, 245, 0.71);
-    background: none;
-  }
-
-  .btn-equal {
-    min-width: 230px; /* Set a minimum width */
-    min-height: 50px;
-    padding: 10px 20px; /* Ensure padding is consistent */
+    min-width: 160px; /* Adjust the minimum width for smaller screens */
+    min-height: 40px; /* Adjust the minimum height for smaller screens */
+    font-size: 0.9rem; /* Adjust the font size for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
   }
 
   .btn-purple {
-    background-color: rgba(57, 36, 103, 0.576);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    border-radius: 10px; /* Adjust border-radius if needed */
+    width: 40px; /* Adjust width for smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
+    padding: 3px; /* Adjust padding for smaller screens */
   }
-  
-  .btn-purple:hover {
-    background-color: #5D3587; /* Bootstrap's purple */
-  }
-  
-  @media (max-width: 768px) {
-    .homepageHeader {
-      background-size: contain; /* Adjust as needed */
-      height: auto; /* Adjust height to auto for mobile */
-      padding: 20px; /* Add padding if needed for better appearance */
-    }
-  
-    .display-4 {
-      font-size: 2rem; /* Adjust the font size for smaller screens */
-    }
-  
-    .lead {
-      font-size: 1rem; /* Adjust the font size for smaller screens */
-    }
-  
-    .btn-equal {
-      min-width: 160px; /* Adjust the minimum width for smaller screens */
-      min-height: 40px; /* Adjust the minimum height for smaller screens */
-      font-size: 0.9rem; /* Adjust the font size for smaller screens */
-      /* padding: 5px 10px;  */
-      /* Adjust padding for smaller screens */
-      margin-bottom: 20px; /* Adjust margin for smaller screens */
-    }
-  
-    .btn-purple {
-      width: 40px; /* Adjust width for smaller screens */
-      height: 40px; /* Adjust height for smaller screens */
-      padding: 3px; /* Adjust padding for smaller screens */
-    }
-  
-    .icon-svg {
-      width: 24px; /* Adjust icon size for smaller screens */
-      height: 24px; /* Adjust icon size for smaller screens */
-    }
-  }
-  
+
   .icon-svg {
-    width: 44px;
-    height: 44px;
-    fill: currentColor; /* Ensures the SVG uses the current text color */
+    width: 24px; /* Adjust icon size for smaller screens */
+    height: 24px; /* Adjust icon size for smaller screens */
   }
-  
-  .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adjust the gap between buttons */
-  }
-  
+}
 
-  .image-hover-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+/* Button Styles */
+.btn {
+  font-size: 1.25rem;
+}
 
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: auto; /* Adjust height to auto for proper display */
-  }
-  
-  .default-image,
+.btn-equal {
+  min-width: 100%; /* Make buttons full width on mobile */
+  margin-bottom: 35px; /* Increase space between buttons */
+}
+
+.btn-white:hover {
+  background-color: rgba(247, 245, 245, 0.71);
+}
+
+.btn-outline-light {
+  color: rgba(255, 255, 255, 0.834);
+  border-color: rgba(247, 245, 245, 0.71);
+  background: none;
+}
+
+.btn-equal {
+  min-width: 230px; /* Set a minimum width */
+  min-height: 50px;
+  padding: 10px 20px; /* Ensure padding is consistent */
+}
+
+.btn-purple {
+  background-color: rgba(57, 36, 103, 0.576);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 10px; /* Adjust border-radius if needed */
+}
+
+.btn-purple:hover {
+  background-color: #5D3587; /* Bootstrap's purple */
+}
+
+.icon-svg {
+  width: 44px;
+  height: 44px;
+  fill: currentColor; /* Ensures the SVG uses the current text color */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between buttons */
+}
+
+/* Image Hover Styles */
+.image-hover-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height to auto for proper display */
+}
+
+.default-image,
 .hover-image {
   position: absolute;
   top: 0;
@@ -163,7 +173,6 @@ body {
   height: 100%;
   transition: opacity 0.3s ease;
 }
-
 
 .hover-image {
   opacity: 0;
@@ -178,10 +187,8 @@ body {
 }
 
 @media (max-width: 768px) {
-
-
-  .hover-image1 {
-    display: block; /* Ensure hover image is visible */
+  .hover-image {
+    display: none; /* Hide hover image on mobile */
     opacity: 1; /* Ensure hover image is fully opaque */
     position: static; /* Remove absolute positioning on mobile */
   }
@@ -194,129 +201,83 @@ body {
     opacity: 1; /* Disable hover effect for hover image */
   }
 }
-  
-  section {
-    background-color: white;
-    padding: 3rem 1rem;
-  }
 
-  .container {
-    background-color: white;
-  }
-
-  .centered-image {
-    max-width: 100px; /* Adjust the size as needed */
-    max-height: 100px; /* Adjust the size as needed */
-    border-radius: 50%; /* Make the image round */
+/* Section Styles */
+section {
+  background-color: white;
+  padding: 3rem 1rem;
 }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .centered-image {
-    max-width: 100px; /* Adjust the size as needed */
-    max-height: 100px; /* Adjust the size as needed */
-  }
-  
-  .top {
-    margin-bottom: 2rem; /* Add space below the header */
-  }
 
-  .purple-shadow {
-    box-shadow: 0 4px 6px rgba(111,66,193); /* Adjust the shadow size and color as needed */
-  }
-  
-  .custom-hover:hover {
-    color: #fff; /* Adjust the hover text color */
-  }
-  
-  .skill-icon {
-    position: relative;
-    display: inline-block;
-    transition: opacity 0.3s;
-  }
-  
-  
-  .skill-icon:hover img {
-    opacity: 0.5;
-  }
-  
-  .skill-icon .tooltip {
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 105%; /* Position above the icon */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .skill-icon .tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%; /* Arrow points down */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-  }
-  
-  .skill-icon:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  /* .center {
-    justify-content: center;
-    padding-top: 0.5rem;
-  } */
+.container {
+  background-color: white;
+}
 
-  .around {
-    border-radius: 5px;
-    border-color: white;
-  }
+/* Centered Image Styles */
+.centered-image {
+  max-width: 100px; /* Adjust the size as needed */
+  max-height: 100px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make the image round */
+}
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image {
+  max-width: 100px; /* Adjust the size as needed */
+  max-height: 100px; /* Adjust the size as needed */
+}
+
+/* Misc Styles */
+.top {
+  margin-bottom: 2rem; /* Add space below the header */
+}
+
+.purple-shadow {
+  box-shadow: 0 4px 6px rgba(111,66,193); /* Adjust the shadow size and color as needed */
+}
+
+.custom-hover:hover {
+  color: #fff; /* Adjust the hover text color */
+}
+
+.around {
+  border-radius: 5px;
+  border-color: white;
+}
 
 .img-fluid {
   max-width: 50%;
   height: auto;
 }
 
-  .size {
-    min-width: 450px; /* Set a minimum width */
-    min-height: 50px;
-  }
+.size {
+  min-width: 450px; /* Set a minimum width */
+  min-height: 50px;
+}
 
-  .info {
-    min-width: 450px; /* Set a minimum width */
-    min-height: 150px;
-  }
+.info {
+  min-width: 450px; /* Set a minimum width */
+  min-height: 150px;
+}
 
-  .content {
-    min-width: 100px; /* Set a minimum width */
-    min-height: 50px;
-  }
+.content {
+  min-width: 100px; /* Set a minimum width */
+  min-height: 50px;
+}
 
-  .size2 {
-    min-width: 450px; /* Set a minimum width */
-    min-height: 10px;
-  }
+.size2 {
+  min-width: 450px; /* Set a minimum width */
+  min-height: 10px;
+}
 
-  .fontSize{
-    font-size: small;
-  }
+.fontSize {
+  font-size: small;
+}
 
-/* send to top css */
+/* Back to Top Button Styles */
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -334,6 +295,7 @@ body {
   background-color: #5D3587;
 }
 
+/* Home Button Styles */
 #home-button {
   position: fixed;
   top: 20px;
@@ -353,7 +315,7 @@ body {
   }
 }
 
-
+/* Link Card Styles */
 .link-card {
   width: 100%;
   max-width: 200px; /* You can adjust this value */
@@ -371,6 +333,7 @@ body {
   }
 }
 
+/* Lead Text Styles */
 .lead-responsive {
   font-size: 1.00rem; /* Default size */
 }
@@ -387,6 +350,7 @@ body {
   }
 }
 
+/* Info Section Styles */
 @media (max-width: 768px) {
   .info {
     min-width: 300px;
@@ -401,6 +365,7 @@ body {
   }
 }
 
+/* Equal Size Styles */
 .equal-size {
   height: 100%;
   display: flex;
@@ -415,6 +380,7 @@ body {
   align-items: center;
 }
 
+/* Small Image Styles */
 .small-img {
   max-width: 25%; /* Adjust the width percentage as needed */
   height: auto;
@@ -434,25 +400,7 @@ body {
   }
 }
 
-
-.homepageHeader {
-  background-image: url("/crystal-7428278_1280.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* Fill the viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .homepageHeader {
-    background-size: cover; /* Adjust as needed */
-    background-position: center;
-    height: auto;
-  }
-}
-
+/* Modal Styles */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -464,6 +412,7 @@ body {
   opacity: 0.5;
 }
 
+/* Responsive Video Styles */
 .responsive-video {
   width: 100%;
   height: auto;
@@ -476,27 +425,83 @@ body {
   }
 }
 
+/* Skill Icon Styles */
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-.responsive-video {
-  width: auto;
-  height: 500px;
-  max-width: 640px; /* Adjust the max-width as needed */
+.skill-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.skill-icon img {
+  width: 100%;
+  height: auto;
+  max-width: 100px; /* Default size */
+}
+
+.skill-icon:hover img {
+  opacity: 0.5;
+}
+
+.skill-icon .tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skill-icon .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Arrow points down */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.skill-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
-  .responsive-video {
-    max-width: 300px; /* Adjust the max-width for smaller screens as needed */
+  .skill-icon img {
+    max-width: 80px; /* Smaller size for smaller screens */
+  }
+
+  .tooltip {
+    font-size: 0.875rem; /* Smaller font size for smaller screens */
   }
 }
 
-.responsive-video1 {
-  width: auto;
-  height: 500px;
-  max-width: 640px; /* Adjust the max-width as needed */
-}
+@media (max-width: 576px) {
+  .skill-icon img {
+    max-width: 60px; /* Even smaller size for very small screens */
+  }
 
-@media (max-width: 768px) {
-  .responsive-video1 {
-    max-width: 395px; /* Adjust the max-width for smaller screens as needed */
+  .tooltip {
+    font-size: 0.75rem; /* Even smaller font size for very small screens */
   }
 }
+

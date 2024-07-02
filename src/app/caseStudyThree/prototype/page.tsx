@@ -144,8 +144,6 @@ export default function prototype() {
             />
             Your browser does not support the video tag.
           </video>
-
-          <ImageCard imgSrc="/CS3prototype/Mockup1.png" />
         </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>

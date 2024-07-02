@@ -20,17 +20,17 @@ export default function hifi() {
       ],
     },
     {
-      subheading: "The Importance of Prototyping with Users",
+      subheading: "The Importance of High-Fidelity Prototyping",
       paragraphs: [
-        "Prototyping is a crucial stage in the UX design process. By creating interactive representations of ideas, designers can test and refine solutions based on user feedback. This phase builds on the insights and ideas generated during the ideation stage, bringing concepts to life in a way that allows for practical evaluation and iteration.",
-        "Developing prototypes is essential for identifying the most effective solutions. During the prototyping phase, we create various levels of prototypes, from low-fidelity wireframes to high-fidelity interactive models, to ensure that all aspects of the design are thoroughly tested and refined. This helps in creating innovative and user-centered designs that are both functional and engaging.",
+        "High-fidelity prototyping is a crucial stage in the UX design process. By creating detailed and interactive representations of ideas, designers can test and refine solutions based on user feedback. This phase builds on the insights and ideas generated during the ideation stage, bringing concepts to life in a way that allows for practical evaluation and iteration.",
+        "Developing high-fidelity prototypes is essential for identifying the most effective solutions. During this phase, we create mockups and assemble them into a working prototype for further testing and refinement. This helps in creating innovative and user-centered designs that are both functional and engaging.",
         "The Prototype section of my portfolio is a comprehensive guide to transforming ideas into tangible solutions. By delving into these prototyping activities, you will gain a deeper appreciation of the iterative design process and how it leads to more effective and meaningful user-centered designs.",
       ],
     },
     {
       subheading: "What You Will See in This Section",
       paragraphs: [
-        "In this section, you will be introduced to several key prototyping techniques that are essential for developing interactive models. These include:",
+        "In this section, you will be introduced to several key prototyping techniques that are essential for developing high-fidelity models. These include:",
       ],
     },
   ];
@@ -48,18 +48,18 @@ export default function hifi() {
       </Link>
       <div className="title">
         <Section
-          title="Introduction to the Prototype Section Phase"
+          title="Introduction to the Mock Up and High Fidelity Prototype Section Phase"
           content={content}
         />
       </div>
       <div className="row justify-content-center mt-5 pb-5">
         <ImageAndTextCard
-          href="#user-Flow"
-          imgSrc="/moduleIcons/userFlow.png"
-          text="User flow diagrams, storyboards and sitemaps: User flow diagrams are visual maps of user steps; Storyboards detail user experiences visually; Sitemap are an overview of product information architecture."
+          href="#mock-ups"
+          imgSrc="/CS3MockUps/mockupHeader.png"
+          text="Mock Ups: are an essential tools in the design process, providing detailed, static representations of user flows, and overviews of a product's information architecture to refine aesthetics and functionality before development."
         />
 
-        <ImageAndTextCard
+        {/* <ImageAndTextCard
           href="#paper-Wireframes"
           imgSrc="/moduleIcons/paperWireframes.png"
           text="Paper wireframes: Creating basic layouts to define the structure and flow of the design."
@@ -74,48 +74,26 @@ export default function hifi() {
           href="#lowFidelity-Prototypes"
           imgSrc="/moduleIcons/lowFidelityPrototypes.png"
           text="Low-fidelity prototypes: Initial interactive models to test and refine design concepts."
-        />
+        /> */}
       </div>
       <div className="container pt-5">
         <div className="row justify-content-center">
-          <ImageCard id="user-Flow" imgSrc="/headings/UserFlow.png" />
-          <ImageCard imgSrc="/CS3prototype/userFlow.png" />
 
-          <ImageCard imgSrc="/headings/storyboards.png" />
-          <ImageCard imgSrc="/CS3prototype/StoryboardAnna.png" />
-          <ImageCard imgSrc="/CS3prototype/StoryboardMichael.png" />
-          <ImageCard imgSrc="/CS3prototype/StoryboardEmma.png" />
-          <ImageCard imgSrc="/headings/sitemaps.png" />
-          <ImageCard imgSrc="/CS3prototype/siteMap.png" />
+          <ImageCard id="mock-ups" imgSrc="/CS3MockUps/mockup.png" />
 
-          <ImageCard
-            id="paper-Wireframes"
-            imgSrc="/headings/PaperWireframes .png"
-          />
-          <ImageCard imgSrc="/CS3prototype/paperWireframe1.png" />
-          <ImageCard imgSrc="/CS3prototype/paperWireframe2.png" />
-          <ImageCard imgSrc="/CS3prototype/paperWireframe3.png" />
+          <ImageCard imgSrc="/CS3prototype/Mockup1.png" />
+          <ImageCard imgSrc="/CS3MockUps/2.png" />
+          <ImageCard imgSrc="/CS3MockUps/3.png" />
+          <ImageCard imgSrc="/CS3MockUps/4.png" />
+          <ImageCard imgSrc="/CS3MockUps/5.png" />
+          <ImageCard imgSrc="/CS3MockUps/6.png" />
+          <ImageCard imgSrc="/CS3MockUps/7.png" />
+          <ImageCard imgSrc="/CS3MockUps/8.png" />
+          <ImageCard imgSrc="/CS3MockUps/9.png" />
 
-          <ImageCard
-            id="digital-Wireframes"
-            imgSrc="/headings/DigitalWireframes.png"
-          />
-          <ImageCard imgSrc="/CS3prototype/WFw1.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe2.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe3.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe4.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe5.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe6.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe7.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe8.png" />
-          <ImageCard imgSrc="/CS3prototype/wireframe9.png" />
+         
 
-          <ImageCard imgSrc="/CS3prototype/LPAPP1.png" />
-          <ImageCard imgSrc="/CS3prototype/LPAPP2.png" />
-          <ImageCard imgSrc="/CS3prototype/LPAPP3.png" />
-          <ImageCard imgSrc="/CS3prototype/LPAPP4.png" />
-
-          <ImageCard
+          {/* <ImageCard
             id="lowFidelity-Prototypes"
             imgSrc="/headings/Low-FidelityPrototypes.png"
           />
@@ -143,9 +121,7 @@ export default function hifi() {
               label="English"
             />
             Your browser does not support the video tag.
-          </video>
-
-          <ImageCard imgSrc="/CS3prototype/Mockup1.png" />
+          </video> */}
         </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>
