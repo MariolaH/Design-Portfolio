@@ -60,8 +60,6 @@ body {
     margin-bottom: 35px; /* Increase space between buttons */
   }
 
-
-  
   .btn-white:hover {
     background-color: rgba(247, 245, 245, 0.71);
   }
@@ -94,6 +92,40 @@ body {
     background-color: #5D3587; /* Bootstrap's purple */
   }
   
+  @media (max-width: 768px) {
+    .homepageHeader {
+      background-size: contain; /* Adjust as needed */
+      height: auto; /* Adjust height to auto for mobile */
+      padding: 20px; /* Add padding if needed for better appearance */
+    }
+  
+    .display-4 {
+      font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .lead {
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .btn-equal {
+      min-width: 180px; /* Adjust the minimum width for smaller screens */
+      min-height: 40px; /* Adjust the minimum height for smaller screens */
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+      padding: 5px 10px; /* Adjust padding for smaller screens */
+      margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .btn-purple {
+      width: 40px; /* Adjust width for smaller screens */
+      height: 40px; /* Adjust height for smaller screens */
+      padding: 3px; /* Adjust padding for smaller screens */
+    }
+  
+    .icon-svg {
+      width: 24px; /* Adjust icon size for smaller screens */
+      height: 24px; /* Adjust icon size for smaller screens */
+    }
+  }
   .icon-svg {
     width: 44px;
     height: 44px;
@@ -113,7 +145,6 @@ body {
     align-items: center;
     justify-content: center;
   }
- 
 
   .image-container {
     position: relative;
