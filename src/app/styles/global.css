@@ -108,10 +108,11 @@ body {
     }
   
     .btn-equal {
-      min-width: 180px; /* Adjust the minimum width for smaller screens */
+      min-width: 160px; /* Adjust the minimum width for smaller screens */
       min-height: 40px; /* Adjust the minimum height for smaller screens */
-      font-size: 1rem; /* Adjust the font size for smaller screens */
-      padding: 5px 10px; /* Adjust padding for smaller screens */
+      font-size: 0.9rem; /* Adjust the font size for smaller screens */
+      /* padding: 5px 10px;  */
+      /* Adjust padding for smaller screens */
       margin-bottom: 20px; /* Adjust margin for smaller screens */
     }
   
@@ -126,6 +127,7 @@ body {
       height: 24px; /* Adjust icon size for smaller screens */
     }
   }
+  
   .icon-svg {
     width: 44px;
     height: 44px;
