@@ -8,7 +8,7 @@ import ImageAndTextCard from "@/app/components/imageAndTextCard";
 import Link from "next/link";
 import Section from "@/app/components/section";
 
-export default function prototype() {
+export default function hifi() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

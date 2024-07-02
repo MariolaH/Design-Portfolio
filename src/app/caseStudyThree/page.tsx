@@ -43,6 +43,11 @@ export default function empathize() {
               imgSrc="/DesignProcess/Test.png"
               text="Test"
             />
+             <LinkCard
+              href="/caseStudyThree/hiFi"
+              imgSrc="/DesignProcess/Design2.png"
+              text="Mock Ups"
+            />
           </div>
         </div>
       </section>
