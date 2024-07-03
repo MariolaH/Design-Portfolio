@@ -414,8 +414,8 @@ section {
 
 /* Responsive Video Styles */
 .responsive-video {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 450px;
   max-width: 640px; /* Adjust the max-width as needed */
 }
 
