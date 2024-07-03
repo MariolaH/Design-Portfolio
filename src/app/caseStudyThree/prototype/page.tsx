@@ -122,7 +122,7 @@ export default function prototype() {
           <video
             className="responsive-video responsive-video1 mb-5"
             controls
-            preload="none"
+            preload="auto"
           >
             <source src="/CS3prototype/LF-website.mp4" type="video/mp4" />
             <track
@@ -134,7 +134,7 @@ export default function prototype() {
             Your browser does not support the video tag.
           </video>
 
-          <video className="responsive-video mb-5" controls preload="none">
+          <video className="responsive-video mb-5" controls preload="metadata">
             <source src="/CS3prototype/AppPrototype.mp4" type="video/mp4" />
             <track
               src="/CS3prototype/captions.vtt"
