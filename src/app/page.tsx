@@ -11,7 +11,7 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader">
           <h1 className="display-4">Hi, I&apos;m Mariola</h1>
-          <p className="lead">A UX / UI Designer and Software Developer</p>
+          <p className="lead">UX / UI Designer and Software Developer</p>
           <div className="mt-4">
             {/* <Link href="/bio" className="btn btn-purple btn-equal mx-2">
               More About Me
