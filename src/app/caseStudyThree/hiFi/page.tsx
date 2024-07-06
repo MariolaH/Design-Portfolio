@@ -91,8 +91,6 @@ export default function hifi() {
           <ImageCard imgSrc="/CS3MockUps/8.png" />
           <ImageCard imgSrc="/CS3MockUps/9.png" />
 
-         
-
           {/* <ImageCard
             id="lowFidelity-Prototypes"
             imgSrc="/headings/Low-FidelityPrototypes.png"
