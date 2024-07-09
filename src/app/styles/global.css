@@ -84,23 +84,24 @@ header p {
   }
 
   .btn-equal {
-    min-width: 160px; /* Adjust the minimum width for smaller screens */
-    min-height: 40px; /* Adjust the minimum height for smaller screens */
-    font-size: 0.9rem; /* Adjust the font size for smaller screens */
-    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    min-width: 100px; /* Adjust the minimum width for smaller screens */
+    min-height: 30px; /* Adjust the minimum height for smaller screens */
+    font-size: 0.5rem; /* Adjust the font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
   }
 
   .btn-purple {
-    width: 40px; /* Adjust width for smaller screens */
-    height: 40px; /* Adjust height for smaller screens */
+    width: 30px; /* Adjust width for smaller screens */
+    height: 30px; /* Adjust height for smaller screens */
     padding: 3px; /* Adjust padding for smaller screens */
   }
 
   .icon-svg {
-    width: 24px; /* Adjust icon size for smaller screens */
-    height: 24px; /* Adjust icon size for smaller screens */
+    width: 16px; /* Adjust icon size for smaller screens */
+    height: 16px; /* Adjust icon size for smaller screens */
   }
 }
+
 
 /* Button Styles */
 .btn {
@@ -123,9 +124,9 @@ header p {
 }
 
 .btn-equal {
-  min-width: 230px; /* Set a minimum width */
+  min-width: 190px; /* Set a minimum width */
   min-height: 50px;
-  padding: 10px 20px; /* Ensure padding is consistent */
+  padding: 10px; /* Ensure padding is consistent */
 }
 
 .btn-purple {
