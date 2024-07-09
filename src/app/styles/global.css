@@ -90,9 +90,17 @@ header p {
 
 @media (max-width: 768px) {
   .homepageHeader {
-    background-size: cover; /* Adjust as needed */
+    background-size: contain; /* Adjust as needed */
     background-position: center;
-    height: auto;
+    height: 40vh;
+    padding: 20px; /* Add padding if needed for better appearance */
+    background-attachment: fixed; 
+  }
+
+  .homepageHeader2 {
+    background-size: contain; /* Adjust as needed */
+    background-position: center;
+    height: 20vh;
     padding: 20px; /* Add padding if needed for better appearance */
     background-attachment: fixed; 
   }
