@@ -94,6 +94,7 @@ header p {
     background-position: center;
     height: auto;
     padding: 20px; /* Add padding if needed for better appearance */
+    background-attachment: fixed; 
   }
 
   .display-4 {
