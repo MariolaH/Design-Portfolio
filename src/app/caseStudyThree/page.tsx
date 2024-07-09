@@ -10,7 +10,7 @@ export default function empathize() {
   return (
     <div>
       <section className="container text-center py-5">
-        <h2 className="mb-5 mt-5">Museum App & Website </h2>
+        <h2 className="headerFont mb-5 mt-5">Museum App & Website </h2>
         <p className="mb-5 mt-5">
           PROMPT: Design an app and a responsive website for a public art museum
           to advertise exhibitions and events, provide museum information to

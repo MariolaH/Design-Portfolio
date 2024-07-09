@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <div>
         <header className="text-center text-light py-5 homepageHeader">
-          <h1 className="display-4 pb-2">Hi, I&apos;m Mariola</h1>
+          <h1 className="headerFont display-4 pb-2">Hi, I&apos;m Mariola</h1>
           <p className="lead">UX / UI Designer and Software Developer</p>
           <div className="mt-4">
             {/* <Link href="/bio" className="btn btn-purple btn-equal mx-2">
@@ -46,14 +46,14 @@ export default function Home() {
       </div>
 
       <section className="container text-center py-5">
-        <h2 className="mb-4 section-heading p-4">UX / UI DESIGN</h2>
+        <h2 className="headerFont mb-4 section-heading p-4">UX / UI DESIGN</h2>
         <div className="row p-4 justify-content-center">
           <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
               href="/caseStudyThree"
               className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
             >
-              <div className="mb-3 image-container">
+              <div className="mb-3 mt-4 image-container">
                 <img
                   src="/Musuem.png"
                   className="img-fluid default-image hover-image"
@@ -69,7 +69,7 @@ export default function Home() {
               href="/caseStudyOne"
               className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
             >
-              <div className="mb-3 image-container">
+              <div className="mb-3 mt-4 image-container">
                 <img
                   src="/Flowerwireframe.png"
                   className="img-fluid default-image hover-image"
@@ -109,7 +109,7 @@ export default function Home() {
 </section> */}
 
       <div className="container text-center py-5">
-        <h2 className="mb-4 section-heading p-4 text-uppercase">Skills</h2>
+        <h2 className="headerFont mb-4 section-heading p-4 text-uppercase">Skills</h2>
         <div className="row p-4">
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">
