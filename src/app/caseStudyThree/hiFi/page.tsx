@@ -59,6 +59,12 @@ export default function hifi() {
           text="Mock Ups: are an essential tools in the design process, providing detailed, static representations of user flows, and overviews of a product's information architecture to refine aesthetics and functionality before development."
         />
 
+<ImageAndTextCard
+          href="#high-fidelityPrototype"
+          imgSrc="/headings/hifiPrototype.png"
+          text="High-Fidelity Prototype: is a comprehensive, interactive model that closely mimics the final product's design and functionality, allowing for thorough user testing and feedback before full-scale development."
+        />
+
         {/* <ImageAndTextCard
           href="#paper-Wireframes"
           imgSrc="/moduleIcons/paperWireframes.png"
@@ -97,6 +103,8 @@ export default function hifi() {
           <ImageCard imgSrc="/CS3MockUps/App4.png" />
           <ImageCard imgSrc="/CS3MockUps/App5.png" />
           <ImageCard imgSrc="/CS3MockUps/App6.png" />
+
+          <ImageCard id="high-fidelityPrototype" imgSrc="/CS3MockUps/high-fidelityPrototype .png" />
 
           {/* <ImageCard
             id="lowFidelity-Prototypes"
