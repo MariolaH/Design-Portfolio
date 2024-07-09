@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+background-color: #f2f2f2;
 }
 
 html, body {
@@ -65,11 +66,26 @@ header p {
   background-image: url("/1.jpg");
   background-size: center;
   background-position: center;
-  height: 80vh; /* Fill the viewport height */
+  background-attachment: fixed; 
+  height: 70vh; /* Fill the viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* filter: blur(0.20px); */
+}
+
+.homepageHeader2 {
+  /* background-image: url("/crystal-7428278_1280.jpg"); */
+  /* background-image: url("/likes.png"); */
+  background-image: url("/1.jpg");
+  background-size: center;
+  background-position: center;
+  background-attachment: fixed; 
+  height: 50vh; /* Fill the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 @media (max-width: 768px) {
@@ -218,12 +234,14 @@ header p {
 
 /* Section Styles */
 section {
-  background-color: white;
+  /* background-color: white; */
+background-color: #f2f2f2;
   padding: 3rem 1rem;
 }
 
 .container {
-  background-color: white;
+  /* background-color: white; */
+  background-color: #f2f2f2;
 }
 
 /* Centered Image Styles */
@@ -455,6 +473,8 @@ section {
   justify-content: center;
   text-align: center;
   transition: opacity 0.3s;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .skill-icon img {
@@ -470,7 +490,7 @@ section {
 .skill-icon .tooltip {
   visibility: hidden;
   background-color: black;
-  color: #fff;
+  color: #F8F9FA;
   text-align: center;
   border-radius: 6px;
   padding: 5px;
@@ -519,3 +539,28 @@ section {
   }
 }
 
+/* Add this to your global CSS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(170px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeInUp 3s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.image-hover-container:hover img {
+  /* transform: scale(1.05); */
+  transition: transform 0.3s ease;
+}

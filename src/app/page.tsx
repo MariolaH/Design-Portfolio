@@ -9,14 +9,12 @@ export default function Home() {
   return (
     <div>
       <div>
-        <header className="text-center text-light py-5 homepageHeader">
-          <h1 className="headerFont display-4 pb-2">Hi, I&apos;m Mariola</h1>
-          <p className="lead">UX / UI Designer and Software Developer</p>
-          <div className="mt-4">
-            {/* <Link href="/bio" className="btn btn-purple btn-equal mx-2">
-              More About Me
-            </Link> */}
-
+        <header className="text-center text-light py-5 homepageHeader parallax">
+          <h1 className="display-4 animated">Hi, I&apos;m Mariola</h1>
+          <p className="lead animated">
+            A UX / UI Designer and Software Developer
+          </p>
+          <div className="mt-4 animated">
             <Link
               href="https://mariola-portfolio.vercel.app/"
               target="_blank"
@@ -24,8 +22,7 @@ export default function Home() {
             >
               Developer Portfolio
             </Link>
-
-            <div className="button-group">
+            <div className="button-group animated">
               <Link
                 href="https://www.linkedin.com/in/mariola-hullings/"
                 target="_blank"
@@ -108,8 +105,14 @@ export default function Home() {
   </div>
 </section> */}
 
+      <div>
+        <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
+      </div>
+
       <div className="container text-center py-5">
-        <h2 className="headerFont mb-4 section-heading p-4 text-uppercase">Skills</h2>
+        <h2 className="headerFont mb-4 section-heading p-4 text-uppercase">
+          Skills
+        </h2>
         <div className="row p-4">
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">
@@ -306,6 +309,40 @@ export default function Home() {
         <SkillCard imgSrc="skills/Firebase.svg" altText="Firebase" tooltipText="Firebase" /> 
         <SkillCard imgSrc="skills/Git.svg" altText="Git" tooltipText="Git" />  */}
         </div>
+      </div>
+      <div>
+        <header className="text-center text-light py-5 homepageHeader2 parallax">
+          <div className="mt-4">
+            {/* <Link href="/bio" className="btn btn-purple btn-equal mx-2">
+              More About Me
+            </Link> */}
+
+            <Link
+              href="https://mariola-portfolio.vercel.app/"
+              target="_blank"
+              className="btn btn-equal btn-outline-light btn-white mx-2"
+            >
+              Developer Portfolio
+            </Link>
+
+            <div className="button-group">
+              <Link
+                href="https://www.linkedin.com/in/mariola-hullings/"
+                target="_blank"
+                className="btn btn-purple btn-icon mx-2"
+              >
+                <img src="/linkedin.svg" alt="LinkedIn" className="icon-svg" />
+              </Link>
+              <Link
+                href="https://github.com/MariolaH"
+                target="_blank"
+                className="btn btn-purple btn-icon mx-2"
+              >
+                <img src="/github.svg" alt="GitHub" className="icon-svg" />
+              </Link>
+            </div>
+          </div>
+        </header>
       </div>
     </div>
   );

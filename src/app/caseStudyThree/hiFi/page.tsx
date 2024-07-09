@@ -65,22 +65,6 @@ export default function hifi() {
           text="High-Fidelity Prototype: is a comprehensive, interactive model that closely mimics the final product's design and functionality, allowing for thorough user testing and feedback before full-scale development."
         />
 
-        {/* <ImageAndTextCard
-          href="#paper-Wireframes"
-          imgSrc="/moduleIcons/paperWireframes.png"
-          text="Paper wireframes: Creating basic layouts to define the structure and flow of the design."
-        />
-
-        <ImageAndTextCard
-          href="#digital-Wireframes"
-          imgSrc="/moduleIcons/digitalWireframes.png"
-          text="Digital wireframes: Developing interactive digital layouts to simulate user interactions."
-        />
-        <ImageAndTextCard
-          href="#lowFidelity-Prototypes"
-          imgSrc="/moduleIcons/lowFidelityPrototypes.png"
-          text="Low-fidelity prototypes: Initial interactive models to test and refine design concepts."
-        /> */}
       </div>
       <div className="container pt-5">
         <div className="row justify-content-center">
