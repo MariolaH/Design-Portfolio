@@ -97,13 +97,22 @@ header p {
     background-attachment: fixed; 
   }
 
-  .homepageHeader2 {
-    background-size: contain; /* Adjust as needed */
+  /* .homepageHeader2 {
+    background-size: contain;
     background-position: center;
     height: 20vh;
-    padding: 20px; /* Add padding if needed for better appearance */
+    padding: 20px;
     background-attachment: fixed; 
+  } */
+
+  .homepageHeader2 {
+    background-size: cover; /* Cover for mobile */
+    background-position: center;
+    background-attachment: scroll; /* Disable fixed for mobile */
+    height: 20vh;
+    padding: 20px; /* Add padding if needed for better appearance */
   }
+
 
   .display-4 {
     font-size: 2rem; /* Adjust the font size for smaller screens */
