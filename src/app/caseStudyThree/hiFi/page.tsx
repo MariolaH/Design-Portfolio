@@ -90,16 +90,12 @@ export default function hifi() {
 
           <ImageCard id="high-fidelityPrototype" imgSrc="/CS3MockUps/high-fidelityPrototype .png" />
 
-          {/* <ImageCard
-            id="lowFidelity-Prototypes"
-            imgSrc="/headings/Low-FidelityPrototypes.png"
-          />
           <video
             className="responsive-video responsive-video1 mb-5"
             controls
             preload="none"
           >
-            <source src="/CS3prototype/LF-website.mp4" type="video/mp4" />
+            <source src="/CS3MockUps/WebsiteMockup.mp4" type="video/mp4" />
             <track
               src="/CS3prototype/captions.vtt"
               kind="subtitles"
@@ -109,7 +105,7 @@ export default function hifi() {
             Your browser does not support the video tag.
           </video>
 
-          <video className="responsive-video mb-5" controls preload="none">
+          {/* <video className="responsive-video mb-5" controls preload="none">
             <source src="/CS3prototype/AppPrototype.mp4" type="video/mp4" />
             <track
               src="/CS3prototype/captions.vtt"

@@ -73,7 +73,7 @@ export default function Home() {
         </header>
       </div>
 
-    <section className="text-center py-5">
+    <section className="container text-center py-5">
 
     <h3 className="headerFont mb-4 section-heading p-4">UX / UI DESIGN</h3>
     <div className="row p-4 justify-content-center">
@@ -124,9 +124,8 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
-      <div className="floating-container">
 
-      </div>
+   
 
       <div className="container text-center py-5">
         <h3 className="headerFont mb-4 section-heading p-4 text-uppercase">
