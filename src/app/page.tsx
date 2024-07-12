@@ -1,28 +1,58 @@
+"use client";
+
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import "/src/app/styles/global.css";
 import Icon from "./icons";
 import styles from "./HomePage.module.css";
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const header = document.querySelector('.homepageHeader') as HTMLElement;
+      if (header) {
+        const headerHeight = header.offsetHeight;
+        const opacity = Math.max(0, 1 - scrollTop / (headerHeight * 0.5));
+        const fixedContent = document.querySelector('.fixed-content') as HTMLElement;
+
+        if (fixedContent) {
+          fixedContent.style.opacity = `${opacity}`;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div>
         <header className="text-center text-light py-5 homepageHeader parallax">
+   
+        <div className={`fixed-content ${scrolled ? 'scrolled' : ''}`}>
           <h1 className="display-4 animated">Hi, I&apos;m Mariola</h1>
           <p className="lead animated">
             A UX / UI Designer and Software Developer
           </p>
-          <div className="mt-4 animated">
+          </div>
+          {/* <div className="mt-4 animated">
             <Link
               href="https://mariola-portfolio.vercel.app/"
               target="_blank"
               className="btn btn-equal btn-outline-light btn-white mx-2"
             >
               Developer Portfolio
-            </Link>
-            <div className="button-group animated">
+            </Link> */}
+            {/* <div className="button-group animated">
               <Link
                 href="https://www.linkedin.com/in/mariola-hullings/"
                 target="_blank"
@@ -37,59 +67,45 @@ export default function Home() {
               >
                 <img src="/github.svg" alt="GitHub" className="icon-svg" />
               </Link>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
+        
         </header>
       </div>
 
-      <section className="container text-center py-5">
-        <h2 className="headerFont mb-4 section-heading p-4">UX / UI DESIGN</h2>
-        <div className="row p-4 justify-content-center">
-          <div className="col-md-4 mb-4 d-flex justify-content-center">
-            <Link
-              href="/caseStudyThree"
-              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
-            >
-              <div className="mb-3 mt-4 image-container">
-                <img
-                  src="/Musuem.png"
-                  className="img-fluid default-image hover-image"
-                />
-                <img src="/MusuemMockup.png" className="img-fluid" />
-              </div>
-              <p className="text-muted">Museum Website</p>
-            </Link>
-          </div>
+    <section className="text-center py-5">
 
-          <div className="col-md-4 mb-4 d-flex justify-content-center">
-            <Link
-              href="/caseStudyOne"
-              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
-            >
-              <div className="mb-3 mt-4 image-container">
-                <img
-                  src="/Flowerwireframe.png"
-                  className="img-fluid default-image hover-image"
-                />
-                <img src="/CaseStudy1.png" className="img-fluid" />
-              </div>
-              <p className="text-muted">Flower Catalogue Website</p>
-            </Link>
+    <h3 className="headerFont mb-4 section-heading p-4">UX / UI DESIGN</h3>
+    <div className="row p-4 justify-content-center">
+      <div className="col-md-4 mb-4 d-flex justify-content-center">
+        <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
+          <div className="mb-3 mt-4 image-container">
+            <img src="/Musuem.png" className="img-fluid default-image hover-image" />
+            <img src="/MusuemMockup.png" className="img-fluid" />
           </div>
+          <p className="text-muted">Museum Website</p>
+        </Link>
+      </div>
+      <div className="col-md-4 mb-4 d-flex justify-content-center">
+        <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
+          <div className="mb-3 mt-4 image-container">
+            <img src="/Flowerwireframe.png" className="img-fluid default-image hover-image" />
+            <img src="/CaseStudy1.png" className="img-fluid" />
+          </div>
+          <p className="text-muted">Flower Catalogue Website</p>
+        </Link>
+      </div>
+      <div className="col-md-4 mb-4 d-flex justify-content-center">
+        <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
+          <div className="mb-3">
+            <img src="/app.png" className="img-fluid small-img" />
+          </div>
+          <p className="text-muted">Flower Catalogue App</p>
+        </Link>
+      </div>
+    </div>
+  </section>
 
-          <div className="col-md-4 mb-4 d-flex justify-content-center">
-            <Link
-              href="/caseStudyTwo"
-              className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size"
-            >
-              <div className="mb-3">
-                <img src="/app.png" className="img-fluid small-img" />
-              </div>
-              <p className="text-muted">Flower Catalogue App</p>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* <section className="container text-center py-5">
   <h2 className="mb-4 section-heading p-4 text-uppercase">UX Certificates</h2>
@@ -108,11 +124,14 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
+      <div className="floating-container">
+
+      </div>
 
       <div className="container text-center py-5">
-        <h2 className="headerFont mb-4 section-heading p-4 text-uppercase">
+        <h3 className="headerFont mb-4 section-heading p-4 text-uppercase">
           Skills
-        </h2>
+        </h3>
         <div className="row p-4">
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">

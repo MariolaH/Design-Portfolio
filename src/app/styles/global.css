@@ -1,27 +1,59 @@
 /* src/app/styles/global.css */
 
 /* General Styles */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-background-color: #f2f2f2;
-}
-
-html, body {
+body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* background-color: #f2f2f2; */
+  /* background-image: url("/1.jpg"); */
+}
+
+
+/* Header Styles */
+
+.fixed-content {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  /* transition: opacity 0.5s ease; */
+}
+
+.fade-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.scrolled {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+
+.fixed-content h1 {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.fixed-content p {
+  font-size: 1.75rem;
+  color: #fff;
 }
 
 /* Header Styles */
 header {
   position: relative;
-  height: 800px; /* Increase height */
+  height: 50vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem; /* Add padding if needed */
+  padding: 2rem;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -71,7 +103,6 @@ header p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* filter: blur(0.20px); */
 }
 
 .homepageHeader2 {
@@ -90,28 +121,28 @@ header p {
 
 @media (max-width: 768px) {
   .homepageHeader {
-    background-size: contain; /* Adjust as needed */
-    background-position: center;
-    height: 40vh;
-    padding: 20px; /* Add padding if needed for better appearance */
-    background-attachment: fixed; 
-  }
-
-  /* .homepageHeader2 {
     background-size: contain;
     background-position: center;
-    height: 20vh;
+    height: 33vh;
     padding: 20px;
-    background-attachment: fixed; 
-  } */
+    background-attachment: fixed;
+  }
+
+  .fixed-content h1 {
+    font-size: 2rem;
+  }
+
+  .fixed-content p {
+    font-size: 1rem;
+  }
 
   .homepageHeader2 {
     background-size: cover; /* Cover for mobile */
     background-position: center;
     background-attachment: scroll; /* Disable fixed for mobile */
-    height: 20vh;
+    height: 30vh;
     padding: 20px; /* Add padding if needed for better appearance */
-  }
+  } 
 
 
   .display-4 {
@@ -138,6 +169,39 @@ header p {
   .icon-svg {
     width: 16px; /* Adjust icon size for smaller screens */
     height: 16px; /* Adjust icon size for smaller screens */
+  }
+
+  .fixed-content {
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    /* transition: opacity 0.5s ease; */
+  }
+  
+  .fade-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .scrolled {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  
+  .fixed-content h1 {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  
+  .fixed-content p {
+    padding-top: 5px;
+    font-size: 0.85rem;
+    color: #fff;
   }
 }
 
@@ -253,14 +317,18 @@ header p {
 /* Section Styles */
 section {
   /* background-color: white; */
-background-color: #f2f2f2;
+/* background-color: #f2f2f2; */
   padding: 3rem 1rem;
+  border-radius: 15px;
 }
 
-.container {
-  /* background-color: white; */
+/* .container {
   background-color: #f2f2f2;
-}
+  padding: 3rem 1rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
 
 /* Centered Image Styles */
 .centered-image {
@@ -558,7 +626,8 @@ background-color: #f2f2f2;
 }
 
 /* Add this to your global CSS */
-@keyframes fadeInUp {
+/* This movings the heading up slowly */
+/* @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(170px);
@@ -567,7 +636,7 @@ background-color: #f2f2f2;
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .animated {
   animation: fadeInUp 3s ease-out;
@@ -583,3 +652,18 @@ background-color: #f2f2f2;
   transition: transform 0.1s ease;
 }
 
+/* Floating Container Styles */
+/* @media (min-width: 768px) {
+  .floating-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: transform 0.3s ease;
+  }
+
+  .floating-container:hover {
+    transform: translateY(-10px);
+  }
+} */
