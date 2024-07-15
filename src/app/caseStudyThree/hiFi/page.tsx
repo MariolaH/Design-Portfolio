@@ -59,16 +59,14 @@ export default function hifi() {
           text="Mock Ups: are an essential tools in the design process, providing detailed, static representations of user flows, and overviews of a product's information architecture to refine aesthetics and functionality before development."
         />
 
-<ImageAndTextCard
+        <ImageAndTextCard
           href="#high-fidelityPrototype"
           imgSrc="/headings/hifiPrototype.png"
           text="High-Fidelity Prototype: is a comprehensive, interactive model that closely mimics the final product's design and functionality, allowing for thorough user testing and feedback before full-scale development."
         />
-
       </div>
       <div className="container pt-5">
         <div className="row justify-content-center">
-
           <ImageCard id="mock-ups" imgSrc="/CS3MockUps/mockup.png" />
 
           <ImageCard imgSrc="/CS3MockUps/1.png" />
@@ -88,33 +86,40 @@ export default function hifi() {
           <ImageCard imgSrc="/CS3MockUps/App5.png" />
           <ImageCard imgSrc="/CS3MockUps/App6.png" />
 
-          <ImageCard id="high-fidelityPrototype" imgSrc="/CS3MockUps/high-fidelityPrototype .png" />
-
-          <video
-            className="responsive-video responsive-video1 mb-5"
-            controls
-            preload="none"
-          >
-            <source src="/CS3MockUps/WebsiteMockup.mp4" type="video/mp4" />
-            <track
-              src="/CS3prototype/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-            Your browser does not support the video tag.
-          </video>
-
-          {/* <video className="responsive-video mb-5" controls preload="none">
-            <source src="/CS3prototype/AppPrototype.mp4" type="video/mp4" />
-            <track
-              src="/CS3prototype/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-            Your browser does not support the video tag.
-          </video> */}
+          <ImageCard
+            id="high-fidelityPrototype"
+            imgSrc="/CS3MockUps/high-fidelityPrototype .png"
+          />
+          <div className="container ">
+            <div className="row justify-content-center">
+              <video
+                className="responsive-video responsive-video1 mb-5"
+                controls
+                preload="auto"
+              >
+                <source src="/CS3MockUps/WebsiteMockup.mp4" type="video/mp4" />
+                <track
+                  src="/CS3prototype/captions.vtt"
+                  kind="subtitles"
+                  srcLang="en"
+                  label="English"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="row justify-content-center">
+              <video className="responsive-video mb-5" controls preload="auto">
+                <source src="/CS3MockUps/AppRecording.mp4" type="video/mp4" />
+                <track
+                  src="/CS3prototype/captions.vtt"
+                  kind="subtitles"
+                  srcLang="en"
+                  label="English"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>

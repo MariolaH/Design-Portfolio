@@ -119,31 +119,40 @@ export default function prototype() {
             id="lowFidelity-Prototypes"
             imgSrc="/headings/Low-FidelityPrototypes.png"
           />
-          <video
-            className="responsive-video responsive-video1 mb-5"
-            controls
-            preload="auto"
-          >
-            <source src="/CS3prototype/LF-website.mp4" type="video/mp4" />
-            <track
-              src="/CS3prototype/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-            Your browser does not support the video tag.
-          </video>
-
-          <video className="responsive-video mb-5" controls preload="metadata">
-            <source src="/CS3prototype/AppPrototype.mp4" type="video/mp4" />
-            <track
-              src="/CS3prototype/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-            Your browser does not support the video tag.
-          </video>
+          <div className="container ">
+          <div className="row justify-content-center">
+            <video
+              className="responsive-video responsive-video1 mb-5"
+              controls
+              preload="auto"
+            >
+              <source src="/CS3prototype/LF-website.mp4" type="video/mp4" />
+              <track
+                src="/CS3prototype/captions.vtt"
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+              />
+              Your browser does not support the video tag.
+            </video>
+            </div>
+            <div className="row justify-content-center">
+            <video
+              className="responsive-video mb-5"
+              controls
+              preload="metadata"
+            >
+              <source src="/CS3prototype/AppPrototype.mp4" type="video/mp4" />
+              <track
+                src="/CS3prototype/captions.vtt"
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+              />
+              Your browser does not support the video tag.
+            </video>
+            </div>
+          </div>
         </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>
