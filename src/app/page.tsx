@@ -39,8 +39,8 @@ export default function Home() {
         <header className="text-center text-light py-5 homepageHeader parallax">
    
         <div className={`fixed-content ${scrolled ? 'scrolled' : ''}`}>
-          <h1 className="display-4 animated">Hi, I&apos;m Mariola</h1>
-          <p className="lead animated">
+          <h1 className="mainHeader display-4 animated">Hi, I&apos;m Mariola</h1>
+          <p className="mainSubheader lead animated">
             A UX / UI Designer and Software Developer
           </p>
           </div>

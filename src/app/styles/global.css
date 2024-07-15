@@ -10,6 +10,13 @@ body, html {
   /* background-image: url("/1.jpg"); */
 }
 
+.mainHeader {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .mainSubheader {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
 
 /* Header Styles */
 
@@ -70,7 +77,7 @@ header::before {
   /* background: rgba(0, 0, 0, 0.76);  */
   /* Adjust the alpha value for dimming effect */
   /* background: rgba(27, 6, 29, 0.76);  */
-  background: rgba(11, 11, 11, 0.521);
+  background: rgba(11, 11, 11, 0.735);
   z-index: 1;
 }
 
@@ -318,8 +325,8 @@ header p {
 section {
   /* background-color: white; */
 /* background-color: #f2f2f2; */
-  padding: 3rem 1rem;
-  border-radius: 15px;
+  /* padding: 3rem 1rem; */
+  border-radius: 45px;
 }
 
 /* .container {
@@ -400,8 +407,8 @@ section {
   position: fixed;
   bottom: 20px;
   right: 50px;
-  background-color: white;
-  color: rgb(6, 6, 6);
+  background-color:rgba(6, 6, 6, 0.496);
+  color: white;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -410,7 +417,7 @@ section {
 }
 
 #back-to-top:hover {
-  background-color: #5D3587;
+  background-color: #272626;
 }
 
 /* Home Button Styles */
