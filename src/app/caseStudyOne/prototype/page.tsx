@@ -54,20 +54,20 @@ export default function cs1prototype() {
         />
         </div>
       <div className="row justify-content-center mt-5 pb-5">
-        <ImageAndTextCard
+        {/* <ImageAndTextCard
           href="#user-interviews"
           imgSrc="/moduleIcons/userFlow.png"
           text="User flow diagrams, storyboards and sitemaps: User flow diagrams are visual maps of user steps; Storyboards detail user experiences visually; Sitemap are an overview of product information architecture."
-        />
+        /> */}
 
-        <ImageAndTextCard
+        {/* <ImageAndTextCard
           href="#empathy-map"
           imgSrc="/moduleIcons/paperWireframes.png"
           text="Paper wireframes: Creating basic layouts to define the structure and flow of the design."
-        />
+        /> */}
 
         <ImageAndTextCard
-          href="#empathy-map"
+          href="#digitalWireframes"
           imgSrc="/moduleIcons/digitalWireframes.png"
           text="Digital wireframes: Developing interactive digital layouts to simulate user interactions."
         />
@@ -79,6 +79,16 @@ export default function cs1prototype() {
       </div>
       <div className="container pt-5">
       <div className="row justify-content-center">
+
+      <ImageCard id="digitalWireframes" imgSrc="/FlowerWebsite/App/Wireframes/1.png" />
+      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/2.png" />
+      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/3.png" />
+      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/4.png" />
+      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app1.png" />
+      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app2.png" />
+      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app3.png" />
+      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app4.png" />
+      
         {/* <ImageCard imgSrc="/empathizeCS3/researchGoals.png" />
         <ImageCard imgSrc="/empathizeCS3/audience.png" />
         <ImageCard

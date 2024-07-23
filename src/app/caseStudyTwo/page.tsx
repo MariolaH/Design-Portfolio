@@ -42,6 +42,7 @@ export default function caseStudyTwo() {
             />
           </div>
         </div> */}
+        
       </section>
       <h4 className="container text-center justify-content-center">Product Development Lifecycle Documentation </h4>
       <h4 className="container text-center justify-content-center">Coming Soon... </h4>

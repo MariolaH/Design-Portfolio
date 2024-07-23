@@ -39,7 +39,7 @@ export default function Home() {
         <header className="text-center text-light py-5 homepageHeader parallax">
    
         <div className={`fixed-content ${scrolled ? 'scrolled' : ''}`}>
-          <h1 className="mainHeader display-4 animated">Hi, I&apos;m Mariola</h1>
+          <h1 className="display-4 mainHeader animated">Hi, I&apos;m Mariola</h1>
           <p className="mainSubheader lead animated">
             A UX / UI Designer and Software Developer
           </p>
@@ -75,7 +75,7 @@ export default function Home() {
 
     <section className="container text-center py-5">
 
-    <h3 className="headerFont mb-4 section-heading p-4">UX / UI DESIGN</h3>
+    <h3 className="headerFont mb-4 p-4">UX / UI DESIGN</h3>
     <div className="row p-4 justify-content-center">
       <div className="col-md-4 mb-4 d-flex justify-content-center">
         <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
@@ -95,6 +95,7 @@ export default function Home() {
           <p className="text-muted">Flower Catalogue Website</p>
         </Link>
       </div>
+
       <div className="col-md-4 mb-4 d-flex justify-content-center">
         <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
           <div className="mb-3">
@@ -103,6 +104,17 @@ export default function Home() {
           <p className="text-muted">Flower Catalogue App</p>
         </Link>
       </div>
+
+      {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
+        <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container">
+          <div className="mb-3">
+          <img src="/appWireframe.png" className="img-fluid default-image hover-image small-img" />
+            <img src="/app.png" className="img-fluid small-img" />
+          </div>
+          <p className="text-muted">Flower Catalogue App</p>
+        </Link>
+      </div> */}
+
     </div>
   </section>
 
