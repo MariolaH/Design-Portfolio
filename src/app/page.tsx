@@ -75,7 +75,7 @@ export default function Home() {
 
     <section className="container text-center py-5">
 
-    <h3 className="headerFont mb-4 p-4">UX / UI DESIGN</h3>
+    <h3 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h3>
     <div className="row p-4 justify-content-center">
       <div className="col-md-4 mb-4 d-flex justify-content-center">
         <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
@@ -140,7 +140,7 @@ export default function Home() {
    
 
       <div className="container text-center py-5">
-        <h3 className="headerFont mb-4 section-heading p-4 text-uppercase">
+        <h3 className="headerFont mainHeader mb-4 section-heading p-4 text-uppercase">
           Skills
         </h3>
         <div className="row p-4">

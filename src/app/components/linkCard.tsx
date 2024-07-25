@@ -9,8 +9,8 @@ interface LinkCardProps {
 
 const LinkCard: React.FC<LinkCardProps> = ({ href, imgSrc, text }) => {
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-2 d-flex pt-3 justify-content-center">
-      <Link href={href} className="btn btn-light p-4 d-block shadow text-decoration-none pt-5 link-card">
+    <div className="col-12 col-sm-6 col-md-4 col-lg-2 d-flex pt-3 mainHeader justify-content-center">
+      <Link href={href} className="btn btn-light p-4 d-block shadow pt-5 link-card">
           <img src={imgSrc} alt="Image" />
           <p className='pt-2'>{text}</p>
       </Link>

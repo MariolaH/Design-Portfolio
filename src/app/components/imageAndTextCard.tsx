@@ -13,7 +13,7 @@ const ImageAndTextCard: React.FC<ImageAndTextCardProps> = ({ href, imgSrc, text 
       <Link href={href} className="btn btn-light p-4 d-block shadow text-decoration-none link-card">
         <img src={imgSrc} alt="Image" />
         <p className="fontSize mt-4">
-          <b>{text.split(':')[0]}:</b> {text.split(':')[1]}
+          <b className='mainHeader'>{text.split(':')[0]}:</b> {text.split(':')[1]}
         </p>
       </Link>
     </div>

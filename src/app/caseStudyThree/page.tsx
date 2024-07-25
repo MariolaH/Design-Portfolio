@@ -10,12 +10,22 @@ export default function empathize() {
   return (
     <div>
       <section className="container text-center py-5">
-        <h2 className="headerFont mb-5 mt-5">Museum App & Website </h2>
-        <p className="mb-5 mt-5">
-          PROMPT: Design an app and a responsive website for a public art museum
-          to advertise exhibitions and events, provide museum information to
-          patrons, and enable patrons to schedule visits.
+        <h2 className="headerFont mainHeader mb-5 mt-5">
+          {" "}
+          Museum App & Website Case Study{" "}
+        </h2>
+        <p className=" mt-5">
+          In this case study, I developed an application and responsive website
+          for a public art museum.
         </p>
+        <p>The goal was to create a digital platform that:</p>
+
+ 
+            <p>Advertise Exhibitions and Events</p>
+            <p>Provide Essential Information</p>
+            <p>Enable patrons to schedule their visits</p>
+   
+
         <div className="d-flex justify-content-center mt-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
             <LinkCard
@@ -43,7 +53,7 @@ export default function empathize() {
               imgSrc="/DesignProcess/Test.png"
               text="Test"
             />
-             <LinkCard
+            <LinkCard
               href="/caseStudyThree/hiFi"
               imgSrc="/DesignProcess/Design2.png"
               text="Mock Ups"

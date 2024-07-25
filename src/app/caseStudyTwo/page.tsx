@@ -9,9 +9,9 @@ export default function caseStudyTwo() {
   return (
     <div>
       <section className="container text-center py-5">
-        <h2 className="headerFont mb-5 mt-5">Flower Catalogue App</h2>
+        <h2 className="headerFont mainHeader mb-5 mt-5">Flower Catalogue App</h2>
         <p className="mb-5 mt-5">
-        PROMPT: Design a flower catalogue app for a florist.
+        Design a flower catalogue app for a florist.
         </p>
         {/* <div className="d-flex justify-content-center mt-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
