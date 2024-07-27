@@ -1,25 +1,43 @@
+
 "use client";
 
+import Icon from "./icons";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import "/src/app/styles/global.css";
-import Icon from "./icons";
 import styles from "./HomePage.module.css";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+
+
+interface Certificate {
+  src: string;
+}
+
+const certificates: Certificate[] = [
+  { src: '/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png' },
+  { src: '/Certificates/BuildWireframesandLow-FidelityPrototypes.png' },
+  { src: '/Certificates/ConductUXResearchandTestEarlyConcepts.png' },
+  { src: '/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png' },
+  { src: '/Certificates/FoundationsofUserExperience(UX)Design.png' },
+  { src: '/Certificates/StarttheUXDesignProcessEmpathizeDefineandIdeate.png' },
+  // { src: '/Certificates/GoogleUXDesignProfessionalCertificate.png' },
+];
 
 export default function Home() {
-
   const [scrolled, setScrolled] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<Certificate | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const header = document.querySelector('.homepageHeader') as HTMLElement;
+      const header = document.querySelector(".homepageHeader") as HTMLElement;
       if (header) {
         const headerHeight = header.offsetHeight;
         const opacity = Math.max(0, 1 - scrollTop / (headerHeight * 0.5));
-        const fixedContent = document.querySelector('.fixed-content') as HTMLElement;
+        const fixedContent = document.querySelector(
+          ".fixed-content"
+        ) as HTMLElement;
 
         if (fixedContent) {
           fixedContent.style.opacity = `${opacity}`;
@@ -27,22 +45,34 @@ export default function Home() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const enlargeImage = (certificate: Certificate) => {
+    document.body.classList.add("modal-open");
+    setSelectedImage(certificate);
+  };
+
+  const closeModal = () => {
+    document.body.classList.remove("modal-open");
+    setSelectedImage(null);
+  };
+
 
   return (
     <div>
       <div>
         <header className="text-center text-light py-5 homepageHeader parallax">
-   
-        <div className={`fixed-content ${scrolled ? 'scrolled' : ''}`}>
-          <h1 className="display-4 mainHeader animated">Hi, I&apos;m Mariola</h1>
-          <p className="mainSubheader lead animated">
-            A UX / UI Designer and Software Developer
-          </p>
+          <div className={`fixed-content ${scrolled ? "scrolled" : ""}`}>
+            <h1 className="display-4 mainHeader animated">
+              Hi, I&apos;m Mariola
+            </h1>
+            <p className="mainSubheader lead animated">
+              A UX / UI Designer and Software Developer
+            </p>
           </div>
           {/* <div className="mt-4 animated">
             <Link
@@ -52,7 +82,7 @@ export default function Home() {
             >
               Developer Portfolio
             </Link> */}
-            {/* <div className="button-group animated">
+          {/* <div className="button-group animated">
               <Link
                 href="https://www.linkedin.com/in/mariola-hullings/"
                 target="_blank"
@@ -69,34 +99,44 @@ export default function Home() {
               </Link>
             </div> */}
           {/* </div> */}
-        
         </header>
       </div>
 
-    <section className="container text-center py-5">
-
-    <h3 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h3>
-    <div className="row p-4 justify-content-center">
-      <div className="col-md-4 mb-4 d-flex justify-content-center">
-        <Link href="/caseStudyThree" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
-          <div className="mb-3 mt-4 image-container">
-            <img src="/Musuem.png" className="img-fluid default-image hover-image" />
-            <img src="/MusuemMockup.png" className="img-fluid" />
+      <section className="container text-center py-5">
+        <h3 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h3>
+        <div className="row p-4 justify-content-center">
+          <div className="col-md-4 mb-4 d-flex justify-content-center">
+            <Link
+              href="/caseStudyThree"
+              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
+            >
+              <div className="mb-3 mt-4 image-container">
+                <img
+                  src="/Musuem.png"
+                  className="img-fluid default-image hover-image"
+                />
+                <img src="/MusuemMockup.png" className="img-fluid" />
+              </div>
+              <p className="text-muted">Museum Website & App</p>
+            </Link>
           </div>
-          <p className="text-muted">Museum Website & App</p>
-        </Link>
-      </div>
-      <div className="col-md-4 mb-4 d-flex justify-content-center">
-        <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
-          <div className="mb-3 mt-4 image-container">
-            <img src="/Flowerwireframe.png" className="img-fluid default-image hover-image" />
-            <img src="/CaseStudy1.png" className="img-fluid" />
+          <div className="col-md-4 mb-4 d-flex justify-content-center">
+            <Link
+              href="/caseStudyOne"
+              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
+            >
+              <div className="mb-3 mt-4 image-container">
+                <img
+                  src="/Flowerwireframe.png"
+                  className="img-fluid default-image hover-image"
+                />
+                <img src="/CaseStudy1.png" className="img-fluid" />
+              </div>
+              <p className="text-muted">Flower Catalogue Website & App</p>
+            </Link>
           </div>
-          <p className="text-muted">Flower Catalogue Website & App</p>
-        </Link>
-      </div>
 
-      {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
+          {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
         <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
           <div className="mb-3">
             <img src="/app.png" className="img-fluid small-img" />
@@ -105,7 +145,7 @@ export default function Home() {
         </Link>
       </div> */}
 
-      {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
+          {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
         <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container">
           <div className="mb-3">
           <img src="/appWireframe.png" className="img-fluid default-image hover-image small-img" />
@@ -114,30 +154,38 @@ export default function Home() {
           <p className="text-muted">Flower Catalogue App</p>
         </Link>
       </div> */}
-
-    </div>
-  </section>
-
-
-      {/* <section className="container text-center py-5">
-  <h2 className="mb-4 section-heading p-4 text-uppercase">UX Certificates</h2>
-  <div className="row justify-content-center p-4">
-    <div className="col-md-4 mb-4">
-      <Link href="/caseStudyOne" className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container">
-        <div className="mb-3 image-container">
-          <img src="/Google.png" className="img-fluid"/>
         </div>
-        <p className="text-muted">Google UX Design Professional Certificate</p>
-      </Link>
-    </div>
-  </div>
-</section> */}
+      </section>
 
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
 
-   
+      <section className="container text-center py-5">
+        <h3 className="mb-4 section-heading mainHeader p-4 text-uppercase">
+          UX Certificates
+        </h3>
+        <div className="row p-4 justify-content-center">
+          {certificates.map((certificate, index) => (
+            <div key={index} className="col-12 col-sm-6 col-md-4 mb-4 skill-container">
+              <div className="skill-icon p-4 d-block shadow text-decoration-none" onClick={() => enlargeImage(certificate)}>
+                <img src={certificate.src} alt={`Certificate ${index + 1}`} className="img-fluid certificate-icon" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {selectedImage && (
+        <div id="imageModal" className="modal show" onClick={closeModal}>
+          <span className="close">&times;</span>
+          <img className="modal-content" id="modalImage" src={selectedImage.src} alt="Certificate" />
+        </div>
+      )}
+
+      <div>
+        <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
+      </div>
 
       <div className="container text-center py-5">
         <h3 className="headerFont mainHeader mb-4 section-heading p-4 text-uppercase">
