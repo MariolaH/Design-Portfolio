@@ -10,9 +10,9 @@ export default function caseStudyOne() {
   return (
     <div>
       <section className="container text-center py-5">
-        <h2 className="headerFont mb-5 mt-5">Flowers Flowers Flowers Website</h2>
+        <h2 className="headerFont mainHeader mb-5 mt-5">Flowers Flowers Flowers Website</h2>
         <p className="mb-5 mt-5">
-          PROMPT: Design a flower catalogue website for a florist.
+          Design a flower catalogue website for a florist.
         </p>
         <div className="row justify-content-center mt-5">
             <div className="col-md-2 d-flex justify-content-center">

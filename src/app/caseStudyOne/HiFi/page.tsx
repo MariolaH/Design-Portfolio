@@ -94,18 +94,14 @@ export default function CS1hifi() {
           <ImageCard imgSrc="/CS3MockUps/App5.png" />
           <ImageCard imgSrc="/CS3MockUps/App6.png" /> */}
 
-          {/* <ImageCard
-            id="high-fidelityPrototype"
-            imgSrc="/CS3MockUps/high-fidelityPrototype .png"
-          /> */}
-          {/* <div className="container ">
+          <div className="container ">
             <div className="row justify-content-center">
               <video
                 className="responsive-video responsive-video1 mb-5"
                 controls
                 preload="auto"
               >
-                <source src="/CS3MockUps/WebsiteMockup.mp4" type="video/mp4" />
+                <source src="/FlowerWebsite/App/Wireframes/FlowersWebsite.mp4" type="video/mp4" />
                 <track
                   src="/CS3prototype/captions.vtt"
                   kind="subtitles"
@@ -117,7 +113,7 @@ export default function CS1hifi() {
             </div>
             <div className="row justify-content-center">
               <video className="responsive-video mb-5" controls preload="auto">
-                <source src="/CS3MockUps/AppRecording.mp4" type="video/mp4" />
+                <source src="/FlowerWebsite/App/Wireframes/FlowerApp.mp4" type="video/mp4" />
                 <track
                   src="/CS3prototype/captions.vtt"
                   kind="subtitles"
@@ -127,7 +123,7 @@ export default function CS1hifi() {
                 Your browser does not support the video tag.
               </video>
             </div>
-          </div> */}
+          </div> 
         </div>
       </div>
       <button id="back-to-top" onClick={scrollToTop}>
