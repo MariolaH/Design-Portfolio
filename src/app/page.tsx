@@ -376,7 +376,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <header className="text-center text-light py-5 homepageHeader2 parallax">
+        <header className="text-center text-light py-5 homepageHeader2 homepageHeader3 parallax">
           <div className="mt-4">
             <div className="button-group text-center py-5 button-group1 mt-5">
               <Link

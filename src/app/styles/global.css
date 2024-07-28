@@ -161,6 +161,13 @@ header p {
     padding: 20px; /* Add padding if needed for better appearance */
   } 
 
+  .homepageHeader3 {
+    background-size: cover; /* Cover for mobile */
+    background-position: center;
+    background-attachment: scroll; /* Disable fixed for mobile */
+    height: 50vh;
+    padding: 20px; /* Add padding if needed for better appearance */
+  } 
 
   .display-4 {
     font-size: 2rem; /* Adjust the font size for smaller screens */
