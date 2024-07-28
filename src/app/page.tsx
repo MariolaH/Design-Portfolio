@@ -1,4 +1,3 @@
-
 "use client";
 
 import Icon from "./icons";
@@ -9,18 +8,17 @@ import "/src/app/styles/global.css";
 import styles from "./HomePage.module.css";
 import { useEffect, useState } from "react";
 
-
 interface Certificate {
   src: string;
 }
 
 const certificates: Certificate[] = [
-  { src: '/Certificates/FoundationsofUserExperience(UX)Design.png' },
-  { src: '/Certificates/StarttheUXDesignProcessEmpathizeDefineandIdeate.png' },
-  { src: '/Certificates/BuildWireframesandLow-FidelityPrototypes.png' },
-  { src: '/Certificates/ConductUXResearchandTestEarlyConcepts.png' },
-  { src: '/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png' },
-  { src: '/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png' },
+  { src: "/Certificates/FoundationsofUserExperience(UX)Design.png" },
+  { src: "/Certificates/StarttheUXDesignProcessEmpathizeDefineandIdeate.png" },
+  { src: "/Certificates/BuildWireframesandLow-FidelityPrototypes.png" },
+  { src: "/Certificates/ConductUXResearchandTestEarlyConcepts.png" },
+  { src: "/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png" },
+  { src: "/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png" },
   // { src: '/Certificates/GoogleUXDesignProfessionalCertificate.png' },
 ];
 
@@ -61,7 +59,6 @@ export default function Home() {
     setSelectedImage(null);
   };
 
-
   return (
     <div>
       <div>
@@ -74,31 +71,6 @@ export default function Home() {
               A UX / UI Designer and Software Developer
             </p>
           </div>
-          {/* <div className="mt-4 animated">
-            <Link
-              href="https://mariola-portfolio.vercel.app/"
-              target="_blank"
-              className="btn btn-equal btn-outline-light btn-white mx-2"
-            >
-              Developer Portfolio
-            </Link> */}
-          {/* <div className="button-group animated">
-              <Link
-                href="https://www.linkedin.com/in/mariola-hullings/"
-                target="_blank"
-                className="btn btn-purple btn-icon mx-2"
-              >
-                <img src="/linkedin.svg" alt="LinkedIn" className="icon-svg" />
-              </Link>
-              <Link
-                href="https://github.com/MariolaH"
-                target="_blank"
-                className="btn btn-purple btn-icon mx-2"
-              >
-                <img src="/github.svg" alt="GitHub" className="icon-svg" />
-              </Link>
-            </div> */}
-          {/* </div> */}
         </header>
       </div>
 
@@ -167,9 +139,19 @@ export default function Home() {
         </h3>
         <div className="row p-4 justify-content-center">
           {certificates.map((certificate, index) => (
-            <div key={index} className="col-12 col-sm-6 col-md-4 mb-4 skill-container">
-              <div className=" p-4 d-block shadow text-decoration-none" onClick={() => enlargeImage(certificate)}>
-                <img src={certificate.src} alt={`Certificate ${index + 1}`} className="img-fluid certificate-icon" />
+            <div
+              key={index}
+              className="col-12 col-sm-6 col-md-4 mb-4 skill-container"
+            >
+              <div
+                className=" p-4 d-block shadow text-decoration-none"
+                onClick={() => enlargeImage(certificate)}
+              >
+                <img
+                  src={certificate.src}
+                  alt={`Certificate ${index + 1}`}
+                  className="img-fluid certificate-icon"
+                />
               </div>
             </div>
           ))}
@@ -179,7 +161,12 @@ export default function Home() {
       {selectedImage && (
         <div id="imageModal" className="modal show" onClick={closeModal}>
           <span className="close">&times;</span>
-          <img className="modal-content" id="modalImage" src={selectedImage.src} alt="Certificate" />
+          <img
+            className="modal-content"
+            id="modalImage"
+            src={selectedImage.src}
+            alt="Certificate"
+          />
         </div>
       )}
 
@@ -391,19 +378,25 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax">
           <div className="mt-4">
-            {/* <Link href="/bio" className="btn btn-purple btn-equal mx-2">
-              More About Me
-            </Link> */}
+            <div className="button-group text-center py-5 button-group1">
+              <Link
+                href="https://mariola-portfolio.vercel.app/"
+                target="_blank"
+                className="btn btn-equal btn-outline-light btn-white mx-2"
+              >
+                Developer Portfolio
+              </Link>
 
-            <Link
-              href="https://mariola-portfolio.vercel.app/"
-              target="_blank"
-              className="btn btn-equal btn-outline-light btn-white mx-2"
-            >
-              Developer Portfolio
-            </Link>
+              <a
+                href="/DesignResume.pdf"
+                target="_blank"
+                className="btn btn-equal btn-outline-light btn-white mx-2"
+              >
+                Resume
+              </a>
+            </div>
 
-            <div className="button-group">
+            <div className="button-group mb-5">
               <Link
                 href="https://www.linkedin.com/in/mariola-hullings/"
                 target="_blank"

@@ -223,6 +223,11 @@ header p {
     font-size: 1.1rem;
     color: #b5b2b2;
   }
+
+  .button-group1 {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 
