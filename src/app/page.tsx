@@ -15,12 +15,12 @@ interface Certificate {
 }
 
 const certificates: Certificate[] = [
-  { src: '/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png' },
+  { src: '/Certificates/FoundationsofUserExperience(UX)Design.png' },
+  { src: '/Certificates/StarttheUXDesignProcessEmpathizeDefineandIdeate.png' },
   { src: '/Certificates/BuildWireframesandLow-FidelityPrototypes.png' },
   { src: '/Certificates/ConductUXResearchandTestEarlyConcepts.png' },
   { src: '/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png' },
-  { src: '/Certificates/FoundationsofUserExperience(UX)Design.png' },
-  { src: '/Certificates/StarttheUXDesignProcessEmpathizeDefineandIdeate.png' },
+  { src: '/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png' },
   // { src: '/Certificates/GoogleUXDesignProfessionalCertificate.png' },
 ];
 
