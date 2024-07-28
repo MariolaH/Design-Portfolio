@@ -215,12 +215,12 @@ header p {
   
   .fixed-content h1 {
     font-size: 2.8rem;
-
+color: #c5c3c3;
   }
   
   .fixed-content p {
     padding-top: 5px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #b5b2b2;
   }
 }
