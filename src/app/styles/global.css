@@ -586,6 +586,12 @@ section {
   max-width: 100px; /* Default size */
 }
 
+.skill-icon2 img {
+  width: 100%;
+  height: auto;
+  max-width: 100px; /* Default size */
+}
+
 .skill-icon:hover img {
   opacity: 0.5;
 }
@@ -692,6 +698,19 @@ section {
   transition: 0.3s;
   cursor: pointer;
   width: 100%; /* Make icon larger */
+  max-width: 300px; /* Increase size for readability */
+  max-height: 300px; /* Increase size for readability */
+}
+
+@media (max-width: 768px) {
+
+  .certificate-icon {
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%; /* Make icon larger */
+    max-width: 250px; /* Increase size for readability */
+    max-height: 300px; /* Increase size for readability */
+  }
 }
 
 /* The Modal (background) */

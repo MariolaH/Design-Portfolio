@@ -168,7 +168,7 @@ export default function Home() {
         <div className="row p-4 justify-content-center">
           {certificates.map((certificate, index) => (
             <div key={index} className="col-12 col-sm-6 col-md-4 mb-4 skill-container">
-              <div className="skill-icon p-4 d-block shadow text-decoration-none" onClick={() => enlargeImage(certificate)}>
+              <div className=" p-4 d-block shadow text-decoration-none" onClick={() => enlargeImage(certificate)}>
                 <img src={certificate.src} alt={`Certificate ${index + 1}`} className="img-fluid certificate-icon" />
               </div>
             </div>
