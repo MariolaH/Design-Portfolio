@@ -139,7 +139,7 @@ header p {
   .homepageHeader {
     background-size: contain;
     background-position: center;
-    height: 50vh;
+    height: 47vh;
     padding: 20px;
     background-attachment: fixed;
   }
@@ -210,13 +210,13 @@ header p {
   
   
   .fixed-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: #fff;
   }
   
   .fixed-content p {
-    padding-top: 5px;
-    font-size: 0.85rem;
+    padding-top: 15px;
+    font-size: 1.0rem;
     color: #fff;
   }
 }
