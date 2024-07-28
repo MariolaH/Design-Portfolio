@@ -784,7 +784,7 @@ section {
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #474646;
   text-decoration: none;
   cursor: pointer;
 }
