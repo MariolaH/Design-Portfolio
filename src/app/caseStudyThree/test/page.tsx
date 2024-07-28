@@ -54,7 +54,7 @@ export default function test() {
         <ImageAndTextCard
           href="#plan-usabilityStudy"
           imgSrc="/moduleIcons/planUsabilityStudy.png"
-          text="Plan a usability study:  Develop a comprehensive UX research plan by defining research goals, questions, KPIs, methodology, participants, and script to effectively assess user interactions and usability."
+          text="Plan a usability study:  Develop a comprehensive UX research plan by defining research goals, questions, KPIs, methodology, participants, and a script to effectively assess user interactions and usability."
         />
 
         <ImageAndTextCard
@@ -66,7 +66,7 @@ export default function test() {
         <ImageAndTextCard
           href="#synthesizeResults"
           imgSrc="/moduleIcons/synthesizeResults.png"
-          text="Synthesize Results and modify designs: Organize data, identify patterns and themes, and derive actionable insights. Apply insights to enhance design, focusing on usability and user experience improvements."
+          text="Synthesize results and modify designs: Organize data, identify patterns and themes, and derive actionable insights. Apply insights to enhance design, focusing on usability and user experience improvements."
         />
       </div>
       <div className="container pt-5">

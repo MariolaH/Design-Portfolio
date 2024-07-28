@@ -46,7 +46,7 @@ export default function define() {
           <ImageAndTextCard
             href="#problem-statement"
             imgSrc="/moduleIcons/problemStatements.png"
-            text="Problem statement:  concisely describes a user need that the design must address"
+            text="Problem statement:  concisely describes a user need that the design must address."
           />
 
           <ImageAndTextCard

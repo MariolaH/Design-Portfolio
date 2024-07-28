@@ -23,7 +23,7 @@ export default function CS1hifi() {
       subheading: "The Importance of High-Fidelity Prototyping",
       paragraphs: [
         "High-fidelity prototyping is a crucial stage in the UX design process. By creating detailed and interactive representations of ideas, designers can test and refine solutions based on user feedback. This phase builds on the insights and ideas generated during the ideation stage, bringing concepts to life in a way that allows for practical evaluation and iteration.",
-        "Developing high-fidelity prototypes is essential for identifying the most effective solutions. During this phase, we create mockups and assemble them into a working prototype for further testing and refinement. This helps in creating innovative and user-centered designs that are both functional and engaging.",
+        "Developing high-fidelity prototypes is essential for identifying the most effective solutions. During this phase, I create mockups and assemble them into a working prototype for further testing and refinement. This helps in creating innovative and user-centered designs that are both functional and engaging.",
         "The Prototype section of my portfolio is a comprehensive guide to transforming ideas into tangible solutions. By delving into these prototyping activities, you will gain a deeper appreciation of the iterative design process and how it leads to more effective and meaningful user-centered designs.",
       ],
     },
@@ -94,7 +94,7 @@ export default function CS1hifi() {
           <ImageCard imgSrc="/CS3MockUps/App5.png" />
           <ImageCard imgSrc="/CS3MockUps/App6.png" /> */}
 
-          <div className="container ">
+          <div className="container" id="high-fidelityPrototype">
             <div className="row justify-content-center">
               <video
                 className="responsive-video responsive-video1 mb-5"
