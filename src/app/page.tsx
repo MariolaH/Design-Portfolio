@@ -378,7 +378,7 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax">
           <div className="mt-4">
-            <div className="button-group text-center py-5 button-group1">
+            <div className="button-group text-center py-5 button-group1 mt-5">
               <Link
                 href="https://mariola-portfolio.vercel.app/"
                 target="_blank"
@@ -396,18 +396,18 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="button-group mb-5">
+            <div className="button-group pb-5 mb-5">
               <Link
                 href="https://www.linkedin.com/in/mariola-hullings/"
                 target="_blank"
-                className="btn btn-purple btn-icon mx-2"
+                className="btn btn-purple btn-icon mx-2 pb-5"
               >
                 <img src="/linkedin.svg" alt="LinkedIn" className="icon-svg" />
               </Link>
               <Link
                 href="https://github.com/MariolaH"
                 target="_blank"
-                className="btn btn-purple btn-icon mx-2"
+                className="btn btn-purple btn-icon mx-2 pb-5"
               >
                 <img src="/github.svg" alt="GitHub" className="icon-svg" />
               </Link>

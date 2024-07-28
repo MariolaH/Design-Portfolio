@@ -227,6 +227,7 @@ header p {
   .button-group1 {
     flex-direction: column;
     gap: 20px;
+    padding-top: 50px;
   }
 }
 
