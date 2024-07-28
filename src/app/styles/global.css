@@ -59,6 +59,7 @@ ul {
 .fixed-content p {
   font-size: 1.75rem;
   color: #fff;
+  padding-top: 10px;
 }
 
 /* Header Styles */
@@ -163,6 +164,8 @@ header p {
 
   .display-4 {
     font-size: 2rem; /* Adjust the font size for smaller screens */
+    color: #000;
+
   }
 
   .lead {
@@ -212,13 +215,13 @@ header p {
   
   
   .fixed-content h1 {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     color: #fff;
   }
   
   .fixed-content p {
-    padding-top: 15px;
-    font-size: 1.0rem;
+    padding-top: 5px;
+    font-size: 0.85rem;
     color: #fff;
   }
 }
