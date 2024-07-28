@@ -277,6 +277,7 @@ header p {
   fill: currentColor; /* Ensures the SVG uses the current text color */
 }
 
+
 .button-group {
   display: flex;
   justify-content: center;
