@@ -24,37 +24,7 @@ export default function caseStudyOne() {
               </div>
             </div>
             </div>
-            {/* <div className="d-flex justify-content-center mt-5">
-          <div className="row justify-content-center mt-5 btn-round image-container">
-            <LinkCard
-              href="/caseStudyOne/empathize/"
-              imgSrc="/DesignProcess/E.png"
-              text="Empathize"
-            />
-            <LinkCard
-              href="/caseStudyOne/define"
-              imgSrc="/DesignProcess/D.png"
-              text="Define"
-            />
-            <LinkCard
-              href="/caseStudyOne/ideate"
-              imgSrc="/DesignProcess/I.png"
-              text="Ideate"
-            />
-            <LinkCard
-              href="/caseStudyOne/prototype"
-              imgSrc="/DesignProcess/Design.png"
-              text="Prototype"
-            />
-            <LinkCard
-              href="/caseStudyOne/test"
-              imgSrc="/DesignProcess/Test.png"
-              text="Test"
-            />
-          </div>
-        </div> */}
-            {/* <h4 className="container text-center justify-content-center">Product Development Lifecycle Documentation </h4>
-      <h4 className="container text-center justify-content-center">Coming Soon... </h4> */}
+
       <div className="d-flex justify-content-center mt-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
             {/* <LinkCard
