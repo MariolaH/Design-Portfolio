@@ -25,7 +25,9 @@ export default function empathize() {
             <p>Provide Essential Information</p>
             <p>Enable patrons to schedule their visits</p>
    
-
+            <p>
+            Role in the Project: Lead UX / UI Designer
+        </p>
         <div className="d-flex justify-content-center mt-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
             <LinkCard

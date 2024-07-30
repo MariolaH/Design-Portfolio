@@ -68,7 +68,7 @@ export default function Home() {
               Hi, I&apos;m Mariola
             </h1>
             <p className="mainSubheader lead animated">
-              A UX / UI Designer and Software Developer
+              UX / UI Designer and Software Developer
             </p>
           </div>
         </header>
