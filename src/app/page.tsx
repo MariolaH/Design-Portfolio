@@ -173,7 +173,6 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
-
       <div className="container text-center py-5">
         <h3 className="headerFont mainHeader mb-4 section-heading p-4 text-uppercase">
           Skills
