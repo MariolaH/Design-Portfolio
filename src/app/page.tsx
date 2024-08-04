@@ -19,7 +19,7 @@ const certificates: Certificate[] = [
   { src: "/Certificates/ConductUXResearchandTestEarlyConcepts.png" },
   { src: "/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png" },
   { src: "/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png" },
-  // { src: '/Certificates/GoogleUXDesignProfessionalCertificate.png' },
+  { src: '/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png' },
 ];
 
 export default function Home() {
