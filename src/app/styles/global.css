@@ -716,8 +716,8 @@ section {
   transition: 0.3s;
   cursor: pointer;
   width: 100%; /* Make icon larger */
-  max-width: 300px; /* Increase size for readability */
-  max-height: 300px; /* Increase size for readability */
+  max-width: 200px; /* Increase size for readability */
+  max-height: 200px; /* Increase size for readability */
 }
 
 @media (max-width: 768px) {
@@ -729,6 +729,17 @@ section {
     max-width: 250px; /* Increase size for readability */
     max-height: 300px; /* Increase size for readability */
   }
+
+  /* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /* max-width: 80%; */
+  max-height: 30%;
+  width: auto;
+  height: auto;
+}
+
 }
 
 /* The Modal (background) */
@@ -756,7 +767,7 @@ section {
   margin: auto;
   display: block;
   /* max-width: 80%; */
-  max-height: 80%;
+  max-height: 60%;
   width: auto;
   height: auto;
 }
