@@ -20,6 +20,7 @@ const certificates: Certificate[] = [
   { src: "/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png" },
   { src: "/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png" },
   { src: '/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png' },
+  { src: '/Certificates/Google.png' },
 ];
 
 export default function Home() {
