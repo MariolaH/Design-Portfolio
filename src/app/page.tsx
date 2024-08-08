@@ -110,6 +110,22 @@ export default function Home() {
           </div>
 
           {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
+            <Link
+              href="/caseStudyOne"
+              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
+            >
+              <div className="mb-3 mt-4 image-container">
+                <img
+                  src="/Flowerwireframe.png"
+                  className="img-fluid default-image hover-image"
+                />
+                <img src="/CaseStudy1.png" className="img-fluid" />
+              </div>
+              <p className="text-muted">Wisconsin Bucket List</p>
+            </Link>
+          </div> */}
+
+          {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
         <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
           <div className="mb-3">
             <img src="/app.png" className="img-fluid small-img" />
