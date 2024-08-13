@@ -144,7 +144,6 @@ export default function Home() {
       </div> */}
         </div>
       </section>
-
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
