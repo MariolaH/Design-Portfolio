@@ -71,23 +71,20 @@ export default function cs1prototype() {
           imgSrc="/moduleIcons/digitalWireframes.png"
           text="Digital wireframes: Developing interactive digital layouts to simulate user interactions."
         />
-        <ImageAndTextCard
+        {/* <ImageAndTextCard
           href="#empathy-map"
           imgSrc="/moduleIcons/lowFidelityPrototypes.png"
           text="Low-fidelity prototypes: Initial interactive models to test and refine design concepts."
-        />
+        /> */}
       </div>
       <div className="container pt-5">
       <div className="row justify-content-center">
 
-      <ImageCard id="digitalWireframes" imgSrc="/FlowerWebsite/App/Wireframes/1.png" />
-      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/2.png" />
-      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/3.png" />
-      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/4.png" />
-      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app1.png" />
-      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app2.png" />
-      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app3.png" />
-      <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/app4.png" />
+      <ImageCard id="digitalWireframes" imgSrc="/WisconsinBucketList/1.png" />
+      <ImageCard imgSrc="/WisconsinBucketList/2.png" />
+      <ImageCard imgSrc="/WisconsinBucketList/3.png" />
+      <ImageCard imgSrc="/WisconsinBucketList/4.png" />
+      
       
         {/* <ImageCard imgSrc="/empathizeCS3/researchGoals.png" />
         <ImageCard imgSrc="/empathizeCS3/audience.png" />

@@ -67,14 +67,11 @@ export default function CS1hifi() {
       </div>
       <div className="container pt-5">
         <div className="row justify-content-center">
-        <ImageCard id="mock-ups" imgSrc="/FlowerWebsite/App/Wireframes/Mockup1.png" />
-        <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/Mockup2.png" />
-        <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/Mockup3.png" />
-        <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/Mockup4.png" />
-        <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/mockupApp1.png" />
-        <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/mockupApp2.png" />
-        <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/mockupApp3.png" />
-        <ImageCard imgSrc="/FlowerWebsite/App/Wireframes/mockupApp4.png" />
+        <ImageCard id="mock-ups" imgSrc="/WisconsinBucketList/MU1.png" />
+        <ImageCard imgSrc="/WisconsinBucketList/MU2.png" />
+        <ImageCard imgSrc="/WisconsinBucketList/MU3.png" />
+        <ImageCard imgSrc="/WisconsinBucketList/MU4.png" />
+        <ImageCard imgSrc="/WisconsinBucketList/MU5.png" />
         
 
           {/* <ImageCard imgSrc="/CS3MockUps/1.png" />
@@ -101,19 +98,7 @@ export default function CS1hifi() {
                 controls
                 preload="auto"
               >
-                <source src="/FlowerWebsite/App/Wireframes/FlowersWebsite.mp4" type="video/mp4" />
-                <track
-                  src="/CS3prototype/captions.vtt"
-                  kind="subtitles"
-                  srcLang="en"
-                  label="English"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div className="row justify-content-center">
-              <video className="responsive-video mb-5" controls preload="auto">
-                <source src="/FlowerWebsite/App/Wireframes/FlowerApp.mp4" type="video/mp4" />
+                <source src="/WisconsinBucketList/Prototype.mp4" type="video/mp4" />
                 <track
                   src="/CS3prototype/captions.vtt"
                   kind="subtitles"

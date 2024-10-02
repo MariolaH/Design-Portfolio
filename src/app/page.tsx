@@ -78,6 +78,36 @@ export default function Home() {
       <section className="container text-center py-5">
         <h3 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h3>
         <div className="row p-4 justify-content-center">
+        <div className="col-md-4 mb-4 d-flex justify-content-center">
+            <Link
+              href="/caseStudyOne"
+              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
+            >
+              <div className="mb-3 mt-4 image-container">
+                <img
+                  src="/wireframeBook.png"
+                  className="img-fluid default-image hover-image"
+                />
+                <img src="/WisconsinBucketListMockUP.png" className="img-fluid" />
+              </div>
+              <p className="text-muted">The Wisconsin Bucket List</p>
+            </Link>
+          </div>
+          <div className="col-md-4 mb-4 d-flex justify-content-center">
+            <Link
+              href="/caseStudyTwo"
+              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
+            >
+              <div className="mb-3 mt-4 image-container">
+                <img
+                  src="/Flowerwireframe.png"
+                  className="img-fluid default-image hover-image"
+                />
+                <img src="/CaseStudy1.png" className="img-fluid" />
+              </div>
+              <p className="text-muted">Flower Catalogue Website & App</p>
+            </Link>
+          </div>
           <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
               href="/caseStudyThree"
@@ -93,37 +123,6 @@ export default function Home() {
               <p className="text-muted">Museum Website & App</p>
             </Link>
           </div>
-          <div className="col-md-4 mb-4 d-flex justify-content-center">
-            <Link
-              href="/caseStudyOne"
-              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
-            >
-              <div className="mb-3 mt-4 image-container">
-                <img
-                  src="/Flowerwireframe.png"
-                  className="img-fluid default-image hover-image"
-                />
-                <img src="/CaseStudy1.png" className="img-fluid" />
-              </div>
-              <p className="text-muted">Flower Catalogue Website & App</p>
-            </Link>
-          </div>
-          
-          {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
-            <Link
-              href="/caseStudyOne"
-              className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
-            >
-              <div className="mb-3 mt-4 image-container">
-                <img
-                  src="/Flowerwireframe.png"
-                  className="img-fluid default-image hover-image"
-                />
-                <img src="/CaseStudy1.png" className="img-fluid" />
-              </div>
-              <p className="text-muted">Wisconsin Bucket List</p>
-            </Link>
-          </div> */}
 
           {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
         <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
