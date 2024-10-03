@@ -80,7 +80,7 @@ export default function Home() {
         <div className="row p-4 justify-content-center">
         <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
-              href="/caseStudyOne"
+              href="/WisconsinBucketListBook"
               className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
             >
               <div className="mb-3 mt-4 image-container">
@@ -95,7 +95,7 @@ export default function Home() {
           </div>
           <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
-              href="/caseStudyTwo"
+              href="/FlowersFlowersFlowersWebsite"
               className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
             >
               <div className="mb-3 mt-4 image-container">
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
           <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
-              href="/caseStudyThree"
+              href="/MuseumWebsite"
               className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
             >
               <div className="mb-3 mt-4 image-container">
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
 
           {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
-        <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
+        <Link href="/FlowersFlowersFlowersWebsite" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
           <div className="mb-3">
             <img src="/app.png" className="img-fluid small-img" />
           </div>
@@ -134,7 +134,7 @@ export default function Home() {
       </div> */}
 
           {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
-        <Link href="/caseStudyTwo" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container">
+        <Link href="/FlowersFlowersFlowersWebsite" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container">
           <div className="mb-3">
           <img src="/appWireframe.png" className="img-fluid default-image hover-image small-img" />
             <img src="/app.png" className="img-fluid small-img" />

@@ -3,62 +3,61 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import "/src/app/styles/global.css";
-import Icon from "../icons";
 import LinkCard from "../components/linkCard";
 
-export default function caseStudyOne() {
+export default function FlowersFlowersFlowersWebsite() {
   return (
     <div>
       <section className="container text-center py-5">
-        <h2 className="headerFont mainHeader mb-5 mt-5">The Wisconsin Bucket List Website</h2>
-        <p className=" mt-5">
-        I designed and developed an interactive website for an author, crafting an engaging online platform to highlight their work and foster meaningful connections with readers. </p>
+      <h2 className="headerFont mainHeader mb-5 mt-5">Flowers Flowers Flowers Website</h2>
+        <p className="mb-5 mt-5">
+          Design a flower catalogue website for a florist.
+        </p>
         <div className="row justify-content-center mt-5">
             <div className="col-md-2 d-flex justify-content-center">
               <div className="around p-4 d-block shadow text-decoration-none">
                 <div className="size">
-                <a href="https://www.bookthewisconsinbucketlist.com/" target="_blank"> <img src="/WIWebsite.png" /> </a>
-                {/* <img src="/flowers.png" /> */}
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vQxDZK_2-fSdpQ4_jTZp7Dn1YUB-VS0ZrzNranteznP__tqwoOtuWzq6A8Y86HRgCeAzZzbFRvBq6Ut/pub?start=true&loop=true&delayms=30000" target="_blank"> <img src="/flowers.png" /> </a>
                 </div>
               </div>
             </div>
             </div>
+
       <div className="d-flex justify-content-center mt-5 mb-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
             {/* <LinkCard
-              href="/caseStudyThree/empathize"
+              href="/MuseumWebsite/empathize"
               imgSrc="/DesignProcess/E.png"
               text="Empathize"
             />
             <LinkCard
-              href="/caseStudyThree/define"
+              href="/MuseumWebsite/define"
               imgSrc="/DesignProcess/D.png"
               text="Define"
             />
             <LinkCard
-              href="/caseStudyThree/ideate"
+              href="/MuseumWebsite/ideate"
               imgSrc="/DesignProcess/I.png"
               text="Ideate"
             /> */}
             <LinkCard
-              href="/caseStudyOne/prototype"
+              href="/FlowersFlowersFlowersWebsite/prototype"
               imgSrc="/DesignProcess/Design2.png"
               text="Prototype"
             />
             {/* <LinkCard
-              href="/caseStudyThree/test"
+              href="/MuseumWebsite/test"
               imgSrc="/DesignProcess/Test.png"
               text="Test"
             /> */}
              <LinkCard
-              href="/caseStudyOne/HiFi"
+              href="/FlowersFlowersFlowersWebsite/HiFi"
               imgSrc="/DesignProcess/Design2.png"
               text="Mock Ups"
             />
           </div>
         </div>
-
-      </section>
+        </section>
     </div>
   );
 }
