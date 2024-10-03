@@ -30,7 +30,7 @@ export default function cs1prototype() {
     {
       subheading: "What You Will See in This Section",
       paragraphs: [
-        "In this section, you will be introduced to several key prototyping techniques that are essential for developing interactive models. These include:",
+        "In this section, you will be introduced to a key prototyping technique that is essential for developing interactive models. This includes:",
       ],
     },
   ];
