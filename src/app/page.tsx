@@ -244,6 +244,30 @@ export default function Home() {
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">
               <div className="mb-3">
+                <Icon src="/skills/Firebase.svg" alt="Firebase" />
+                <div className="tooltip">Firebase</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+              <div className="mb-3">
+                <Icon src="/skills/Docker.svg" alt="Docker" />
+                <div className="tooltip">Docker</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+              <div className="mb-3">
+                <Icon src="/skills/Git.svg" alt="Git" />
+                <div className="tooltip">Git</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+              <div className="mb-3">
                 <Icon src="/skills/Figma.svg" alt="Figma" />
                 <div className="tooltip">Figma</div>
               </div>
@@ -300,6 +324,14 @@ export default function Home() {
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">
               <div className="mb-3">
+                <Icon src="/skills/PostgresSQL.svg" alt="PostgresSQL" />
+                <div className="tooltip">PostgresSQL</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+              <div className="mb-3">
                 <Icon src="/skills/React.svg" alt="React" />
                 <div className="tooltip">React</div>
               </div>
@@ -345,22 +377,6 @@ export default function Home() {
               <div className="mb-3">
                 <Icon src="/skills/Xcode.svg" alt="Xcode" />
                 <div className="tooltip">Xcode</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Firebase.svg" alt="Firebase" />
-                <div className="tooltip">Firebase</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Git.svg" alt="Git" />
-                <div className="tooltip">Git</div>
               </div>
             </div>
           </div>
