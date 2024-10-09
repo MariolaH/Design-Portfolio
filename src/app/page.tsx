@@ -236,6 +236,14 @@ export default function Home() {
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">
               <div className="mb-3">
+                <Icon src="/skills/Canva.svg" alt="Canva" />
+                <div className="tooltip">Canva</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+              <div className="mb-3">
                 <Icon src="/skills/CSS3.svg" alt="CSS3" />
                 <div className="tooltip">CSS3</div>
               </div>
