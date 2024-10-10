@@ -133,15 +133,15 @@ export default function Home() {
         </Link>
       </div> */}
 
-          {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
-        <Link href="/FlowersFlowersFlowersWebsite" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container">
+          <div className="col-md-4 mb-4 d-flex justify-content-center">
+        <Link href="/DieHardAnglers" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container">
           <div className="mb-3">
-          <img src="/appWireframe.png" className="img-fluid default-image hover-image small-img" />
-            <img src="/app.png" className="img-fluid small-img" />
+          {/* <img src="/DieHardAnglers/DieHardAnglersMockUp.jpg" className="img-fluid default-image hover-image small-img" /> */}
+            <img src="/DieHardAnglers/DieHardAnglersMockUp.jpg" className="img-fluid small-img" />
           </div>
-          <p className="text-muted">Flower Catalogue App</p>
+          <p className="text-muted">Die Hard Anglers</p>
         </Link>
-      </div> */}
+      </div> 
         </div>
       </section>
       <div>
