@@ -5,6 +5,7 @@ import Link from "next/link";
 import "/src/app/styles/global.css";
 import Icon from "../icons";
 import LinkCard from "../components/linkCard";
+import Footer from "../components/footer";
 
 export default function WisconsinBucketListBook() {
   return (
@@ -59,6 +60,7 @@ export default function WisconsinBucketListBook() {
         </div>
 
       </section>
+      < Footer />
     </div>
   );
 }
