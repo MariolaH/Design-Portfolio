@@ -67,29 +67,11 @@ export default function DHAhifi() {
       </div>
       <div className="container pt-5">
         <div className="row justify-content-center">
-        {/* <ImageCard id="mock-ups" imgSrc="/WisconsinBucketList/MU1.png" />
-        <ImageCard imgSrc="/WisconsinBucketList/MU2.png" />
-        <ImageCard imgSrc="/WisconsinBucketList/MU3.png" />
-        <ImageCard imgSrc="/WisconsinBucketList/MU4.png" />
-        <ImageCard imgSrc="/WisconsinBucketList/MU5.png" /> */}
-        
-
-          {/* <ImageCard imgSrc="/CS3MockUps/1.png" />
-          <ImageCard imgSrc="/CS3MockUps/2.png" />
-          <ImageCard imgSrc="/CS3MockUps/3.png" />
-          <ImageCard imgSrc="/CS3MockUps/4.png" />
-          <ImageCard imgSrc="/CS3MockUps/5.png" />
-          <ImageCard imgSrc="/CS3MockUps/6.png" />
-          <ImageCard imgSrc="/CS3MockUps/7.png" />
-          <ImageCard imgSrc="/CS3MockUps/8.png" />
-          <ImageCard imgSrc="/CS3MockUps/9.png" />
-
-          <ImageCard imgSrc="/CS3MockUps/App1.png" />
-          <ImageCard imgSrc="/CS3MockUps/App2.png" />
-          <ImageCard imgSrc="/CS3MockUps/App3.png" />
-          <ImageCard imgSrc="/CS3MockUps/App4.png" />
-          <ImageCard imgSrc="/CS3MockUps/App5.png" />
-          <ImageCard imgSrc="/CS3MockUps/App6.png" /> */}
+        <ImageCard id="mock-ups" imgSrc="/DieHardAnglers/01.jpg" />
+        <ImageCard imgSrc="/DieHardAnglers/02.jpg" />
+        <ImageCard imgSrc="/DieHardAnglers/3.jpg" />
+        <ImageCard imgSrc="/DieHardAnglers/4.jpg" />
+        <ImageCard imgSrc="/DieHardAnglers/5.jpg" />
 
           <div className="container" id="high-fidelityPrototype">
             <div className="row justify-content-center">
