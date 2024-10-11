@@ -60,7 +60,7 @@ export default function DieHardAnglers() {
               text="Ideate"
             /> */}
             {/* <LinkCard
-              href="/WisconsinBucketListBook/prototype"
+              href="/DieHardAnglers/Prototype"
               imgSrc="/DesignProcess/Design2.png"
               text="Prototype"
             /> */}
@@ -69,11 +69,11 @@ export default function DieHardAnglers() {
               imgSrc="/DesignProcess/Test.png"
               text="Test"
             /> */}
-            {/* <LinkCard
-              href="/WisconsinBucketListBook/HiFi"
+            <LinkCard
+              href="/DieHardAnglers/HiFi"
               imgSrc="/DesignProcess/Design2.png"
-              text="Mock Ups"
-            /> */}
+              text="Prototype"
+            />
           </div>
         </div>
       </section>
