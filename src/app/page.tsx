@@ -7,6 +7,7 @@ import Link from "next/link";
 import "/src/app/styles/global.css";
 import styles from "./HomePage.module.css";
 import { useEffect, useState } from "react";
+import Footer from "./components/footer";
 
 interface Certificate {
   src: string;
@@ -463,6 +464,7 @@ export default function Home() {
             </div>
           </div>
         </header>
+        < Footer />
       </div>
     </div>
   );

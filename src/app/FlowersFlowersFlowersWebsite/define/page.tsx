@@ -3,6 +3,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import div from "next/link";
 import "/src/app/styles/global.css";
+import Footer from "@/app/components/footer";
 
 export default function define() {
   return (
@@ -61,6 +62,7 @@ export default function define() {
           </div>
      
       </section>
+      < Footer />
     </div>
   );
 }

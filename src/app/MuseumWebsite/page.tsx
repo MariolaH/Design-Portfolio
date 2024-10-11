@@ -5,6 +5,7 @@ import Link from "next/link";
 import "/src/app/styles/global.css";
 import Icon from "../icons";
 import LinkCard from "../components/linkCard";
+import Footer from "../components/footer";
 
 export default function empathize() {
   return (
@@ -63,6 +64,7 @@ export default function empathize() {
           </div>
         </div>
       </section>
+      < Footer />
     </div>
   );
 }

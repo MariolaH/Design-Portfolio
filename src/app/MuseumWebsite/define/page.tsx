@@ -8,6 +8,7 @@ import ImageAndTextCard from "@/app/components/imageAndTextCard";
 import Link from "next/link";
 import Image from "next/image";
 import Section from '@/app/components/section';
+import Footer from "@/app/components/footer";
 
 export default function define() {
   const scrollToTop = () => {
@@ -91,6 +92,7 @@ export default function define() {
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
       </button>
+      < Footer />
     </div>
   );
 }

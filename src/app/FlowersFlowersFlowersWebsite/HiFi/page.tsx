@@ -7,6 +7,7 @@ import ImageCard from "@/app/components/imageCard";
 import ImageAndTextCard from "@/app/components/imageAndTextCard";
 import Link from "next/link";
 import Section from "@/app/components/section";
+import Footer from "@/app/components/footer";
 
 export default function CS1hifi() {
   const scrollToTop = () => {
@@ -129,6 +130,7 @@ export default function CS1hifi() {
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
       </button>
+      < Footer />
     </div>
   );
 }

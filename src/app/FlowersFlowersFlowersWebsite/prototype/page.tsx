@@ -1,65 +1,3 @@
-// "use client";
-
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import div from "next/link";
-// import "/src/app/styles/global.css";
-
-// export default function prototype() {
-//   return (
-//     <div>
-//       <section className="container text-center py-5">
-//         <h2 className="mb-5 mt-5">PROTOTYPE PHASE</h2>
-        
-      
-//           <div className="row justify-content-center mt-5">
-//             <div className="col-md-2 d-flex justify-content-center">
-//               <div className="around p-4 d-block shadow text-decoration-none">
-//                 <div className="size">
-//                 <img src="/empathizeCS3/researchGoal.png" />
-//                 </div>
-//               </div>
-//             </div>
-//             </div>
-
-//             <div className="row justify-content-center mt-5">
-//             <div className="col-md-2 d-flex justify-content-center">
-//               <div className="around p-4 d-block shadow text-decoration-none">
-//                 <div className="size">
-//                 <img src="/empathizeCS3/audience.png" />
-//                 </div>
-//               </div>
-//             </div>
-//             </div>
-
-//             <div className="row justify-content-center mt-5">
-//             <div className="col-md-2 d-flex justify-content-center">
-//               <div className="around p-4 d-block shadow text-decoration-none">
-//                 <div className="img-fluid"></div>
-//               </div>
-//             </div>
-//             </div>
-//             <div className="row justify-content-center mt-5">
-//             <div className="col-md-2 d-flex justify-content-center">
-//               <div className="around p-4 d-block shadow text-decoration-none">
-//                 <div className="img-fluid"></div>
-//               </div>
-//             </div>
-//             </div>
-
-//             <div className="row justify-content-center mt-5">
-//             <div className="col-md-2 d-flex justify-content-center">
-//               <div className="around p-4 d-block shadow text-decoration-none">
-//                 <div className="img-fluid"></div>
-//               </div>
-//             </div>
-//           </div>
-     
-//       </section>
-//     </div>
-//   );
-// }
-
-
 "use client";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -69,6 +7,7 @@ import ImageCard from "@/app/components/imageCard";
 import ImageAndTextCard from "@/app/components/imageAndTextCard";
 import Link from "next/link";
 import Section from "@/app/components/section";
+import Footer from "@/app/components/footer";
 
 export default function cs1prototype() {
   const scrollToTop = () => {
@@ -189,6 +128,7 @@ export default function cs1prototype() {
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
       </button>
+      < Footer />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import "/src/app/styles/global.css";
 import Icon from "../icons";
 import LinkCard from "../components/linkCard";
+import Footer from "../components/footer";
 
 export default function DieHardAnglers() {
   return (
@@ -77,6 +78,7 @@ export default function DieHardAnglers() {
           </div>
         </div>
       </section>
+      < Footer />
     </div>
   );
 }
