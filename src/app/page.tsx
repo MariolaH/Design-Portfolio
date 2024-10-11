@@ -19,8 +19,10 @@ const certificates: Certificate[] = [
   { src: "/Certificates/ConductUXResearchandTestEarlyConcepts.png" },
   { src: "/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png" },
   { src: "/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png" },
-  { src: '/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png' },
-  { src: '/Certificates/Google.png' },
+  {
+    src: "/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png",
+  },
+  { src: "/Certificates/Google.png" },
 ];
 
 export default function Home() {
@@ -78,7 +80,7 @@ export default function Home() {
       <section className="container text-center py-5">
         <h3 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h3>
         <div className="row p-4 justify-content-center">
-        <div className="col-md-4 mb-4 d-flex justify-content-center">
+          <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
               href="/WisconsinBucketListBook"
               className="btn btn-light p-4 d-block shadow text-decoration-none equal-size image-hover-container"
@@ -88,7 +90,10 @@ export default function Home() {
                   src="/wireframeBook.png"
                   className="img-fluid default-image hover-image"
                 />
-                <img src="/WisconsinBucketListMockUP.png" className="img-fluid" />
+                <img
+                  src="/WisconsinBucketListMockUP.png"
+                  className="img-fluid"
+                />
               </div>
               <p className="text-muted">The Wisconsin Bucket List</p>
             </Link>
@@ -134,14 +139,20 @@ export default function Home() {
       </div> */}
 
           <div className="col-md-4 mb-4 d-flex justify-content-center">
-        <Link href="/DieHardAnglers" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container">
-          <div className="mb-3">
-          {/* <img src="/DieHardAnglers/DieHardAnglersMockUp.jpg" className="img-fluid default-image hover-image small-img" /> */}
-            <img src="/DieHardAnglers/DieHardAnglersMockUp.jpg" className="img-fluid small-img" />
+            <Link
+              href="/DieHardAnglers"
+              className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container"
+            >
+              <div className="mb-3">
+                {/* <img src="/DieHardAnglers/DieHardAnglersMockUp.jpg" className="img-fluid default-image hover-image small-img" /> */}
+                <img
+                  src="/DieHardAnglers/DieHardAnglersMockUp.jpg"
+                  className="img-fluid small-img"
+                />
+              </div>
+              <p className="text-muted">Die Hard Anglers</p>
+            </Link>
           </div>
-          <p className="text-muted">Die Hard Anglers</p>
-        </Link>
-      </div> 
         </div>
       </section>
       <div>
@@ -434,18 +445,18 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="button-group pb-5 mb-5">
+            <div className="button-group pb-5 mb-5 d-flex justify-content-center align-items-center">
               <Link
                 href="https://www.linkedin.com/in/mariola-hullings/"
                 target="_blank"
-                className="btn btn-purple btn-icon mx-2 pb-5"
+                className="btn btn-purple btn-icon mx-2"
               >
                 <img src="/linkedin.svg" alt="LinkedIn" className="icon-svg" />
               </Link>
               <Link
                 href="https://github.com/MariolaH"
                 target="_blank"
-                className="btn btn-purple btn-icon mx-2 pb-5"
+                className="btn btn-purple btn-icon mx-2"
               >
                 <img src="/github.svg" alt="GitHub" className="icon-svg" />
               </Link>
