@@ -757,7 +757,7 @@ section {
 } */
 
 .animated {
-  animation: fadeInUp 3s ease-out;
+  animation: fadeInUp 3s ease-out;  
 }
 
 .btn:hover {
@@ -917,3 +917,19 @@ section {
   transition: width 0.25s ease;
 }
 
+/* home button on pages */
+
+
+@media (max-width: 768px) {
+  #home-button {
+    width: 40px; /* Adjust size for mobile */
+    height: 50px; /* Keep aspect ratio */
+  }
+}
+
+@media (max-width: 576px) {
+  #home-button {
+    width: 30px; /* Even smaller for extra small screens */
+    height: 40px;
+  }
+}
