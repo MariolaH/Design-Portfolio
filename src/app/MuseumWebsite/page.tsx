@@ -33,34 +33,35 @@ export default function empathize() {
           <div className="row justify-content-center mt-5 btn-round image-container">
             <LinkCard
               href="/MuseumWebsite/empathize"
-              imgSrc="/DesignProcess/E.png"
+              imgSrc="/Empathize .png"
               text="Empathize"
             />
             <LinkCard
               href="/MuseumWebsite/define"
-              imgSrc="/DesignProcess/D.png"
+              imgSrc="/Define.png"
               text="Define"
             />
             <LinkCard
               href="/MuseumWebsite/ideate"
-              imgSrc="/DesignProcess/I.png"
+              imgSrc="/Ideate.png"
               text="Ideate"
             />
             <LinkCard
               href="/MuseumWebsite/prototype"
-              imgSrc="/DesignProcess/Design2.png"
+              imgSrc="/prototypeLogo.png"
               text="Prototype"
             />
             <LinkCard
               href="/MuseumWebsite/test"
-              imgSrc="/DesignProcess/Test.png"
+              imgSrc="/Test.png"
               text="Test"
             />
             <LinkCard
               href="/MuseumWebsite/hiFi"
-              imgSrc="/DesignProcess/Design2.png"
+              imgSrc="/mockup.png"
               text="Mock Ups"
             />
+            
           </div>
         </div>
       </section>

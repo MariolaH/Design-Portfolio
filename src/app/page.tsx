@@ -251,14 +251,14 @@ export default function Home() {
         <h2 className="mb-4 section-heading mainHeader p-4 text-uppercase">
           UX Certificates
         </h2>
-        <div className="row p-4 justify-content-center">
+        <div className="row p-12 justify-content-center">
           {certificates.map((certificate, index) => (
             <div
               key={index}
-              className="col-12 col-sm-6 col-md-4 mb-4 skill-container"
+              className="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 skill-container"
             >
               <div
-                className=" p-4 d-block shadow text-decoration-none"
+                className=" p-2 d-block shadow text-decoration-none"
                 onClick={() => enlargeImage(certificate)}
               >
                 <img
@@ -291,7 +291,7 @@ export default function Home() {
         <h2 className="headerFont mainHeader mb-4 section-heading p-4 text-uppercase">
           Skills
         </h2>
-        <div className="row p-4">
+        <div className="row p-2">
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">
               <div className="mb-3">

@@ -62,7 +62,7 @@ export default function DieHardAnglers() {
             /> */}
             {/* <LinkCard
               href="/DieHardAnglers/Prototype"
-              imgSrc="/DesignProcess/Design2.png"
+              imgSrc="/prototypeLogo.png"
               text="Prototype"
             /> */}
             {/* <LinkCard
@@ -72,7 +72,7 @@ export default function DieHardAnglers() {
             /> */}
             <LinkCard
               href="/DieHardAnglers/HiFi"
-              imgSrc="/DesignProcess/Design2.png"
+              imgSrc="/prototypeLogo.png"
               text="Prototype"
             />
           </div>

@@ -47,7 +47,7 @@ export default function FlowersFlowersFlowersWebsite() {
             /> */}
             <LinkCard
               href="/FlowersFlowersFlowersWebsite/prototype"
-              imgSrc="/DesignProcess/Design2.png"
+              imgSrc="/prototypeLogo.png"
               text="Prototype"
             />
             {/* <LinkCard
@@ -57,7 +57,7 @@ export default function FlowersFlowersFlowersWebsite() {
             /> */}
              <LinkCard
               href="/FlowersFlowersFlowersWebsite/HiFi"
-              imgSrc="/DesignProcess/Design2.png"
+              imgSrc="/mockup.png"
               text="Mock Ups"
             />
           </div>

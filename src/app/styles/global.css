@@ -556,7 +556,9 @@ section {
 
 @media (max-width: 576px) {
   .link-card {
-    max-width: 150px; /* Further shrink the cards on extra small screens */
+    max-width: 100px; /* Further shrink the cards on extra small screens */
+    font-size: 0.75rem;
+    text-align: center;
   }
 
 }
@@ -791,8 +793,8 @@ section {
   transition: 0.3s;
   cursor: pointer;
   width: 100%; /* Make icon larger */
-  max-width: 200px; /* Increase size for readability */
-  max-height: 200px; /* Increase size for readability */
+  max-width: 300px; /* Increase size for readability */
+  max-height: 240px; /* Increase size for readability */
 }
 
 @media (max-width: 768px) {
