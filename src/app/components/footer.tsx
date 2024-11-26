@@ -6,7 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 text-black py-6">
       <div className="container mx-auto text-center flex flex-col items-center">
-        <div className="mb-4">
+        <div className="mb-4 mt-4">
+          <a href="https://www.designmatrixlabs.com/" target="_blank">
+          <img src="/design-matrix-labs-high-resolution-logo-grayscale.png" className="footerLogo"/></a>
           {/* Publisher Image */}
           {/* <Image 
         src="/publisher.png" 
@@ -21,7 +23,8 @@ const Footer = () => {
           reserved.
         </p>
         <p className="text-sm mt-2 md:text-base">
-          Website developed by Design Matrix Labs LLC.
+          Website developed by{" "}
+           <a href="https://www.designmatrixlabs.com/" target="_blank">Design Matrix Labs</a>
         </p>
       </div>
     </footer>

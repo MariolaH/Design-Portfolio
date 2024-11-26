@@ -8,6 +8,7 @@ import "/src/app/styles/global.css";
 import styles from "./HomePage.module.css";
 import { useEffect, useState } from "react";
 import Footer from "./components/footer";
+import Typewriter from 'typewriter-effect';
 
 interface Certificate {
   src: string;
@@ -20,11 +21,83 @@ const certificates: Certificate[] = [
   { src: "/Certificates/ConductUXResearchandTestEarlyConcepts.png" },
   { src: "/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png" },
   { src: "/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png" },
-  {
-    src: "/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png",
-  },
+  { src: "/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png" },
   { src: "/Certificates/Google.png" },
 ];
+
+const Breadcrumbs = () => {
+  const [activeSection, setActiveSection] = useState("Home");
+  const [progressWidth, setProgressWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return; // Ensure this only runs in the browser
+
+    const handleScroll = () => {
+      const sections = [
+        { id: "ux-ui-design", label: "UX / UI Design" },
+        { id: "certificates", label: "UX Certificates" },
+        { id: "skills", label: "Skills" },
+        { id: "resume", label: "Resume" },
+      ];
+
+      const scrollPosition = window.scrollY + 400; // Offset for visibility
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const sectionElement = document.getElementById(sections[i].id);
+        if (sectionElement) {
+          const sectionTop = sectionElement.offsetTop;
+          const sectionBottom = sectionTop + sectionElement.offsetHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            setActiveSection(sections[i].label);
+            break;
+          }
+        }
+      }
+
+      // Calculate the progress bar width only if window is defined
+      if (typeof window !== 'undefined') {
+        const maxScroll = document.body.scrollHeight - window.innerHeight;
+        setProgressWidth((window.scrollY / maxScroll) * 100);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+  return (
+    <nav
+      aria-label="breadcrumb"
+      className="breadcrumb-container sticky-top text-white shadow-sm py-2"
+    >
+      <ol className="breadcrumb mb-0 container text-white">
+        <li className={`breadcrumb-item ${activeSection === "Home" ? "active" : ""}`}>
+          <Link href="/">Home</Link>
+        </li>
+        <li className={`breadcrumb-item ${activeSection === "UX / UI Design" ? "active" : ""}`}>
+          <Link href="#ux-ui-design">UX / UI Design</Link>
+        </li>
+        <li className={`breadcrumb-item ${activeSection === "UX Certificates" ? "active" : ""}`}>
+          <Link href="#certificates">UX Certificates</Link>
+        </li>
+        <li className={`breadcrumb-item ${activeSection === "Skills" ? "active" : ""}`}>
+          <Link href="#skills">Skills</Link>
+        </li>
+        <li className={`breadcrumb-item ${activeSection === "Resume" ? "active" : ""}`}>
+          <Link href="#resume">Resume</Link>
+        </li>
+      </ol>
+      <div
+        className="progress-bar"
+        style={{ width: `${progressWidth}%`, backgroundColor: "#007bff", height: "4px", position: "fixed", top: 0, left: 0, zIndex: 1050 }}
+      ></div>
+    </nav>
+  );
+};
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -65,21 +138,35 @@ export default function Home() {
 
   return (
     <div>
+      {/* < Breadcrumbs /> */}
       <div>
-        <header className="text-center text-light py-5 homepageHeader parallax">
+        <section id="home">
+
+        <header className=" text-center text-light py-5 homepageHeader parallax">
           <div className={`fixed-content ${scrolled ? "scrolled" : ""}`}>
             <h1 className="display-4 mainHeader animated">
               Hi, I&apos;m Mariola
             </h1>
-            <p className="mainSubheader lead animated">
+            <div className="mainSubheader lead animated">
+            <Typewriter
+  options={{
+    strings: ['UX / UI Designer and Software Developer'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
+            </div>
+            
+            {/* <p className="mainSubheader lead animated">
               UX / UI Designer and Software Developer
-            </p>
+            </p> */}
           </div>
         </header>
+        </section>
       </div>
 
-      <section className="container text-center py-5">
-        <h3 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h3>
+      <section id="ux-ui-design" className="text-center py-5">
+        <h2 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h2>
         <div className="row p-4 justify-content-center">
           <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
@@ -160,10 +247,10 @@ export default function Home() {
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
 
-      <section className="container text-center py-5">
-        <h3 className="mb-4 section-heading mainHeader p-4 text-uppercase">
+      <section id="certificates" className="text-center py-5">
+        <h2 className="mb-4 section-heading mainHeader p-4 text-uppercase">
           UX Certificates
-        </h3>
+        </h2>
         <div className="row p-4 justify-content-center">
           {certificates.map((certificate, index) => (
             <div
@@ -200,10 +287,10 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
-      <div className="container text-center py-5">
-        <h3 className="headerFont mainHeader mb-4 section-heading p-4 text-uppercase">
+      <section id="skills" className=" text-center py-5">
+        <h2 className="headerFont mainHeader mb-4 section-heading p-4 text-uppercase">
           Skills
-        </h3>
+        </h2>
         <div className="row p-4">
           <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
             <div className="skill-icon p-4 d-block shadow text-decoration-none">
@@ -424,8 +511,8 @@ export default function Home() {
         <SkillCard imgSrc="skills/Firebase.svg" altText="Firebase" tooltipText="Firebase" /> 
         <SkillCard imgSrc="skills/Git.svg" altText="Git" tooltipText="Git" />  */}
         </div>
-      </div>
-      <div>
+      </section>
+      <section id="resume">
         <header className="text-center text-light py-5 homepageHeader2 homepageHeader3 parallax">
           <div className="mt-4">
             <div className="button-group text-center py-5 button-group1 mt-5">
@@ -465,7 +552,7 @@ export default function Home() {
           </div>
         </header>
         < Footer />
-      </div>
+      </section>
     </div>
   );
 }

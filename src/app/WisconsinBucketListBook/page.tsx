@@ -15,14 +15,13 @@ export default function WisconsinBucketListBook() {
         <p className=" mt-5">
         I designed and developed an interactive website for an author, crafting an engaging online platform to highlight their work and foster meaningful connections with readers. </p>
         <div className="row justify-content-center mt-5">
-            <div className="col-md-2 d-flex justify-content-center">
-              <div className="around p-4 d-block shadow text-decoration-none">
-                <div className="size">
-                <a href="https://www.bookthewisconsinbucketlist.com/" target="_blank"> <img src="/WIWebsite.png" /> </a>
-                {/* <img src="/flowers.png" /> */}
-                </div>
-              </div>
-            </div>
+        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+  <div className="around p-4 d-block shadow text-decoration-none">
+    <a href="https://www.bookthewisconsinbucketlist.com/" target="_blank">
+      <img src="/WIWebsite.png" className="responsive-image" />
+    </a>
+  </div>
+</div>
             </div>
       <div className="d-flex justify-content-center mt-5 mb-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
