@@ -556,7 +556,7 @@ section {
 
 @media (max-width: 576px) {
   .link-card {
-    max-width: 100px; /* Further shrink the cards on extra small screens */
+    max-width: 250px; /* Further shrink the cards on extra small screens */
     font-size: 0.75rem;
     text-align: center;
   }

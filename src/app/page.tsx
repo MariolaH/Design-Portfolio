@@ -8,7 +8,7 @@ import "/src/app/styles/global.css";
 import styles from "./HomePage.module.css";
 import { useEffect, useState } from "react";
 import Footer from "./components/footer";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
 interface Certificate {
   src: string;
@@ -21,7 +21,9 @@ const certificates: Certificate[] = [
   { src: "/Certificates/ConductUXResearchandTestEarlyConcepts.png" },
   { src: "/Certificates/CreateHigh-FidelityDesignsandPrototypesinFigma.png" },
   { src: "/Certificates/BuildDynamicUserInterfaces(UI)forWebsites.png" },
-  { src: "/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png" },
+  {
+    src: "/Certificates/DesignaUserExperienceforSocialGood&PrepareforJobs.png",
+  },
   { src: "/Certificates/Google.png" },
 ];
 
@@ -30,7 +32,7 @@ const Breadcrumbs = () => {
   const [progressWidth, setProgressWidth] = useState(0);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return; // Ensure this only runs in the browser
+    if (typeof window === "undefined") return; // Ensure this only runs in the browser
 
     const handleScroll = () => {
       const sections = [
@@ -56,7 +58,7 @@ const Breadcrumbs = () => {
       }
 
       // Calculate the progress bar width only if window is defined
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         const maxScroll = document.body.scrollHeight - window.innerHeight;
         setProgressWidth((window.scrollY / maxScroll) * 100);
       }
@@ -68,32 +70,59 @@ const Breadcrumbs = () => {
     };
   }, []);
 
-
   return (
     <nav
       aria-label="breadcrumb"
       className="breadcrumb-container sticky-top text-white shadow-sm py-2"
     >
       <ol className="breadcrumb mb-0 container text-white">
-        <li className={`breadcrumb-item ${activeSection === "Home" ? "active" : ""}`}>
+        <li
+          className={`breadcrumb-item ${
+            activeSection === "Home" ? "active" : ""
+          }`}
+        >
           <Link href="/">Home</Link>
         </li>
-        <li className={`breadcrumb-item ${activeSection === "UX / UI Design" ? "active" : ""}`}>
+        <li
+          className={`breadcrumb-item ${
+            activeSection === "UX / UI Design" ? "active" : ""
+          }`}
+        >
           <Link href="#ux-ui-design">UX / UI Design</Link>
         </li>
-        <li className={`breadcrumb-item ${activeSection === "UX Certificates" ? "active" : ""}`}>
+        <li
+          className={`breadcrumb-item ${
+            activeSection === "UX Certificates" ? "active" : ""
+          }`}
+        >
           <Link href="#certificates">UX Certificates</Link>
         </li>
-        <li className={`breadcrumb-item ${activeSection === "Skills" ? "active" : ""}`}>
+        <li
+          className={`breadcrumb-item ${
+            activeSection === "Skills" ? "active" : ""
+          }`}
+        >
           <Link href="#skills">Skills</Link>
         </li>
-        <li className={`breadcrumb-item ${activeSection === "Resume" ? "active" : ""}`}>
+        <li
+          className={`breadcrumb-item ${
+            activeSection === "Resume" ? "active" : ""
+          }`}
+        >
           <Link href="#resume">Resume</Link>
         </li>
       </ol>
       <div
         className="progress-bar"
-        style={{ width: `${progressWidth}%`, backgroundColor: "#007bff", height: "4px", position: "fixed", top: 0, left: 0, zIndex: 1050 }}
+        style={{
+          width: `${progressWidth}%`,
+          backgroundColor: "#007bff",
+          height: "4px",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 1050,
+        }}
       ></div>
     </nav>
   );
@@ -141,27 +170,26 @@ export default function Home() {
       {/* < Breadcrumbs /> */}
       <div>
         <section id="home">
+          <header className=" text-center text-light py-5 homepageHeader parallax">
+            <div className={`fixed-content ${scrolled ? "scrolled" : ""}`}>
+              <h1 className="display-4 mainHeader animated">
+                Hi, I&apos;m Mariola
+              </h1>
+              <div className="mainSubheader lead animated">
+                <Typewriter
+                  options={{
+                    strings: ["UX / UI Designer and Software Developer"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </div>
 
-        <header className=" text-center text-light py-5 homepageHeader parallax">
-          <div className={`fixed-content ${scrolled ? "scrolled" : ""}`}>
-            <h1 className="display-4 mainHeader animated">
-              Hi, I&apos;m Mariola
-            </h1>
-            <div className="mainSubheader lead animated">
-            <Typewriter
-  options={{
-    strings: ['UX / UI Designer and Software Developer'],
-    autoStart: true,
-    loop: true,
-  }}
-/>
-            </div>
-            
-            {/* <p className="mainSubheader lead animated">
+              {/* <p className="mainSubheader lead animated">
               UX / UI Designer and Software Developer
             </p> */}
-          </div>
-        </header>
+            </div>
+          </header>
         </section>
       </div>
 
@@ -551,7 +579,7 @@ export default function Home() {
             </div>
           </div>
         </header>
-        < Footer />
+        <Footer />
       </section>
     </div>
   );
