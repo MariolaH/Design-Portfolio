@@ -138,11 +138,9 @@ export default function Home() {
       const header = document.querySelector(".homepageHeader") as HTMLElement;
       if (header) {
         const headerHeight = header.offsetHeight;
-        const opacity = Math.max(0, 1 - scrollTop / (headerHeight * 0.5));
-        const fixedContent = document.querySelector(
-          ".fixed-content"
-        ) as HTMLElement;
-
+        const opacity = scrollTop === 0 ? 1 : Math.max(0, 1 - scrollTop / (headerHeight * 0.5));
+        const fixedContent = document.querySelector(".fixed-content") as HTMLElement;
+    
         if (fixedContent) {
           fixedContent.style.opacity = `${opacity}`;
         }
@@ -320,184 +318,184 @@ export default function Home() {
           Skills
         </h2>
         <div className="row p-2">
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Audit.svg" alt="Bootstrap" />
                 <div className="tooltip">Competitive Audits</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/paperwireframe.svg" alt="Bootstrap" />
                 <div className="tooltip">Paper Wireframing</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/DigitalWireframes.svg" alt="Bootstrap" />
                 <div className="tooltip">Digital Wireframing</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Apple.svg" alt="Apple" />
                 <div className="tooltip">Apple</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Bootstrap.svg" alt="Bootstrap" />
                 <div className="tooltip">Bootstrap</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Canva.svg" alt="Canva" />
                 <div className="tooltip">Canva</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/CSS3.svg" alt="CSS3" />
                 <div className="tooltip">CSS3</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Firebase.svg" alt="Firebase" />
                 <div className="tooltip">Firebase</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Docker.svg" alt="Docker" />
                 <div className="tooltip">Docker</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Git.svg" alt="Git" />
                 <div className="tooltip">Git</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Figma.svg" alt="Figma" />
                 <div className="tooltip">Figma</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/HTML5.svg" alt="HTML5" />
                 <div className="tooltip">HTML5</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/JavaScript.svg" alt="JavaScript" />
                 <div className="tooltip">JavaScript</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/JSON.svg" alt="JSON" />
                 <div className="tooltip">JSON</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/MongoDB.svg" alt="MongoDB" />
                 <div className="tooltip">MongoDB</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/next.svg" alt="Next.js" />
                 <div className="tooltip">NEXT.js</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Python.svg" alt="Python" />
                 <div className="tooltip">Python</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/PostgresSQL.svg" alt="PostgresSQL" />
                 <div className="tooltip">PostgresSQL</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/React.svg" alt="React" />
                 <div className="tooltip">React</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Realm.svg" alt="Realm" />
                 <div className="tooltip">Realm</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/SQLite.svg" alt="SQLite" />
                 <div className="tooltip">SQLite</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/vercel.svg" alt="Vercel" />
                 <div className="tooltip">Vercel</div>
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon
                   src="/skills/VisualStudioCode.svg"
@@ -507,8 +505,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-6 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-4 d-block shadow text-decoration-none">
+          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
+            <div className="skill-icon p-2 d-block shadow text-decoration-none">
               <div className="mb-3">
                 <Icon src="/skills/Xcode.svg" alt="Xcode" />
                 <div className="tooltip">Xcode</div>
