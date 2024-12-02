@@ -72,11 +72,11 @@ export default function cs1prototype() {
           imgSrc="/moduleIcons/digitalWireframes.png"
           text="Digital wireframes: Developing interactive digital layouts to simulate user interactions."
         />
-        <ImageAndTextCard
+        {/* <ImageAndTextCard
           href="#empathy-map"
           imgSrc="/moduleIcons/lowFidelityPrototypes.png"
           text="Low-fidelity prototypes: Initial interactive models to test and refine design concepts."
-        />
+        /> */}
       </div>
       <div className="container pt-5">
       <div className="row justify-content-center">
