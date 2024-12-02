@@ -40,11 +40,11 @@ export default function WisconsinBucketListBook() {
               imgSrc="/DesignProcess/I.png"
               text="Ideate"
             /> */}
-            <LinkCard
+            {/* <LinkCard
               href="/WisconsinBucketListBook/prototype"
               imgSrc="/prototypeLogo.png"
               text="Prototype"
-            />
+            /> */}
             {/* <LinkCard
               href="/MuseumWebsite/test"
               imgSrc="/DesignProcess/Test.png"
