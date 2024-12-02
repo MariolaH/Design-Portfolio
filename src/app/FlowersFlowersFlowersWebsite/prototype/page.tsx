@@ -72,11 +72,11 @@ export default function cs1prototype() {
           imgSrc="/moduleIcons/digitalWireframes.png"
           text="Digital wireframes: Developing interactive digital layouts to simulate user interactions."
         />
-        {/* <ImageAndTextCard
-          href="#empathy-map"
+        <ImageAndTextCard
+          href="#lowFidelityPrototypes"
           imgSrc="/moduleIcons/lowFidelityPrototypes.png"
           text="Low-fidelity prototypes: Initial interactive models to test and refine design concepts."
-        /> */}
+        />
       </div>
       <div className="container pt-5">
       <div className="row justify-content-center">
@@ -125,6 +125,25 @@ export default function cs1prototype() {
         <ImageCard imgSrc="/CS3JourneyMap/JourneyMapEmma.png" /> */}
       </div>
       </div>
+  
+
+            <div className="container" id="lowFidelityPrototypes">
+            <div className="row justify-content-center">
+            <div className="row justify-content-center">
+              <video className="responsive-video mb-5" controls preload="auto">
+                <source src="/FlowerWebsite/App/Wireframes/FlowersLoFiPrototype.mp4" type="video/mp4" />
+                <track
+                  src="/CS3prototype/captions.vtt"
+                  kind="subtitles"
+                  srcLang="en"
+                  label="English"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            </div>
+          </div> 
+
       <button id="back-to-top" onClick={scrollToTop}>
         ↑
       </button>
