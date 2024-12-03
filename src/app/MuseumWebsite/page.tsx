@@ -16,7 +16,7 @@ export default function empathize() {
           Museum App & Website Case Study{" "}
         </h1>
         <h5 className=" mt-5 mb-4">
-          In this case study, I developed an application and responsive website
+          In this case study, I designed an app and responsive website
           for a public art museum.
         </h5>
         <p>The goal was to create a digital platform that:</p>
