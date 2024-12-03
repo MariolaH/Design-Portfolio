@@ -132,6 +132,7 @@ export default function Home() {
                 <img
                   src="/WisconsinBucketListMockUP.png"
                   className="img-fluid"
+                  alt="Wisconsin Bucket List Mockup"
                 />
               </div>
               <p className="text-muted">The Wisconsin Bucket List</p>
@@ -148,7 +149,7 @@ export default function Home() {
                   alt="Flowers Flowers Flowers Website"
                   className="img-fluid default-image hover-image"
                 />
-                <img src="/CaseStudy1.png" className="img-fluid" />
+                <img src="/CaseStudy1.png" className="img-fluid" alt="Flowers Flowers Flowers Website" />
               </div>
               <p className="text-muted">Flower Catalogue Website & App</p>
             </Link>
@@ -164,7 +165,7 @@ export default function Home() {
                   className="img-fluid default-image hover-image"
                   alt="Museum Website"
                 />
-                <img src="/MusuemMockup.png" className="img-fluid" />
+                <img src="/MusuemMockup.png" className="img-fluid" alt="Musuem Mockup" />
               </div>
               <p className="text-muted">Museum Website & App</p>
             </Link>
