@@ -1,7 +1,6 @@
 "use client";
 
-import Icon from "./icons";
-import Image from "next/image";
+import SkillsSection from "./components/SkillsSection";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import "/src/app/styles/global.css";
@@ -9,6 +8,33 @@ import styles from "./HomePage.module.css";
 import { useEffect, useState } from "react";
 import Footer from "./components/footer";
 import Typewriter from "typewriter-effect";
+
+const skillsData = [
+  { src: "/skills/Audit.svg", alt: "Competitive Audits", tooltip: "Competitive Audits" },
+  { src: "/skills/paperwireframe.svg", alt: "Paper Wireframing", tooltip: "Paper Wireframing" },
+  { src: "/skills/DigitalWireframes.svg", alt: "Digital Wireframing", tooltip: "Digital Wireframing" },
+  { src: "/skills/Apple.svg", alt: "Apple", tooltip: "Apple" },
+  { src: "/skills/Bootstrap.svg", alt: "Bootstrap", tooltip: "Bootstrap" },
+  { src: "/skills/Canva.svg", alt: "Canva", tooltip: "Canva" },
+  { src: "/skills/CSS3.svg", alt: "CSS3", tooltip: "CSS3" },
+  { src: "/skills/Firebase.svg", alt: "Firebase", tooltip: "Firebase" },
+  { src: "/skills/Docker.svg", alt: "Docker", tooltip: "Docker" },
+  { src: "/skills/Git.svg", alt: "Git", tooltip: "Git" },
+  { src: "/skills/Figma.svg", alt: "Figma", tooltip: "Figma" },
+  { src: "/skills/HTML5.svg", alt: "HTML5", tooltip: "HTML5" },
+  { src: "/skills/JavaScript.svg", alt: "JavaScript", tooltip: "JavaScript" },
+  { src: "/skills/JSON.svg", alt: "JSON", tooltip: "JSON" },
+  { src: "/skills/MongoDB.svg", alt: "MongoDB", tooltip: "MongoDB" },
+  { src: "/skills/next.svg", alt: "Next.js", tooltip: "NEXT.js" },
+  { src: "/skills/Python.svg", alt: "Python", tooltip: "Python" },
+  { src: "/skills/PostgresSQL.svg", alt: "PostgresSQL", tooltip: "PostgresSQL" },
+  { src: "/skills/React.svg", alt: "React", tooltip: "React" },
+  { src: "/skills/Realm.svg", alt: "Realm", tooltip: "Realm" },
+  { src: "/skills/SQLite.svg", alt: "SQLite", tooltip: "SQLite" },
+  { src: "/skills/vercel.svg", alt: "Vercel", tooltip: "Vercel" },
+  { src: "/skills/VisualStudioCode.svg", alt: "Visual Studio Code", tooltip: "Visual Studio Code" },
+  { src: "/skills/Xcode.svg", alt: "Xcode", tooltip: "Xcode" },
+];
 
 interface Certificate {
   src: string;
@@ -26,107 +52,6 @@ const certificates: Certificate[] = [
   },
   { src: "/Certificates/Google.png" },
 ];
-
-const Breadcrumbs = () => {
-  const [activeSection, setActiveSection] = useState("Home");
-  const [progressWidth, setProgressWidth] = useState(0);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return; // Ensure this only runs in the browser
-
-    const handleScroll = () => {
-      const sections = [
-        { id: "ux-ui-design", label: "UX / UI Design" },
-        { id: "certificates", label: "UX Certificates" },
-        { id: "skills", label: "Skills" },
-        { id: "resume", label: "Resume" },
-      ];
-
-      const scrollPosition = window.scrollY + 400; // Offset for visibility
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const sectionElement = document.getElementById(sections[i].id);
-        if (sectionElement) {
-          const sectionTop = sectionElement.offsetTop;
-          const sectionBottom = sectionTop + sectionElement.offsetHeight;
-
-          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            setActiveSection(sections[i].label);
-            break;
-          }
-        }
-      }
-
-      // Calculate the progress bar width only if window is defined
-      if (typeof window !== "undefined") {
-        const maxScroll = document.body.scrollHeight - window.innerHeight;
-        setProgressWidth((window.scrollY / maxScroll) * 100);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  return (
-    <nav
-      aria-label="breadcrumb"
-      className="breadcrumb-container sticky-top text-white shadow-sm py-2"
-    >
-      <ol className="breadcrumb mb-0 container text-white">
-        <li
-          className={`breadcrumb-item ${
-            activeSection === "Home" ? "active" : ""
-          }`}
-        >
-          <Link href="/">Home</Link>
-        </li>
-        <li
-          className={`breadcrumb-item ${
-            activeSection === "UX / UI Design" ? "active" : ""
-          }`}
-        >
-          <Link href="#ux-ui-design">UX / UI Design</Link>
-        </li>
-        <li
-          className={`breadcrumb-item ${
-            activeSection === "UX Certificates" ? "active" : ""
-          }`}
-        >
-          <Link href="#certificates">UX Certificates</Link>
-        </li>
-        <li
-          className={`breadcrumb-item ${
-            activeSection === "Skills" ? "active" : ""
-          }`}
-        >
-          <Link href="#skills">Skills</Link>
-        </li>
-        <li
-          className={`breadcrumb-item ${
-            activeSection === "Resume" ? "active" : ""
-          }`}
-        >
-          <Link href="#resume">Resume</Link>
-        </li>
-      </ol>
-      <div
-        className="progress-bar"
-        style={{
-          width: `${progressWidth}%`,
-          backgroundColor: "#007bff",
-          height: "4px",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 1050,
-        }}
-      ></div>
-    </nav>
-  );
-};
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -165,7 +90,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* < Breadcrumbs /> */}
       <div>
         <section id="home">
           <header className=" text-center text-light py-5 homepageHeader parallax">
@@ -242,23 +166,12 @@ export default function Home() {
               <p className="text-muted">Museum Website & App</p>
             </Link>
           </div>
-
-          {/* <div className="col-md-4 mb-4 d-flex justify-content-center">
-        <Link href="/FlowersFlowersFlowersWebsite" className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size">
-          <div className="mb-3">
-            <img src="/app.png" className="img-fluid small-img" />
-          </div>
-          <p className="text-muted">Flower Catalogue App</p>
-        </Link>
-      </div> */}
-
           <div className="col-md-4 mb-4 d-flex justify-content-center">
             <Link
               href="/DieHardAnglers"
               className="btn btn-light p-4 d-block shadow text-decoration-none custom-hover equal-size image-hover-container"
             >
               <div className="mb-3">
-                {/* <img src="/DieHardAnglers/DieHardAnglersMockUp.jpg" className="img-fluid default-image hover-image small-img" /> */}
                 <img
                   src="/DieHardAnglers/DieHardAnglersMockUp.jpg"
                   className="img-fluid small-img"
@@ -313,231 +226,7 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
-      <section id="skills" className=" text-center py-5">
-        <h2 className="headerFont mainHeader mb-4 section-heading p-4 text-uppercase">
-          Skills
-        </h2>
-        <div className="row p-2">
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Audit.svg" alt="Bootstrap" />
-                <div className="tooltip">Competitive Audits</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/paperwireframe.svg" alt="Bootstrap" />
-                <div className="tooltip">Paper Wireframing</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/DigitalWireframes.svg" alt="Bootstrap" />
-                <div className="tooltip">Digital Wireframing</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Apple.svg" alt="Apple" />
-                <div className="tooltip">Apple</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Bootstrap.svg" alt="Bootstrap" />
-                <div className="tooltip">Bootstrap</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Canva.svg" alt="Canva" />
-                <div className="tooltip">Canva</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/CSS3.svg" alt="CSS3" />
-                <div className="tooltip">CSS3</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Firebase.svg" alt="Firebase" />
-                <div className="tooltip">Firebase</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Docker.svg" alt="Docker" />
-                <div className="tooltip">Docker</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Git.svg" alt="Git" />
-                <div className="tooltip">Git</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Figma.svg" alt="Figma" />
-                <div className="tooltip">Figma</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/HTML5.svg" alt="HTML5" />
-                <div className="tooltip">HTML5</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/JavaScript.svg" alt="JavaScript" />
-                <div className="tooltip">JavaScript</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/JSON.svg" alt="JSON" />
-                <div className="tooltip">JSON</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/MongoDB.svg" alt="MongoDB" />
-                <div className="tooltip">MongoDB</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/next.svg" alt="Next.js" />
-                <div className="tooltip">NEXT.js</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Python.svg" alt="Python" />
-                <div className="tooltip">Python</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/PostgresSQL.svg" alt="PostgresSQL" />
-                <div className="tooltip">PostgresSQL</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/React.svg" alt="React" />
-                <div className="tooltip">React</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Realm.svg" alt="Realm" />
-                <div className="tooltip">Realm</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/SQLite.svg" alt="SQLite" />
-                <div className="tooltip">SQLite</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/vercel.svg" alt="Vercel" />
-                <div className="tooltip">Vercel</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon
-                  src="/skills/VisualStudioCode.svg"
-                  alt="Visual Studio Code"
-                />
-                <div className="tooltip">Visual Studio Code</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4 col-sm-6 col-md-2 mb-4 skill-container">
-            <div className="skill-icon p-2 d-block shadow text-decoration-none">
-              <div className="mb-3">
-                <Icon src="/skills/Xcode.svg" alt="Xcode" />
-                <div className="tooltip">Xcode</div>
-              </div>
-            </div>
-          </div>
-
-          {/* <SkillCard imgSrc="skills/Design.svg" altText="UX / UI Design" tooltipText="UX / UI Design" />
-        <SkillCard imgSrc="skills/Audit.svg" altText="Competitive Audits" tooltipText="Competitive Audits" />
-        <SkillCard imgSrc="skills/paperwireframe.svg" altText="Paper Wireframing" tooltipText="Paper Wireframing" />
-        <SkillCard imgSrc="skills/DigitalWireframes.svg" altText="Digital Wireframing" tooltipText="Digital Wireframing" />
-        <SkillCard imgSrc="skills/Apple.svg" altText="Apple" tooltipText="Apple" />
-        <SkillCard imgSrc="skills/Bootstrap.svg" altText="Bootstrap" tooltipText="Bootstrap" />
-        <SkillCard imgSrc="skills/CSS3.svg" altText="CSS3" tooltipText="CSS3" />
-        <SkillCard imgSrc="skills/Figma.svg" altText="Figma" tooltipText="Figma" />
-        <SkillCard imgSrc="skills/HTML5.svg" altText="HTML5" tooltipText="HTML5" />
-        <SkillCard imgSrc="skills/JavaScript.svg" altText="JavaScript" tooltipText="JavaScript" />
-        <SkillCard imgSrc="skills/JSON.svg" altText="JSON" tooltipText="JSON" />
-        <SkillCard imgSrc="skills/MongoDB.svg" altText="MongoDB" tooltipText="MongoDB" />
-        <SkillCard imgSrc="skills/next.svg" altText="NEXT.js" tooltipText="NEXT.js" />
-        <SkillCard imgSrc="skills/Python.svg" altText="Python" tooltipText="Python" />
-        <SkillCard imgSrc="skills/React.svg" altText="React" tooltipText="React" />
-        <SkillCard imgSrc="skills/Realm.svg" altText="Realm" tooltipText="Realm" />
-        <SkillCard imgSrc="skills/SQLite.svg" altText="SQLite" tooltipText="SQLite" />
-        <SkillCard imgSrc="skills/vercel.svg" altText="Vercel" tooltipText="Vercel" />
-        <SkillCard imgSrc="skills/VisualStudioCode.svg" altText="Visual Studio Code" tooltipText="Visual Studio Code" />
-        <SkillCard imgSrc="skills/Xcode.svg" altText="Xcode" tooltipText="Xcode" /> 
-        <SkillCard imgSrc="skills/Firebase.svg" altText="Firebase" tooltipText="Firebase" /> 
-        <SkillCard imgSrc="skills/Git.svg" altText="Git" tooltipText="Git" />  */}
-        </div>
-      </section>
+      <SkillsSection skills={skillsData} />
       <section id="resume">
         <header className="text-center text-light py-5 homepageHeader2 homepageHeader3 parallax">
           <div className="mt-4">
