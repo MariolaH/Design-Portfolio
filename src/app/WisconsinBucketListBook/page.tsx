@@ -13,7 +13,7 @@ export default function WisconsinBucketListBook() {
       <section className="container text-center py-5">
         <h2 className="headerFont mainHeader mb-5 mt-5">The Wisconsin Bucket List Website</h2>
         <p className=" mt-5">
-        I designed and developed an interactive website for an author, crafting an engaging online platform to highlight their work and foster meaningful connections with readers. </p>
+        I created an interactive website for an author, providing an engaging platform to showcase their work and connect with readers. </p>
         <div className="row justify-content-center mt-5">
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
   <div className="around p-4 d-block shadow text-decoration-none">
