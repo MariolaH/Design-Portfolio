@@ -44,7 +44,7 @@ export default function DieHardAnglers() {
           </div>
         </div>
         <div className="d-flex justify-content-center mt-5 mb-5">
-          <div className="row justify-content-center mt-5 btn-round image-container">
+          <div className="row justify-content-center btn-round image-container">
             {/* <LinkCard
               href="/MuseumWebsite/empathize"
               imgSrc="/DesignProcess/E.png"
