@@ -126,6 +126,7 @@ export default function Home() {
               <div className="mb-3 mt-4 image-container">
                 <img
                   src="/wireframeBook.png"
+                  alt="Wisconsin Bucket List Book"
                   className="img-fluid default-image hover-image"
                 />
                 <img
@@ -144,6 +145,7 @@ export default function Home() {
               <div className="mb-3 mt-4 image-container">
                 <img
                   src="/Flowerwireframe.png"
+                  alt="Flowers Flowers Flowers Website"
                   className="img-fluid default-image hover-image"
                 />
                 <img src="/CaseStudy1.png" className="img-fluid" />
@@ -160,6 +162,7 @@ export default function Home() {
                 <img
                   src="/Musuem.png"
                   className="img-fluid default-image hover-image"
+                  alt="Museum Website"
                 />
                 <img src="/MusuemMockup.png" className="img-fluid" />
               </div>
@@ -175,6 +178,7 @@ export default function Home() {
                 <img
                   src="/DieHardAnglers/DieHardAnglersMockUp.jpg"
                   className="img-fluid small-img"
+                  alt="Die Hard Anglers"
                 />
               </div>
               <p className="text-muted">Die Hard Anglers</p>

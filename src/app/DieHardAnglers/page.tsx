@@ -34,6 +34,7 @@ export default function DieHardAnglers() {
                   <img
                     className="justify-content-center"
                     src="/DieHardAnglers/DieHardAnglersMockUp.jpg"
+                    alt="Die Hard Anglers"
                     width={150}
                     height={250}
                   />{" "}
