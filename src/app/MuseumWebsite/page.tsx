@@ -11,14 +11,14 @@ export default function empathize() {
   return (
     <div>
       <section className="container text-center py-5">
-        <h2 className="headerFont mainHeader mb-5 mt-5">
+        <h1 className="headerFont mainHeader mb-5 mt-5">
           {" "}
           Museum App & Website Case Study{" "}
-        </h2>
-        <p className=" mt-5">
+        </h1>
+        <h5 className=" mt-5 mb-4">
           In this case study, I developed an application and responsive website
           for a public art museum.
-        </p>
+        </h5>
         <p>The goal was to create a digital platform that:</p>
 
  
