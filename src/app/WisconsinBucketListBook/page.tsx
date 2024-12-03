@@ -12,14 +12,15 @@ export default function WisconsinBucketListBook() {
     <div>
       <section className="container text-center py-5">
         <h1 className="headerFont mainHeader mb-5 mt-5">The Wisconsin Bucket List Website</h1>
-        <h5 className=" mt-5 mb-4">
+        <h5 className=" mt-5 mb-4 caseStudy">
         In this case study, I designed and developed an interactive website for an author. </h5>
+        <div className="book"> 
        <p> The goal was to create an engaging platform that:</p>
 <p><i className="bi bi-book text-red-500" ></i> Promotes the Wisconsin Bucket List book</p>
 <p><i className="bi bi-book text-red-500"></i> Introduces the author and their story</p>
 <p><i className="bi bi-book text-red-500"></i> Provides visitors with a seamless browsing experience to learn about the book and make purchases</p>
 <p>Role in the Project: Lead UX/UI Designer & Software Developer
-</p>
+</p></div>
 
         <div className="row justify-content-center mt-5">
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">

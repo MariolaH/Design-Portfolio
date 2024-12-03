@@ -925,6 +925,15 @@ section {
     width: 40px; /* Adjust size for mobile */
     height: 50px; /* Keep aspect ratio */
   }
+
+  .book {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+.caseStudy{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 }
 
 @media (max-width: 576px) {

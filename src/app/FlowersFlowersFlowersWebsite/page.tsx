@@ -11,15 +11,16 @@ export default function FlowersFlowersFlowersWebsite() {
     <div>
       <section className="container text-center py-5">
       <h1 className="headerFont mainHeader mb-5 mt-5">Flowers Flowers Flowers Website</h1>
-        <h5 className="mb-5 mt-5">
+        <h5 className="mb-5 mt-5 caseStudy">
         In this case study, I designed a floral catalog website for a florist.
         </h5>
+        <div className="book">
 <p>The goal was to create a digital platform that:</p>
 <p><i className="bi bi-flower3 text-yellow-500"></i> Showcases a variety of floral arrangements and services</p>
 <p><i className="bi bi-flower3 text-yellow-500"></i> Provides an intuitive catalog for easy browsing</p>
 <p><i className="bi bi-flower3 text-yellow-500"></i> Enables seamless customer inquiries and order placements</p>
 <p>Role in the Project: Lead UX/UI Designer</p>
-      
+      </div>
         <div className="row justify-content-center mt-5">
   <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
     <div className="around p-4 d-block shadow text-decoration-none">

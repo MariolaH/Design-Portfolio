@@ -15,10 +15,11 @@ export default function empathize() {
           {" "}
           Museum App & Website Case Study{" "}
         </h1>
-        <h5 className=" mt-5 mb-4">
+        <h5 className=" mt-5 mb-4 caseStudy">
           In this case study, I designed an app and responsive website
           for a public art museum.
         </h5>
+        <div className="book">
         <p>The goal was to create a digital platform that:</p>
 
  
@@ -28,7 +29,7 @@ export default function empathize() {
    
             <p>
             Role in the Project: Lead UX / UI Designer
-        </p>
+        </p></div>
         <div className="d-flex justify-content-center mt-5 mb-5">
           <div className="row justify-content-center mt-5 btn-round image-container">
             <LinkCard
