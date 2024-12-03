@@ -12,7 +12,8 @@ export default function DieHardAnglers() {
     <div>
       <section className="container text-center py-5">
         <h1 className="headerFont mainHeader mb-5 mt-5">Die Hard Anglers</h1>
-        <h5 className=" mt-5 mb-4 caseStudy">
+        <div className="aroundText p-4 d-block shadow text-decoration-none">
+        <h5 className="mb-4 caseStudy">
         In this case study, I designed the user interface for the Die Hard Anglers app.
         </h5>
         <div className="book">
@@ -20,7 +21,7 @@ export default function DieHardAnglers() {
         <p><i className="bi bi-droplet text-blue-700"></i> Offers an intuitive and user-friendly experience</p>
         <p><i className="bi bi-droplet text-blue-700"></i> Enhances engagement through visually appealing design</p>
         <p><i className="bi bi-droplet text-blue-700"></i> Simplifies navigation to meet the needs of both novice and experienced anglers</p>
-        <p>Role in the Project: Lead UX/UI Designer</p></div>
+        <p>Role in the Project: Lead UX/UI Designer</p></div></div>
         <div className="row justify-content-center mt-5">
           <div className="col-md-2 d-flex justify-content-center">
             <div className="around p-4 d-block shadow text-decoration-none">

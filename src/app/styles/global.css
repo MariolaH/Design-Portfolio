@@ -474,6 +474,13 @@ section {
   border-color: white;
 }
 
+.aroundText {
+  border-radius: 5px;
+  border-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .img-fluid {
   max-width: 50%;
   height: auto;
@@ -933,6 +940,10 @@ section {
 .caseStudy{
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.aroundText {
+  margin: 10px;
 }
 }
 
