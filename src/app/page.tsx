@@ -114,7 +114,7 @@ export default function Home() {
           </header>
         </section>
       </div>
-
+<main> 
       <section id="ux-ui-design" className="text-center py-5">
         <h2 className="headerFont mainHeader mb-4 p-4">UX / UI DESIGN</h2>
         <div className="row p-4 justify-content-center">
@@ -231,7 +231,8 @@ export default function Home() {
       <div>
         <header className="text-center text-light py-5 homepageHeader2 parallax"></header>
       </div>
-      <SkillsSection skills={skillsData} />
+      <SkillsSection skills={skillsData} /> 
+      </main>
       <section id="resume">
         <header className="text-center text-light py-5 homepageHeader2 homepageHeader3 parallax">
           <div className="mt-4">
