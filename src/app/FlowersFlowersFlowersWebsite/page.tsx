@@ -12,7 +12,7 @@ export default function FlowersFlowersFlowersWebsite() {
       <section className="container text-center py-5">
       <h1 className="headerFont mainHeader mb-5 mt-5">Flowers Flowers Flowers Website</h1>
         <h5 className="mb-5 mt-5">
-        In this case study, I designed and developed a floral catalog website for a florist.
+        In this case study, I designed a floral catalog website for a florist.
         </h5>
 <p>The goal was to create a digital platform that:</p>
 <p><i className="bi bi-flower3 text-yellow-500"></i> Showcases a variety of floral arrangements and services</p>
