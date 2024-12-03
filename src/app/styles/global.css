@@ -422,28 +422,51 @@ section {
 .responsive-image {
   display: block;
   margin: 0 auto; /* Center the image */
-  max-width: 500px; /* Maximum width for large screens */
+  max-width: 725px; /* Maximum width for large screens */
 
   height: auto; /* Maintain aspect ratio */
 }
 
+@media (min-width: 1024px) and (max-width: 1366px)  { /* Target screens smaller than 480px */
+  .responsive-image {
+    max-width: 700px; /* Make the image even smaller on very small screens */
+    width: 100%; /* Ensure it doesn’t overflow */
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1023px) { /* Target screens smaller than 768px */
+  .responsive-image {
+    max-width: 400px; /* Adjust size for smaller screens */
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) { /* Target screens smaller than 768px */
+  .responsive-image {
+    max-width: 350px; /* Adjust size for smaller screens */
+
+  }
+}
+
 @media (max-width: 768px) { /* Target screens smaller than 768px */
   .responsive-image {
-    max-width: 350px; /* Adjust size for smaller screens */
-    width: 80%; /* Ensure it stays proportional */
+    max-width: 460px; /* Adjust size for smaller screens */
+
   }
+
 }
 
 @media (max-width: 480px) { /* Target screens smaller than 480px */
   .responsive-image {
-    max-width: 250px; /* Make the image even smaller on very small screens */
+    max-width: 330px; /* Make the image even smaller on very small screens */
     width: 100%; /* Ensure it doesn’t overflow */
   }
 
   .responsive-image-flower {
     max-width: 350px; /* Adjust size for smaller screens */
-    width: 80%; /* Ensure it stays proportional */
+    width: 100%; /* Ensure it stays proportional */
   }
+  
 }
 
 @media (max-width: 480px) { /* Target screens smaller than 480px */
@@ -452,6 +475,13 @@ section {
     width: 100%; /* Ensure it doesn’t overflow */
   }
 
+
+
+}
+
+.responsive-image-flower {
+  max-width: 550px; 
+  width: 100%; /* Ensure it doesn’t overflow */
 }
 
 

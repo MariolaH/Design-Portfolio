@@ -24,7 +24,7 @@ export default function WisconsinBucketListBook() {
 </p></div></div>
 
         <div className="row justify-content-center mt-5">
-        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+        <div className="col-md-6 col-sm-6 col-12 d-flex justify-content-center">
   <div className="around p-4 d-block shadow text-decoration-none">
     <a href="https://www.bookthewisconsinbucketlist.com/" target="_blank">
       <img src="/WIWebsite.png" className="responsive-image" />
