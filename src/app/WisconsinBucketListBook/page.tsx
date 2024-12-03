@@ -14,10 +14,10 @@ export default function WisconsinBucketListBook() {
         <h1 className="headerFont mainHeader mb-5 mt-5">The Wisconsin Bucket List Website</h1>
         <h5 className=" mt-5 mb-4">
         In this case study, I designed and developed an interactive website for an author. </h5>
-<p>The goal was to create an engaging platform that:</p>
-<p>Promotes the Wisconsin Bucket List book</p>
-<p>Introduces the author and their story</p>
-<p>Provides visitors with a seamless browsing experience to learn about the book and make purchases</p>
+       <p> The goal was to create an engaging platform that:</p>
+<p><i className="bi bi-book text-red-500" ></i> Promotes the Wisconsin Bucket List book</p>
+<p><i className="bi bi-book text-red-500"></i> Introduces the author and their story</p>
+<p><i className="bi bi-book text-red-500"></i> Provides visitors with a seamless browsing experience to learn about the book and make purchases</p>
 <p>Role in the Project: Lead UX/UI Designer & Software Developer
 </p>
 

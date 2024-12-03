@@ -11,18 +11,15 @@ export default function DieHardAnglers() {
   return (
     <div>
       <section className="container text-center py-5">
-        <h2 className="headerFont mainHeader mb-5 mt-5">Die Hard Anglers</h2>
-        <p className=" mt-5">
-          I designed and developed the user interface for the Die Hard Anglers
-          app, ensuring it offered a seamless and intuitive experience for
-          users. <br /><br /> My work included conducting a comprehensive competitive audit
-          of similar social platforms, allowing me to identify best practices
-          and areas for improvement in terms of functionality and user
-          experience. Leveraging this research, I crafted a visually appealing,
-          user-friendly UI that enhances engagement, and simplifies navigation. <br />The
-          design emphasizes clarity, ease of use, and accessibility to meet the
-          needs of both novice and experienced anglers.
-        </p>
+        <h1 className="headerFont mainHeader mb-5 mt-5">Die Hard Anglers</h1>
+        <h5 className=" mt-5 mb-4">
+        In this case study, I designed the user interface for the Die Hard Anglers app.
+        </h5>
+        <p>The goal was to create a seamless platform that:</p>
+        <p><i className="bi bi-droplet text-blue-700"></i> Offers an intuitive and user-friendly experience</p>
+        <p><i className="bi bi-droplet text-blue-700"></i> Enhances engagement through visually appealing design</p>
+        <p><i className="bi bi-droplet text-blue-700"></i> Simplifies navigation to meet the needs of both novice and experienced anglers</p>
+        <p>Role in the Project: Lead UX/UI Designer</p>
         <div className="row justify-content-center mt-5">
           <div className="col-md-2 d-flex justify-content-center">
             <div className="around p-4 d-block shadow text-decoration-none">
