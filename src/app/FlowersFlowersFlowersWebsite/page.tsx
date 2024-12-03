@@ -12,7 +12,7 @@ export default function FlowersFlowersFlowersWebsite() {
       <section className="container text-center py-5">
       <h2 className="headerFont mainHeader mb-5 mt-5">Flowers Flowers Flowers Website</h2>
         <p className="mb-5 mt-5">
-          Design a flower catalogue website for a florist.
+        Create a floral catalog website for a florist.
         </p>
         <div className="row justify-content-center mt-5">
   <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
