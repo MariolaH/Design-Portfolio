@@ -24,9 +24,9 @@ export default function empathize() {
         <p>The goal was to create a digital platform that:</p>
 
  
-            <p><i className="bi bi-image text-purple-700"></i> Advertise Exhibitions and Events</p>
-            <p><i className="bi bi-image text-purple-700"></i>  Provide Essential Information</p>
-            <p><i className="bi bi-image text-purple-700"></i>  Enable patrons to schedule their visits</p>
+            <p><i className="bi bi-image text-purple-700 pr-2"></i> Advertise Exhibitions and Events</p>
+            <p><i className="bi bi-image text-purple-700 pr-2"></i>  Provide Essential Information</p>
+            <p><i className="bi bi-image text-purple-700 pr-2"></i>  Enable patrons to schedule their visits</p>
    
             <p>
             Role in the Project: Lead UX / UI Designer

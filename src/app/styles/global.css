@@ -964,13 +964,13 @@ section {
   }
 
   .book {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-.caseStudy{
-  padding-left: 20px;
-  padding-right: 20px;
-}
+/* .caseStudy{
+  padding-left: 10px;
+  padding-right: 10px;
+} */
 
 .aroundText {
   margin: 10px;

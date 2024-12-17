@@ -17,9 +17,9 @@ export default function FlowersFlowersFlowersWebsite() {
         </h5>
         <div className="book">
 <p>The goal was to create a digital platform that:</p>
-<p><i className="bi bi-flower3 text-yellow-500"></i> Showcases a variety of floral arrangements and services</p>
-<p><i className="bi bi-flower3 text-yellow-500"></i> Provides an intuitive catalog for easy browsing</p>
-<p><i className="bi bi-flower3 text-yellow-500"></i> Enables seamless customer inquiries and order placements</p>
+<p><i className="bi bi-flower3 text-yellow-500 pr-2"></i> Showcases a variety of floral arrangements and services</p>
+<p><i className="bi bi-flower3 text-yellow-500 pr-2"></i> Provides an intuitive catalog for easy browsing</p>
+<p><i className="bi bi-flower3 text-yellow-500 pr-2"></i> Enables seamless customer inquiries and order placements</p>
 <p>Role in the Project: Lead UX/UI Designer</p>
       </div></div>
         <div className="row justify-content-center mt-5">

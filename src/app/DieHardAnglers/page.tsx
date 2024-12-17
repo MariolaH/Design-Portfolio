@@ -18,9 +18,9 @@ export default function DieHardAnglers() {
         </h5>
         <div className="book">
         <p>The goal was to create a seamless platform that:</p>
-        <p><i className="bi bi-droplet text-blue-700"></i> Offers an intuitive and user-friendly experience</p>
-        <p><i className="bi bi-droplet text-blue-700"></i> Enhances engagement through visually appealing design</p>
-        <p><i className="bi bi-droplet text-blue-700"></i> Simplifies navigation to meet the needs of both novice and experienced anglers</p>
+        <p><i className="bi bi-droplet text-blue-700 pr-2"></i> Offers an intuitive and user-friendly experience</p>
+        <p><i className="bi bi-droplet text-blue-700 pr-2"></i> Enhances engagement through visually appealing design</p>
+        <p><i className="bi bi-droplet text-blue-700 pr-2"></i> Simplifies navigation to meet the needs of both novice and experienced anglers</p>
         <p>Role in the Project: Lead UX/UI Designer</p></div></div>
         <div className="row justify-content-center mt-5">
           <div className="col-md-2 d-flex justify-content-center">
